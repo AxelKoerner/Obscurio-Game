@@ -2450,6 +2450,7 @@ drawable design_ic_visibility
 drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
+drawable ic_baseline_chat_24
 drawable ic_clock_black_24dp
 drawable ic_keyboard_black_24dp
 drawable ic_launcher_background
@@ -2622,6 +2623,7 @@ id center_vertical
 id chain
 id chain2
 id chains
+id chat
 id checkbox
 id checked
 id chip
@@ -2953,6 +2955,7 @@ id textinput_placeholder
 id textinput_prefix_text
 id textinput_suffix_text
 id time
+id timer
 id title
 id titleDividerNoCustom
 id title_template
@@ -3165,6 +3168,7 @@ layout text_view_with_theme_line_height
 layout text_view_without_line_height
 menu example_menu
 menu example_menu2
+menu nav
 mipmap ic_launcher
 mipmap ic_launcher_round
 plurals mtrl_badge_content_description

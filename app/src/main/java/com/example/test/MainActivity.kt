@@ -2,14 +2,23 @@ package com.example.test
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.os.CountDownTimer
+import android.view.Menu
+import android.view.MenuItem
 import android.view.View
 import android.widget.ImageButton
 import android.widget.Toast
+import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
+
+    lateinit var countDownTimer: CountDownTimer
+    private var countDownProgress: Int = 60000
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        countdown()
 
         //-----------------------------onClick Listener------------------------------//
         var firstClick = true
@@ -131,6 +140,35 @@ class MainActivity : AppCompatActivity() {
 
 
     }
+
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        menuInflater.inflate(R.menu.nav,menu)
+        return true
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+
+        when(item.itemId){
+            R.id.chat -> Toast.makeText(this,"Chat",Toast.LENGTH_SHORT).show()
+        }
+
+        return super.onOptionsItemSelected(item)
+    }
+
+    private fun countdown(){
+        countDownTimer = object : CountDownTimer(5000,1000) {
+            override fun onTick(millisUntilFinished: Long) {
+                countDownProgress--
+                timer.text = countDownProgress.toString()
+            }
+
+            override fun onFinish() {
+                timer.setText("done!")
+            }
+        }.start()
+
+    }
+
 
 
 }
