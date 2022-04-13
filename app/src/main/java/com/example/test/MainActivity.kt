@@ -22,8 +22,7 @@ class MainActivity : AppCompatActivity() {
 
         var mediaPlayer = MediaPlayer.create(this, R.raw.music)
         mediaPlayer?.start()
-        mediaPlayer.isLooping = true
-
+        mediaPlayer?.isLooping = true
         countdown()
 
 
@@ -160,6 +159,7 @@ class MainActivity : AppCompatActivity() {
             R.id.chat -> Toast.makeText(this,"Chat",Toast.LENGTH_SHORT).show()
             R.id.leave -> finishAffinity()
             R.id.option -> setContentView(R.layout.activity_settings)
+
         }
 
         return super.onOptionsItemSelected(item)

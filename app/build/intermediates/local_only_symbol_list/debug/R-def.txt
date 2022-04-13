@@ -33,6 +33,7 @@ menu nav
 mipmap ic_launcher
 mipmap ic_launcher_round
 raw music
+raw test
 string app_name
 string attachment_summary_off
 string attachment_summary_on
