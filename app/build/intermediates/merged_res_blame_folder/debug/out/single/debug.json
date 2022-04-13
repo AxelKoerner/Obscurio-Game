@@ -12,6 +12,10 @@
         "source": "C:\\Users\\trung\\Desktop\\PVC\\Obscurio-Game-uebung\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.webp"
     },
     {
+        "merged": "C:\\Users\\trung\\Desktop\\PVC\\Obscurio-Game-uebung\\app\\build\\intermediates\\merged_res\\debug\\raw_music.mp3.flat",
+        "source": "C:\\Users\\trung\\Desktop\\PVC\\Obscurio-Game-uebung\\app\\src\\main\\res\\raw\\music.mp3"
+    },
+    {
         "merged": "C:\\Users\\trung\\Desktop\\PVC\\Obscurio-Game-uebung\\app\\build\\intermediates\\merged_res\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
         "source": "C:\\Users\\trung\\Desktop\\PVC\\Obscurio-Game-uebung\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
     },
@@ -28,6 +32,10 @@
         "source": "C:\\Users\\trung\\Desktop\\PVC\\Obscurio-Game-uebung\\app\\src\\main\\res\\layout\\activity_main.xml"
     },
     {
+        "merged": "C:\\Users\\trung\\Desktop\\PVC\\Obscurio-Game-uebung\\app\\build\\intermediates\\merged_res\\debug\\xml_root_preferences.xml.flat",
+        "source": "C:\\Users\\trung\\Desktop\\PVC\\Obscurio-Game-uebung\\app\\src\\main\\res\\xml\\root_preferences.xml"
+    },
+    {
         "merged": "C:\\Users\\trung\\Desktop\\PVC\\Obscurio-Game-uebung\\app\\build\\intermediates\\merged_res\\debug\\mipmap-hdpi_ic_launcher_round.webp.flat",
         "source": "C:\\Users\\trung\\Desktop\\PVC\\Obscurio-Game-uebung\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.webp"
     },
@@ -38,6 +46,10 @@
     {
         "merged": "C:\\Users\\trung\\Desktop\\PVC\\Obscurio-Game-uebung\\app\\build\\intermediates\\merged_res\\debug\\drawable_monk.jpg.flat",
         "source": "C:\\Users\\trung\\Desktop\\PVC\\Obscurio-Game-uebung\\app\\src\\main\\res\\drawable\\monk.jpg"
+    },
+    {
+        "merged": "C:\\Users\\trung\\Desktop\\PVC\\Obscurio-Game-uebung\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_settings.xml.flat",
+        "source": "C:\\Users\\trung\\Desktop\\PVC\\Obscurio-Game-uebung\\app\\src\\main\\res\\layout\\activity_settings.xml"
     },
     {
         "merged": "C:\\Users\\trung\\Desktop\\PVC\\Obscurio-Game-uebung\\app\\build\\intermediates\\merged_res\\debug\\mipmap-mdpi_ic_launcher.webp.flat",

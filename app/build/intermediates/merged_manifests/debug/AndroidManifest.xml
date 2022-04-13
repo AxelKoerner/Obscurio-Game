@@ -19,6 +19,16 @@
         android:testOnly="true"
         android:theme="@style/Theme.Test" >
         <activity
+            android:name="com.example.test.Settings"
+            android:exported="false" />
+        <activity
+            android:name="com.example.test.setting"
+            android:exported="false" />
+        <activity
+            android:name="com.example.test.SettingsActivity"
+            android:exported="false"
+            android:label="@string/title_activity_settings" />
+        <activity
             android:name="com.example.test.MainActivity"
             android:exported="true" >
             <intent-filter>

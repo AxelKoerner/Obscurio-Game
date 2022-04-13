@@ -1,5 +1,7 @@
 R_DEF: Internal format may change without notice
 local
+array reply_entries
+array reply_values
 color black
 color purple_200
 color purple_500
@@ -21,11 +23,25 @@ id chat
 id leave
 id option
 id player
+id progressBar
+id soundtext
 id textView
 id timer
 layout activity_main
+layout activity_settings
 menu nav
 mipmap ic_launcher
 mipmap ic_launcher_round
+raw music
 string app_name
+string attachment_summary_off
+string attachment_summary_on
+string attachment_title
+string messages_header
+string reply_title
+string signature_title
+string sync_header
+string sync_title
+string title_activity_settings
 style Theme.Test
+xml root_preferences
