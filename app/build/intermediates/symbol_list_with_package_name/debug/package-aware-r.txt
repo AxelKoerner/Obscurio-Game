@@ -2744,6 +2744,7 @@ id jumpToEnd
 id jumpToStart
 id labeled
 id layout
+id leave
 id left
 id leftToRight
 id legacy
@@ -2829,6 +2830,7 @@ id notification_main_column_container
 id off
 id on
 id onInterceptTouchReturnSwipe
+id option
 id outline
 id outward
 id overshoot
@@ -2844,6 +2846,7 @@ id pathRelative
 id peekHeight
 id percent
 id pin
+id player
 id position
 id postLayout
 id progress_circular

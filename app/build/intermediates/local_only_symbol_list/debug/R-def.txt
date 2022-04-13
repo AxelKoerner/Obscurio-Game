@@ -18,6 +18,9 @@ id Button4
 id Button5
 id Button6
 id chat
+id leave
+id option
+id player
 id textView
 id timer
 layout activity_main

@@ -2743,6 +2743,7 @@ int id jumpToEnd 0x7f0800e8
 int id jumpToStart 0x7f0800e9
 int id labeled 0x7f0800ea
 int id layout 0x7f0800eb
+int id leave 0x7f0801e5
 int id left 0x7f0800ec
 int id leftToRight 0x7f0800ed
 int id legacy 0x7f0800ee
@@ -2828,6 +2829,7 @@ int id notification_main_column_container 0x7f08013d
 int id off 0x7f08013e
 int id on 0x7f08013f
 int id onInterceptTouchReturnSwipe 0x7f080140
+int id option 0x7f0801e6
 int id outline 0x7f080141
 int id outward 0x7f080142
 int id overshoot 0x7f080143
@@ -2843,6 +2845,7 @@ int id pathRelative 0x7f08014c
 int id peekHeight 0x7f08014d
 int id percent 0x7f08014e
 int id pin 0x7f08014f
+int id player 0x7f0801e7
 int id position 0x7f080150
 int id postLayout 0x7f080151
 int id progress_circular 0x7f080152

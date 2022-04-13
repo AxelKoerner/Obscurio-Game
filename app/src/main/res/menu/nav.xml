@@ -10,4 +10,23 @@
         app:showAsAction="ifRoom"
         />
 
+    <item
+        android:id="@+id/player"
+        android:title="Player"
+        app:showAsAction="never"
+        />
+
+    <item
+        android:id="@+id/option"
+        android:title="Options"
+        app:showAsAction="never"
+        />
+
+    <item
+        android:id="@+id/leave"
+        android:title="Leave Game"
+        app:showAsAction="never"
+        />
+
+
 </menu>
