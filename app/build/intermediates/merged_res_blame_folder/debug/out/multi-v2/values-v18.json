@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\trung\\Desktop\\PVC\\Obscurio-Game-uebung\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v18\\values-v18.xml",
+            "outputFile": "D:\\Hochschule\\PVC-UBQ\\test\\Obscurio-Game-uebung\\test2\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v18\\values-v18.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\trung\\.gradle\\caches\\transforms-3\\fc4554dd3f357f9242ed841ef72a16d6\\transformed\\appcompat-1.4.1\\res\\values-v18\\values-v18.xml",
+                    "source": "C:\\Users\\axel_\\.gradle\\caches\\transforms-3\\fc4554dd3f357f9242ed841ef72a16d6\\transformed\\appcompat-1.4.1\\res\\values-v18\\values-v18.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
