@@ -38,8 +38,11 @@ class MainActivity : AppCompatActivity() {
                 Toast.makeText(applicationContext, "Picture was enlarged", Toast.LENGTH_SHORT).show()
                 button1.layoutParams.height = 1000
                 button1.layoutParams.width = 1000
+                button1.setImageResource(R.drawable.pot)
+                //button1.elevation(e)
                 button1.requestLayout()
                 firstClick = false
+
 
             }
             else {

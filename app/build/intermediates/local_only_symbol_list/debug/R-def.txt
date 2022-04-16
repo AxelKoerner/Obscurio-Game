@@ -9,11 +9,15 @@ color purple_700
 color teal_200
 color teal_700
 color white
+drawable backround
+drawable button
+drawable custom_button
 drawable gameboard
 drawable ic_baseline_chat_24
 drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable monk
+drawable pot
 drawable roundcorner
 id Button1
 id Button2
