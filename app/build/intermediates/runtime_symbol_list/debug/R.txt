@@ -2588,6 +2588,7 @@ int id Button3 0x7f090005
 int id Button4 0x7f090006
 int id Button5 0x7f090007
 int id Button6 0x7f090008
+int id Button_fullscreen 0x7f0901f2
 int id CTRL 0x7f090009
 int id FUNCTION 0x7f09000a
 int id META 0x7f09000b
@@ -3163,6 +3164,7 @@ int layout abc_search_view 0x7f0c0019
 int layout abc_select_dialog_material 0x7f0c001a
 int layout abc_tooltip 0x7f0c001b
 int layout activity_main 0x7f0c001c
+int layout activity_picture_fullscreen 0x7f0c0087
 int layout activity_settings 0x7f0c001d
 int layout custom_dialog 0x7f0c001e
 int layout design_bottom_navigation_item 0x7f0c001f

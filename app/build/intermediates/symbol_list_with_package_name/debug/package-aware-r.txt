@@ -2589,6 +2589,7 @@ id Button3
 id Button4
 id Button5
 id Button6
+id Button_fullscreen
 id CTRL
 id FUNCTION
 id META
@@ -3164,6 +3165,7 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_main
+layout activity_picture_fullscreen
 layout activity_settings
 layout custom_dialog
 layout design_bottom_navigation_item

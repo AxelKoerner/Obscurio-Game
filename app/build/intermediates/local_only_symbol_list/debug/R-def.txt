@@ -25,6 +25,7 @@ id Button3
 id Button4
 id Button5
 id Button6
+id Button_fullscreen
 id backgroundVolume
 id button
 id chat
@@ -36,6 +37,7 @@ id text1
 id textView
 id timer
 layout activity_main
+layout activity_picture_fullscreen
 layout activity_settings
 menu nav
 mipmap ic_launcher

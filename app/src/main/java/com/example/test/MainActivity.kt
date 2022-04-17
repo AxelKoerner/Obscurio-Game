@@ -1,5 +1,6 @@
 package com.example.test
 
+import android.content.Intent
 import android.graphics.*
 import android.media.MediaPlayer
 import android.os.Bundle
@@ -22,7 +23,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        var mediaPlayer = MediaPlayer.create(this, R.raw.music)
+        val mediaPlayer = MediaPlayer.create(this, R.raw.music)
         mediaPlayer?.start()
         mediaPlayer?.isLooping = true
         countdown()
@@ -33,120 +34,51 @@ class MainActivity : AppCompatActivity() {
         var firstClick = true
 
         val button1 = findViewById<ImageButton>(R.id.Button1)
-        button1.setOnClickListener(View.OnClickListener {
-            if(firstClick) {
-                Toast.makeText(applicationContext, "Picture was enlarged", Toast.LENGTH_SHORT).show()
-                button1.layoutParams.height = 1000
-                button1.layoutParams.width = 1000
-                button1.setImageResource(R.drawable.pot)
-                //button1.elevation(e)
-                button1.requestLayout()
-                firstClick = false
-
-
-            }
-            else {
-                button1.layoutParams.height = 320
-                button1.layoutParams.width = 390
-                button1.requestLayout()
-                firstClick = true
-            }
-        }
-        )
-
-
         val button2 = findViewById<ImageButton>(R.id.Button2)
-        button2.setOnClickListener(View.OnClickListener {
-            if(firstClick) {
-                Toast.makeText(applicationContext, "Picture was enlarged", Toast.LENGTH_SHORT).show()
-                button2.layoutParams.height = 1000
-                button2.layoutParams.width = 1000
-                button2.requestLayout()
-                firstClick = false
-
-            }
-            else {
-                button2.layoutParams.height = 320
-                button2.layoutParams.width = 390
-                button2.requestLayout()
-                firstClick = true
-            }
-        }
-        )
-
         val button3 = findViewById<ImageButton>(R.id.Button3)
-        button3.setOnClickListener(View.OnClickListener {
-            if(firstClick) {
-                Toast.makeText(applicationContext, "Picture was enlarged", Toast.LENGTH_SHORT).show()
-                button3.layoutParams.height = 1000
-                button3.layoutParams.width = 1000
-                button3.requestLayout()
-                firstClick = false
-
-            }
-            else {
-                button3.layoutParams.height = 320
-                button3.layoutParams.width = 390
-                button3.requestLayout()
-                firstClick = true
-            }
-        }
-        )
-
         val button4 = findViewById<ImageButton>(R.id.Button4)
-        button4.setOnClickListener(View.OnClickListener {
-            if(firstClick) {
-                Toast.makeText(applicationContext, "Picture was enlarged", Toast.LENGTH_SHORT).show()
-                button4.layoutParams.height = 1000
-                button4.layoutParams.width = 1000
-                button4.requestLayout()
-                firstClick = false
-
-            }
-            else {
-                button4.layoutParams.height = 320
-                button4.layoutParams.width = 390
-                button4.requestLayout()
-                firstClick = true
-            }
-        }
-        )
-
         val button5 = findViewById<ImageButton>(R.id.Button5)
-        button5.setOnClickListener(View.OnClickListener {
-            if(firstClick) {
-                Toast.makeText(applicationContext, "Picture was enlarged", Toast.LENGTH_SHORT).show()
-                button5.layoutParams.height = 1000
-                button5.layoutParams.width = 1000
-                button5.requestLayout()
-                firstClick = false
+        val button6 = findViewById<ImageButton>(R.id.Button6)
+        val pictureFull = findViewById<ImageButton>(R.id.Button_fullscreen)
 
-            }
-            else {
-                button5.layoutParams.height = 320
-                button5.layoutParams.width = 390
-                button5.requestLayout()
-                firstClick = true
-            }
+        fun openPictureFullscreen() {
+            val intent = Intent(this, PictureFullscreen::class.java)
+            startActivity(intent)
+        }
+
+
+        button1.setOnClickListener(View.OnClickListener {
+            //pictureFull.setBackgroundResource(R.drawable.pot)
+            openPictureFullscreen()
         }
         )
 
-        val button6 = findViewById<ImageButton>(R.id.Button6)
-        button6.setOnClickListener(View.OnClickListener {
-            if(firstClick) {
-                Toast.makeText(applicationContext, "Picture was enlarged", Toast.LENGTH_SHORT).show()
-                button6.layoutParams.height = 1000
-                button6.layoutParams.width = 1000
-                button6.requestLayout()
-                firstClick = false
+        button2.setOnClickListener(View.OnClickListener {
+           openPictureFullscreen()
+        }
+        )
 
-            }
-            else {
-                button6.layoutParams.height = 320
-                button6.layoutParams.width = 390
-                button6.requestLayout()
-                firstClick = true
-            }
+
+        button3.setOnClickListener(View.OnClickListener {
+            openPictureFullscreen()
+        }
+        )
+
+
+        button4.setOnClickListener(View.OnClickListener {
+            openPictureFullscreen()
+        }
+        )
+
+
+        button5.setOnClickListener(View.OnClickListener {
+            openPictureFullscreen()
+        }
+        )
+
+
+        button6.setOnClickListener(View.OnClickListener {
+            openPictureFullscreen()
         }
         )
 

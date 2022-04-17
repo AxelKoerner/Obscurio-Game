@@ -1,4 +1,4 @@
-#Sat Apr 16 14:59:59 CEST 2022
+#Sun Apr 17 16:38:22 CEST 2022
 base.2=D\:\\Hochschule\\PVC-UBQ\\test\\Obscurio-Game-uebung\\test2\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\7\\classes.dex
 path.2=7/classes.dex
 base.1=D\:\\Hochschule\\PVC-UBQ\\test\\Obscurio-Game-uebung\\test2\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex

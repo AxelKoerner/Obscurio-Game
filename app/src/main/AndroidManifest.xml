@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Test">
         <activity
+            android:name=".PictureFullscreen"
+            android:exported="true" />
+        <activity
             android:name=".Settings"
             android:exported="false" />
         <activity
