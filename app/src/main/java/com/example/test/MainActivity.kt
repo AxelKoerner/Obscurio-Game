@@ -39,7 +39,7 @@ class MainActivity : AppCompatActivity() {
         val button4 = findViewById<ImageButton>(R.id.Button4)
         val button5 = findViewById<ImageButton>(R.id.Button5)
         val button6 = findViewById<ImageButton>(R.id.Button6)
-        val pictureFull = findViewById<ImageButton>(R.id.Button_fullscreen)
+
 
         fun openPictureFullscreen() {
             val intent = Intent(this, PictureFullscreen::class.java)
