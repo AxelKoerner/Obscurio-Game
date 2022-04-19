@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backround">
+
+    <TextView
+        android:layout_width="253dp"
+        android:layout_height="58dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="78dp"
+        android:layout_marginTop="55dp"
+        android:layout_marginEnd="80dp"
+        android:background="@drawable/obscurio_Schriftzug"
+        android:textAlignment="center"
+        android:textSize="40sp" />
+
+    <Button
+        android:id="@+id/ButtonNeuSpiel"
+        android:layout_width="193dp"
+        android:layout_height="89dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="84dp"
+        android:layout_marginEnd="112dp"
+        android:layout_marginBottom="464dp"
+        android:text="Neues Spiel" />
+
+
+    <Button
+        android:id="@+id/ButtonSpielBeit"
+        android:layout_width="193dp"
+        android:layout_height="89dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="94dp"
+        android:layout_marginEnd="110dp"
+        android:layout_marginBottom="354dp"
+        android:text="Spiel Beitreten" />
+
+    <Button
+        android:id="@+id/ButtonOpt"
+        android:layout_width="193dp"
+        android:layout_height="89dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="71dp"
+        android:layout_marginEnd="110dp"
+        android:layout_marginBottom="251dp"
+        android:text="Optionen" />
+
+    <Button
+        android:layout_width="193dp"
+        android:layout_height="89dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="110dp"
+        android:layout_marginBottom="139dp"
+        android:text="Spiel Beenden"/>
+
+
+</RelativeLayout>
