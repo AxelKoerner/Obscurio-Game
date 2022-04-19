@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\Hochschule\\PVC-UBQ\\test\\Obscurio-Game-uebung\\test2\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
+            "outputFile": "D:\\Hochschule\\PVC\\obscurio\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
             "map": [
                 {
                     "source": "C:\\Users\\axel_\\.gradle\\caches\\transforms-3\\5c863c76a5dad7d69d784652d94686a1\\transformed\\savedstate-1.1.0\\res\\values\\values.xml",
@@ -93,25 +93,6 @@
                     }
                 },
                 {
-                    "source": "D:\\Hochschule\\PVC-UBQ\\test\\Obscurio-Game-uebung\\test2\\app\\src\\main\\res\\values\\arrays.xml",
-                    "from": {
-                        "startLines": "2,7",
-                        "startColumns": "4,4",
-                        "startOffsets": "48,175",
-                        "endLines": "5,10",
-                        "endColumns": "19,19",
-                        "endOffsets": "167,290"
-                    },
-                    "to": {
-                        "startLines": "2,6",
-                        "startColumns": "4,4",
-                        "startOffsets": "150,271",
-                        "endLines": "5,9",
-                        "endColumns": "19,19",
-                        "endOffsets": "266,383"
-                    }
-                },
-                {
                     "source": "C:\\Users\\axel_\\.gradle\\caches\\transforms-3\\620655832b2791123cc81ee3be480cb8\\transformed\\fragment-1.3.6\\res\\values\\values.xml",
                     "from": {
                         "startLines": "2,3,4,5,10",
@@ -164,42 +145,6 @@
                         "endLines": "8220,8227,8238,12121,12126",
                         "endColumns": "24,24,24,24,24",
                         "endOffsets": "554219,554604,555201,754516,754786"
-                    }
-                },
-                {
-                    "source": "D:\\Hochschule\\PVC-UBQ\\test\\Obscurio-Game-uebung\\test2\\app\\src\\main\\res\\values\\strings.xml",
-                    "from": {
-                        "startLines": "1,17,15,14,5,10,9,6,13,2",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "17,708,596,520,164,361,301,218,456,60",
-                        "endLines": "1,17,16,14,5,10,9,6,13,2",
-                        "endColumns": "41,100,13,74,52,60,58,44,62,68",
-                        "endOffsets": "54,804,702,590,212,417,355,258,514,124"
-                    },
-                    "to": {
-                        "startLines": "1608,1610,1611,1613,1675,1721,1723,1726,1727,1728",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "97668,97860,97961,98071,105282,112945,113059,113328,113373,113436",
-                        "endLines": "1608,1610,1612,1613,1675,1721,1723,1726,1727,1728",
-                        "endColumns": "41,100,13,74,52,60,58,44,62,68",
-                        "endOffsets": "97705,97956,98066,98141,105330,113001,113113,113368,113431,113500"
-                    }
-                },
-                {
-                    "source": "D:\\Hochschule\\PVC-UBQ\\test\\Obscurio-Game-uebung\\test2\\app\\src\\main\\res\\values\\colors.xml",
-                    "from": {
-                        "startLines": "7,2,3,4,5,6,8",
-                        "startColumns": "4,4,4,4,4,4,4",
-                        "startOffsets": "286,55,102,149,196,241,328",
-                        "endColumns": "41,46,46,46,44,44,41",
-                        "endOffsets": "323,97,144,191,236,281,365"
-                    },
-                    "to": {
-                        "startLines": "595,814,815,816,827,828,832",
-                        "startColumns": "4,4,4,4,4,4,4",
-                        "startOffsets": "30110,45833,45880,45927,46671,46716,46924",
-                        "endColumns": "41,46,46,46,44,44,41",
-                        "endOffsets": "30147,45875,45922,45969,46711,46756,46961"
                     }
                 },
                 {
@@ -279,22 +224,22 @@
                     }
                 },
                 {
-                    "source": "D:\\Hochschule\\PVC-UBQ\\test\\Obscurio-Game-uebung\\test2\\app\\src\\main\\res\\values\\themes.xml",
+                    "source": "D:\\Hochschule\\PVC\\obscurio\\app\\src\\main\\res\\values\\arrays.xml",
                     "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "100",
-                        "endLines": "14",
-                        "endColumns": "12",
-                        "endOffsets": "813"
+                        "startLines": "2,7",
+                        "startColumns": "4,4",
+                        "startOffsets": "48,175",
+                        "endLines": "5,10",
+                        "endColumns": "19,19",
+                        "endOffsets": "167,290"
                     },
                     "to": {
-                        "startLines": "5877",
-                        "startColumns": "4",
-                        "startOffsets": "400389",
-                        "endLines": "5889",
-                        "endColumns": "12",
-                        "endOffsets": "401100"
+                        "startLines": "2,6",
+                        "startColumns": "4,4",
+                        "startOffsets": "150,271",
+                        "endLines": "5,9",
+                        "endColumns": "19,19",
+                        "endOffsets": "266,383"
                     }
                 },
                 {
@@ -333,6 +278,61 @@
                         "endLines": "41,604,605,606,607,916,917,918,1774,4767,4770,4773,9125",
                         "endColumns": "51,60,61,61,63,58,56,53,12,12,12,12,24",
                         "endOffsets": "1805,30849,30911,30973,31037,52581,52638,52692,116601,324562,324688,324816,603099"
+                    }
+                },
+                {
+                    "source": "D:\\Hochschule\\PVC\\obscurio\\app\\src\\main\\res\\values\\themes.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "100",
+                        "endLines": "14",
+                        "endColumns": "12",
+                        "endOffsets": "813"
+                    },
+                    "to": {
+                        "startLines": "5877",
+                        "startColumns": "4",
+                        "startOffsets": "400389",
+                        "endLines": "5889",
+                        "endColumns": "12",
+                        "endOffsets": "401100"
+                    }
+                },
+                {
+                    "source": "D:\\Hochschule\\PVC\\obscurio\\app\\src\\main\\res\\values\\strings.xml",
+                    "from": {
+                        "startLines": "1,17,15,14,5,10,9,6,13,2",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "16,691,581,506,159,351,292,212,443,58",
+                        "endLines": "1,17,16,14,5,10,9,6,13,2",
+                        "endColumns": "41,100,13,74,52,60,58,44,62,68",
+                        "endOffsets": "53,787,686,576,207,407,346,252,501,122"
+                    },
+                    "to": {
+                        "startLines": "1608,1610,1611,1613,1675,1721,1723,1726,1727,1728",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "97668,97860,97961,98071,105282,112945,113059,113328,113373,113436",
+                        "endLines": "1608,1610,1612,1613,1675,1721,1723,1726,1727,1728",
+                        "endColumns": "41,100,13,74,52,60,58,44,62,68",
+                        "endOffsets": "97705,97956,98066,98141,105330,113001,113113,113368,113431,113500"
+                    }
+                },
+                {
+                    "source": "D:\\Hochschule\\PVC\\obscurio\\app\\src\\main\\res\\values\\colors.xml",
+                    "from": {
+                        "startLines": "7,2,3,4,5,6,8",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "286,55,102,149,196,241,328",
+                        "endColumns": "41,46,46,46,44,44,41",
+                        "endOffsets": "323,97,144,191,236,281,365"
+                    },
+                    "to": {
+                        "startLines": "595,814,815,816,827,828,832",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "30110,45833,45880,45927,46671,46716,46924",
+                        "endColumns": "41,46,46,46,44,44,41",
+                        "endOffsets": "30147,45875,45922,45969,46711,46756,46961"
                     }
                 },
                 {

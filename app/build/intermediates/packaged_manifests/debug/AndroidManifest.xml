@@ -19,20 +19,20 @@
         android:testOnly="true"
         android:theme="@style/Theme.Test" >
         <activity
-            android:name="com.example.test.PictureFullscreen"
+            android:name="com.example.ubq.PictureFullscreen"
             android:exported="true" />
         <activity
-            android:name="com.example.test.Settings"
+            android:name="com.example.ubq.Settings"
             android:exported="false" />
         <activity
-            android:name="com.example.test.setting"
+            android:name="com.example.ubq.setting"
             android:exported="false" />
         <activity
-            android:name="com.example.test.SettingsActivity"
+            android:name="com.example.ubq.SettingsActivity"
             android:exported="false"
             android:label="@string/title_activity_settings" />
         <activity
-            android:name="com.example.test.MainActivity"
+            android:name="com.example.ubq.MainActivity"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

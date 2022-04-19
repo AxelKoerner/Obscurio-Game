@@ -13,7 +13,7 @@
         android:layout_marginStart="78dp"
         android:layout_marginTop="55dp"
         android:layout_marginEnd="80dp"
-        android:background="@drawable/obscurio_Schriftzug"
+        android:background="@drawable/obscurio_schriftzug"
         android:textAlignment="center"
         android:textSize="40sp" />
 

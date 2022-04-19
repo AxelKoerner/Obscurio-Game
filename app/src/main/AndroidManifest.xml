@@ -10,10 +10,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Test">
         <activity
-            android:name="com.example.de.hft.ubq.PictureFullscreen"
+            android:name=".PictureFullscreen"
             android:exported="true" />
         <activity
-            android:name="com.example.de.hft.ubq.Settings"
+            android:name=".Settings"
             android:exported="false" />
         <activity
             android:name=".setting"
@@ -23,7 +23,7 @@
             android:exported="false"
             android:label="@string/title_activity_settings" />
         <activity
-            android:name="com.example.de.hft.ubq.MainActivity"
+            android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

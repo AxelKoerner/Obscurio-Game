@@ -1,4 +1,4 @@
-com.example.test
+com.example.ubq
 anim abc_fade_in
 anim abc_fade_out
 anim abc_grow_fade_in_from_bottom
@@ -2573,9 +2573,11 @@ drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
+drawable obscurio_schriftzug
 drawable pot
 drawable preference_list_divider_material
 drawable roundcorner
+drawable spielbrett
 drawable test_custom_background
 drawable test_level_drawable
 drawable tooltip_frame_dark
@@ -2589,6 +2591,9 @@ id Button3
 id Button4
 id Button5
 id Button6
+id ButtonNeuSpiel
+id ButtonOpt
+id ButtonSpielBeit
 id Button_fullscreen
 id CTRL
 id FUNCTION
@@ -3188,6 +3193,7 @@ layout image_frame
 layout m3_alert_dialog
 layout m3_alert_dialog_actions
 layout m3_alert_dialog_title
+layout main_menu
 layout material_chip_input_combo
 layout material_clock_display
 layout material_clock_display_divider
