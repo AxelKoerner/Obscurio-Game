@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Hochschule/PVC-UBQ/test/Obscurio-Game-uebung/test2/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1665" />
+        <entry key="..\:/Hochschule/PVC-UBQ/test/Obscurio-Game-uebung/test2/app/src/main/res/drawable/backround.xml" value="0.4085" />
+        <entry key="..\:/Hochschule/PVC-UBQ/test/Obscurio-Game-uebung/test2/app/src/main/res/drawable/button.xml" value="0.3435" />
+        <entry key="..\:/Hochschule/PVC-UBQ/test/Obscurio-Game-uebung/test2/app/src/main/res/drawable/custom_button.xml" value="0.2695" />
+        <entry key="..\:/Hochschule/PVC-UBQ/test/Obscurio-Game-uebung/test2/app/src/main/res/drawable/ic_baseline_chat_24.xml" value="0.1665" />
+        <entry key="..\:/Hochschule/PVC-UBQ/test/Obscurio-Game-uebung/test2/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1665" />
+        <entry key="..\:/Hochschule/PVC-UBQ/test/Obscurio-Game-uebung/test2/app/src/main/res/drawable/luu.xml" value="0.2695" />
+        <entry key="..\:/Hochschule/PVC-UBQ/test/Obscurio-Game-uebung/test2/app/src/main/res/drawable/roundcorner.xml" value="0.3105" />
+        <entry key="..\:/Hochschule/PVC-UBQ/test/Obscurio-Game-uebung/test2/app/src/main/res/layout/activity_main.xml" value="0.2318840579710145" />
+        <entry key="..\:/Hochschule/PVC-UBQ/test/Obscurio-Game-uebung/test2/app/src/main/res/layout/activity_picture1_fullscreen.xml" value="0.3125" />
+        <entry key="..\:/Hochschule/PVC-UBQ/test/Obscurio-Game-uebung/test2/app/src/main/res/layout/activity_settings.xml" value="0.3125" />
+        <entry key="..\:/Hochschule/PVC-UBQ/test/Obscurio-Game-uebung/test2/app/src/main/res/menu/nav.xml" value="0.2" />
+        <entry key="..\:/Users/trung/Desktop/PVC/Obscurio-Game-uebung/app/src/main/res/drawable/ic_baseline_chat_24.xml" value="0.117" />
+        <entry key="..\:/Users/trung/Desktop/PVC/Obscurio-Game-uebung/app/src/main/res/drawable/ic_launcher_background.xml" value="0.117" />
+        <entry key="..\:/Users/trung/Desktop/PVC/Obscurio-Game-uebung/app/src/main/res/layout/activity_main.xml" value="0.3546875" />
+        <entry key="..\:/Users/trung/Desktop/PVC/Obscurio-Game-uebung/app/src/main/res/layout/activity_setting.xml" value="0.14722222222222223" />
+        <entry key="..\:/Users/trung/Desktop/PVC/Obscurio-Game-uebung/app/src/main/res/layout/activity_settings.xml" value="0.33" />
+        <entry key="..\:/Users/trung/Desktop/PVC/Obscurio-Game-uebung/app/src/main/res/layout/settings_activity.xml" value="0.14722222222222223" />
+        <entry key="..\:/Users/trung/Desktop/PVC/Obscurio-Game-uebung/app/src/main/res/menu/menu.xml" value="0.17604166666666668" />
+        <entry key="..\:/Users/trung/Desktop/PVC/Obscurio-Game-uebung/app/src/main/res/menu/nav.xml" value="0.3546875" />
+        <entry key="..\:/Users/trung/Desktop/PVC/Obscurio-Game-uebung/app/src/main/res/menu/test.xml" value="0.7734375" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

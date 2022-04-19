@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backround"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/timer"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="164dp"
+        android:text="Hello World!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.049" />
+
+    <ImageButton
+        android:id="@+id/Button2"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="145dp"
+        android:layout_height="137dp"
+        android:layout_below="@+id/timer"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="204dp"
+        android:layout_marginTop="77dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:src="@drawable/monk"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/Button1"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="145dp"
+        android:layout_height="137dp"
+        android:layout_below="@+id/timer"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="57dp"
+        android:layout_marginTop="76dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:src="@drawable/monk"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/Button3"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="145dp"
+        android:layout_height="137dp"
+        android:layout_below="@+id/timer"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="59dp"
+        android:layout_marginTop="216dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:src="@drawable/monk"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/Button4"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="145dp"
+        android:layout_height="137dp"
+        android:layout_below="@+id/timer"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="205dp"
+        android:layout_marginTop="215dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:src="@drawable/monk"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/Button5"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="145dp"
+        android:layout_height="137dp"
+        android:layout_below="@+id/timer"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="62dp"
+        android:layout_marginTop="353dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:src="@drawable/monk"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/Button6"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="145dp"
+        android:layout_height="137dp"
+        android:layout_below="@+id/timer"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="206dp"
+        android:layout_marginTop="354dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:src="@drawable/monk"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/timer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="33dp"
+        android:layout_marginEnd="178dp"
+        android:text="TextView"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="175dp"
+        tools:layout_editor_absoluteY="59dp" />
+
+
+</RelativeLayout>
