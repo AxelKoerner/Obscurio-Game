@@ -1,10 +1,12 @@
-package com.example.ubq
+package de.hft.ubq
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.ImageButton
+import com.example.ubq.MainActivity
+import com.example.ubq.R
 
 
 class PictureFullscreen : AppCompatActivity() {

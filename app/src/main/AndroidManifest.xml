@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Test">
         <activity
-            android:name=".PictureFullscreen"
+            android:name="de.hft.ubq.PictureFullscreen"
             android:exported="true" />
         <activity
             android:name=".Settings"
