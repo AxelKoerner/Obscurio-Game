@@ -19,18 +19,11 @@
         android:testOnly="true"
         android:theme="@style/Theme.Test" >
         <activity
-            android:name="com.example.ubq.PictureFullscreen"
+            android:name="de.hft.ubq.PictureFullscreen"
             android:exported="true" />
         <activity
             android:name="com.example.ubq.Settings"
             android:exported="false" />
-        <activity
-            android:name="com.example.ubq.setting"
-            android:exported="false" />
-        <activity
-            android:name="com.example.ubq.SettingsActivity"
-            android:exported="false"
-            android:label="@string/title_activity_settings" />
         <activity
             android:name="com.example.ubq.MainActivity"
             android:exported="true" >

@@ -11,10 +11,4 @@
                 android:height="300dp" />
         </shape>
     </item>
-    <item android:drawable="@drawable/spielbrett"
-        android:top="16dp"
-        android:left="16dp"
-        android:bottom="16dp"
-        android:right="16dp">
-    </item>
 </layer-list>

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/backround"
+    android:background="@drawable/background_gameboard"
     tools:context="com.example.ubq.MainActivity">
 
     <TextView
@@ -13,9 +13,12 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/timer"
         android:layout_alignParentEnd="true"
-        android:layout_marginTop="13dp"
-        android:layout_marginEnd="164dp"
-        android:text="Hello World!"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="126dp"
+        android:text="Obscurio Game"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -23,15 +26,16 @@
         app:layout_constraintVertical_bias="0.049" />
 
     <ImageButton
-        android:id="@+id/Button2"
+        android:id="@+id/Picture1"
         style="?android:attr/borderlessButtonStyle"
-        android:layout_width="145dp"
-        android:layout_height="137dp"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
         android:layout_below="@+id/timer"
         android:layout_alignParentStart="true"
-        android:layout_marginStart="204dp"
-        android:layout_marginTop="77dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="69dp"
         android:adjustViewBounds="true"
+        android:background="@drawable/button"
         android:scaleType="fitCenter"
         android:src="@drawable/monk"
         app:layout_constraintStart_toStartOf="parent"
@@ -39,15 +43,16 @@
         tools:ignore="MissingConstraints" />
 
     <ImageButton
-        android:id="@+id/Button1"
+        android:id="@+id/Picture2"
         style="?android:attr/borderlessButtonStyle"
-        android:layout_width="145dp"
-        android:layout_height="137dp"
-        android:layout_below="@+id/timer"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
         android:layout_alignParentStart="true"
-        android:layout_marginStart="57dp"
-        android:layout_marginTop="76dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="287dp"
+        android:layout_marginTop="97dp"
         android:adjustViewBounds="true"
+        android:background="@drawable/button"
         android:scaleType="fitCenter"
         android:src="@drawable/monk"
         app:layout_constraintStart_toStartOf="parent"
@@ -55,15 +60,16 @@
         tools:ignore="MissingConstraints" />
 
     <ImageButton
-        android:id="@+id/Button3"
+        android:id="@+id/Picture3"
         style="?android:attr/borderlessButtonStyle"
-        android:layout_width="145dp"
-        android:layout_height="137dp"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
         android:layout_below="@+id/timer"
         android:layout_alignParentStart="true"
-        android:layout_marginStart="59dp"
-        android:layout_marginTop="216dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="213dp"
         android:adjustViewBounds="true"
+        android:background="@drawable/button"
         android:scaleType="fitCenter"
         android:src="@drawable/monk"
         app:layout_constraintStart_toStartOf="parent"
@@ -71,15 +77,16 @@
         tools:ignore="MissingConstraints" />
 
     <ImageButton
-        android:id="@+id/Button4"
+        android:id="@+id/Picture4"
         style="?android:attr/borderlessButtonStyle"
-        android:layout_width="145dp"
-        android:layout_height="137dp"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
         android:layout_below="@+id/timer"
         android:layout_alignParentStart="true"
-        android:layout_marginStart="205dp"
-        android:layout_marginTop="215dp"
+        android:layout_marginStart="282dp"
+        android:layout_marginTop="211dp"
         android:adjustViewBounds="true"
+        android:background="@drawable/button"
         android:scaleType="fitCenter"
         android:src="@drawable/monk"
         app:layout_constraintStart_toStartOf="parent"
@@ -87,15 +94,16 @@
         tools:ignore="MissingConstraints" />
 
     <ImageButton
-        android:id="@+id/Button5"
+        android:id="@+id/Picture5"
         style="?android:attr/borderlessButtonStyle"
-        android:layout_width="145dp"
-        android:layout_height="137dp"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
         android:layout_below="@+id/timer"
         android:layout_alignParentStart="true"
-        android:layout_marginStart="62dp"
-        android:layout_marginTop="353dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="343dp"
         android:adjustViewBounds="true"
+        android:background="@drawable/button"
         android:scaleType="fitCenter"
         android:src="@drawable/monk"
         app:layout_constraintStart_toStartOf="parent"
@@ -103,20 +111,47 @@
         tools:ignore="MissingConstraints" />
 
     <ImageButton
-        android:id="@+id/Button6"
+        android:id="@+id/Picture6"
         style="?android:attr/borderlessButtonStyle"
-        android:layout_width="145dp"
-        android:layout_height="137dp"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
         android:layout_below="@+id/timer"
         android:layout_alignParentStart="true"
-        android:layout_marginStart="206dp"
-        android:layout_marginTop="354dp"
+        android:layout_marginStart="288dp"
+        android:layout_marginTop="346dp"
         android:adjustViewBounds="true"
+        android:background="@drawable/button"
         android:scaleType="fitCenter"
         android:src="@drawable/monk"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView"
         tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/Picture7"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="238dp"
+        android:layout_marginBottom="64dp"
+        android:background="@drawable/button"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true"
+        android:src="@drawable/monk"/>
+
+    <ImageButton
+        android:id="@+id/Picture8"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="76dp"
+        android:layout_marginBottom="63dp"
+        android:scaleType="fitCenter"
+        android:background="@drawable/button"
+        android:adjustViewBounds="true"
+        android:src="@drawable/monk"/>
 
     <TextView
         android:id="@+id/timer"
@@ -124,9 +159,10 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginTop="33dp"
-        android:layout_marginEnd="178dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="179dp"
         android:text="TextView"
+        android:textColor="@color/white"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="175dp"
         tools:layout_editor_absoluteY="59dp" />

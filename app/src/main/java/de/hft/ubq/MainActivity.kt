@@ -34,13 +34,14 @@ class MainActivity : AppCompatActivity() {
         //-----------------------------onClick Listener------------------------------//
         var firstClick = true
 
-        val button1 = findViewById<ImageButton>(R.id.Button1)
-        val button2 = findViewById<ImageButton>(R.id.Button2)
-        val button3 = findViewById<ImageButton>(R.id.Button3)
-        val button4 = findViewById<ImageButton>(R.id.Button4)
-        val button5 = findViewById<ImageButton>(R.id.Button5)
-        val button6 = findViewById<ImageButton>(R.id.Button6)
-
+        val button1 = findViewById<ImageButton>(R.id.Picture1)
+        val button2 = findViewById<ImageButton>(R.id.Picture2)
+        val button3 = findViewById<ImageButton>(R.id.Picture3)
+        val button4 = findViewById<ImageButton>(R.id.Picture4)
+        val button5 = findViewById<ImageButton>(R.id.Picture5)
+        val button6 = findViewById<ImageButton>(R.id.Picture6)
+        val button7 = findViewById<ImageButton>(R.id.Picture7)
+        val button8 = findViewById<ImageButton>(R.id.Picture8)
 
         fun openPictureFullscreen() {
             val intent = Intent(this, PictureFullscreen::class.java)
@@ -48,40 +49,40 @@ class MainActivity : AppCompatActivity() {
         }
 
 
-        button1.setOnClickListener(View.OnClickListener {
+        button1.setOnClickListener{
             //pictureFull.setBackgroundResource(R.drawable.pot)
             openPictureFullscreen()
         }
-        )
 
-        button2.setOnClickListener(View.OnClickListener {
+        button2.setOnClickListener {
            openPictureFullscreen()
         }
-        )
 
-
-        button3.setOnClickListener(View.OnClickListener {
+        button3.setOnClickListener {
             openPictureFullscreen()
         }
-        )
 
-
-        button4.setOnClickListener(View.OnClickListener {
+        button4.setOnClickListener {
             openPictureFullscreen()
         }
-        )
 
-
-        button5.setOnClickListener(View.OnClickListener {
+        button5.setOnClickListener {
             openPictureFullscreen()
         }
-        )
 
-
-        button6.setOnClickListener(View.OnClickListener {
+        button6.setOnClickListener {
             openPictureFullscreen()
         }
-        )
+
+        button7.setOnClickListener {
+            openPictureFullscreen()
+        }
+
+        button8.setOnClickListener {
+            openPictureFullscreen()
+        }
+
+
 
 
     }
