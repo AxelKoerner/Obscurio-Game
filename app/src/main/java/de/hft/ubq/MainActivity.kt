@@ -1,4 +1,4 @@
-package com.example.ubq
+package de.hft.ubq
 
 import android.content.Intent
 import android.graphics.*
@@ -7,11 +7,10 @@ import android.os.Bundle
 import android.os.CountDownTimer
 import android.view.Menu
 import android.view.MenuItem
-import android.view.View
 import android.widget.ImageButton
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import de.hft.ubq.PictureFullscreen
+import com.example.ubq.R
 import kotlinx.android.synthetic.main.activity_main.*
 
 
@@ -32,7 +31,6 @@ class MainActivity : AppCompatActivity() {
 
 
         //-----------------------------onClick Listener------------------------------//
-        var firstClick = true
 
         val button1 = findViewById<ImageButton>(R.id.Picture1)
         val button2 = findViewById<ImageButton>(R.id.Picture2)
@@ -50,7 +48,6 @@ class MainActivity : AppCompatActivity() {
 
 
         button1.setOnClickListener{
-            //pictureFull.setBackgroundResource(R.drawable.pot)
             openPictureFullscreen()
         }
 
@@ -117,24 +114,6 @@ class MainActivity : AppCompatActivity() {
         }.start()
 
     }
-
-    fun toRoundCorner(bitmap: Bitmap, pixels: Int): Bitmap? {
-        val output = Bitmap.createBitmap(bitmap.width, bitmap.height, Bitmap.Config.ARGB_8888)
-        val canvas = Canvas(output)
-        val color = -0xbdbdbe
-        val paint = Paint()
-        val rect = Rect(0, 0, bitmap.width, bitmap.height)
-        val rectF = RectF(rect)
-        val roundPx = pixels.toFloat()
-        paint.setAntiAlias(true)
-        canvas.drawARGB(0, 0, 0, 0)
-        paint.setColor(color)
-        canvas.drawRoundRect(rectF, roundPx, roundPx, paint)
-        paint.setXfermode(PorterDuffXfermode(PorterDuff.Mode.SRC_IN))
-        canvas.drawBitmap(bitmap, rect, rect, paint)
-        return output
-    }
-
 
 
 }

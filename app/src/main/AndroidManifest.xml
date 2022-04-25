@@ -13,14 +13,17 @@
             android:name="de.hft.ubq.PictureFullscreen"
             android:exported="true" />
         <activity
-            android:name=".Settings"
-            android:exported="false" />
+            android:name="de.hft.ubq.Settings"
+            android:exported="true" />
+        <activity android:name="de.hft.ubq.MainActivity"
+            android:exported="true" />
+        <activity android:name="de.hft.ubq.MainActivityGM"
+            android:exported="true" />
         <activity
-            android:name=".MainActivity"
+            android:name="de.hft.ubq.MainMenu"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>

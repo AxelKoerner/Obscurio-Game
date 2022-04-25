@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background_gameboard"
-    tools:context="com.example.ubq.MainActivity">
+    tools:context="com.example.ubq.de.hft.ubq.MainActivity">
 
     <TextView
         android:id="@+id/textView"
@@ -48,7 +48,6 @@
         style="?android:attr/borderlessButtonStyle"
         android:layout_width="110dp"
         android:layout_height="110dp"
-        android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentBottom="true"
         android:layout_marginStart="156dp"

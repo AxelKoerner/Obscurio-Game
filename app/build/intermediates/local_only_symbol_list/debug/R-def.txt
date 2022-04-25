@@ -20,13 +20,17 @@ drawable obscurio_schriftzug
 drawable pot
 drawable roundcorner
 drawable spielbrett
+id ButtonEsc
 id ButtonNeuSpiel
 id ButtonOpt
 id ButtonSpielBeit
 id Button_fullscreen
 id Picture1
+id Picture1_gm
 id Picture2
+id Picture2_gm
 id Picture3
+id Picture3_gm
 id Picture4
 id Picture5
 id Picture6
@@ -42,6 +46,7 @@ id soundtext
 id text1
 id textView
 id timer
+layout activity_gm_main
 layout activity_main
 layout activity_picture_fullscreen
 layout activity_settings

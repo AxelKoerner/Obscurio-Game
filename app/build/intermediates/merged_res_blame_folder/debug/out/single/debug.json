@@ -80,6 +80,10 @@
         "source": "D:\\Hochschule\\PVC\\obscurio\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
     },
     {
+        "merged": "D:\\Hochschule\\PVC\\obscurio\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_gm_main.xml.flat",
+        "source": "D:\\Hochschule\\PVC\\obscurio\\app\\src\\main\\res\\layout\\activity_gm_main.xml"
+    },
+    {
         "merged": "D:\\Hochschule\\PVC\\obscurio\\app\\build\\intermediates\\merged_res\\debug\\mipmap-hdpi_ic_launcher.webp.flat",
         "source": "D:\\Hochschule\\PVC\\obscurio\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.webp"
     },

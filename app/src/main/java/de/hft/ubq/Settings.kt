@@ -1,9 +1,9 @@
-package com.example.ubq
+package de.hft.ubq
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
-import kotlinx.android.synthetic.main.activity_settings.*
+import com.example.ubq.R
 
 
 class Settings : AppCompatActivity() {
@@ -18,7 +18,4 @@ class Settings : AppCompatActivity() {
         }
 
     }
-
-
-
 }

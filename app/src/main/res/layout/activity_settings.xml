@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Settings">
+    tools:context="de.hft.ubq.Settings">
 
     <TextView
         android:id="@+id/soundtext"
@@ -13,7 +13,8 @@
         android:text="Sound"
         android:textSize="23dp"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="16dp" />
+        tools:layout_editor_absoluteY="16dp"
+            tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/text1"
@@ -21,7 +22,8 @@
         android:layout_height="21dp"
         android:text="Background Music"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="60dp" />
+        tools:layout_editor_absoluteY="60dp"
+            tools:ignore="MissingConstraints" />
 
     <SeekBar
         android:id="@+id/backgroundVolume"
@@ -36,5 +38,6 @@
         android:layout_height="wrap_content"
         android:text="Button"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="146dp" />
+        tools:layout_editor_absoluteY="146dp"
+            tools:ignore="MissingConstraints" />
 </androidx.constraintlayout.widget.ConstraintLayout>
