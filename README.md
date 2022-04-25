@@ -5,7 +5,7 @@ Project to make the Boardgame "Obscurio" into an Android App.
 # Future Feautures 
 
 *Oberfläche:*
-* Sicht des normalen Spielers
+Sicht des normalen Spielers
 * Grundspielscreen
 * Rundenergebnisscreen
 * Sicht des Table Masters
@@ -16,12 +16,12 @@ Project to make the Boardgame "Obscurio" into an Android App.
 * Grundspielscreen
 * Rundenergebnisscreen
 
-* Menü für Optionen 
+Menü für Optionen 
 * Anzeigen der Spieler
 * Einstellungen
 * Leave Option
 
-* Startscreen/Verbindungsscreen 
+Startscreen/Verbindungsscreen 
 * Create Avatar (Bild + Name)
 * Grundspielscreen
 * 6 Bilder zur Auswahl (Mit Zoom-Option, 1 Klick Zoom, 2 Klick Auswahl)
@@ -30,7 +30,7 @@ Project to make the Boardgame "Obscurio" into an Android App.
 * Lebensanzeige (mit Zoom-Option) 
 * Chatbutton (Private Message, Group-Message)
 * Bestätigungsbutton
-* GM-Auswahlscreen
+GM-Auswahlscreen
 * 2 GM-Bilder (Markierungs-Option, Zoom-Option)
 * 1 zu suchendes Bild (Zoom-Option)
 * Bestätigungsbutton
