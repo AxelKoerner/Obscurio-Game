@@ -5,9 +5,9 @@ Project to make the Boardgame "Obscurio" into an Android App.
 # Future Feautures 
 
 *Oberfläche:*
-Sicht des normalen Spielers
-Grundspielscreen
-Rundenergebnisscreen
+*Sicht des normalen Spielers
+*Grundspielscreen
+*Rundenergebnisscreen
 Sicht des Table Masters
 GM-Auswahlscreen
 Rundenergebnisscreen
