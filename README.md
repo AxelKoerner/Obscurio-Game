@@ -4,7 +4,8 @@ Project to make the Boardgame "Obscurio" into an Android App.
 
 # Future Feautures 
 
-*Oberfläche:*
+## *Oberfläche:*
+
 Sicht des normalen Spielers
 * Grundspielscreen
 * Rundenergebnisscreen
@@ -45,7 +46,7 @@ GM-Auswahlscreen
 
 
 
-*Spiellogik:*
+## *Spiellogik:*
 
 Spieler
 * Karten des GM anschauen in begrenzter Zeit anschauen
@@ -63,7 +64,7 @@ Traitor
 
 
 
-*Kommunikation:*
+## *Kommunikation:*
 
 * Bluetooth Mesh zur kommunikation zwischen den einzelnen Endgeräten
 * ? Kamera Option zum einscannen eigener Bilder
