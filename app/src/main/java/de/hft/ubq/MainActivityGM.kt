@@ -7,6 +7,7 @@ import android.os.CountDownTimer
 import android.view.Menu
 import android.view.MenuItem
 import android.widget.ImageButton
+import android.widget.ImageView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.ubq.R
@@ -26,7 +27,6 @@ class MainActivityGM : AppCompatActivity() {
         mediaPlayer?.start()
         mediaPlayer?.isLooping = true
         //countdown()   <-- crashed die app
-
 
 
 
