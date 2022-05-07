@@ -20,16 +20,16 @@
         "source": "D:\\Hochschule\\PVC\\obscurio\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "D:\\Hochschule\\PVC\\obscurio\\app\\build\\intermediates\\merged_res\\debug\\drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
-        "source": "D:\\Hochschule\\PVC\\obscurio\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v24\\ic_launcher_foreground.xml"
+        "merged": "D:\\Hochschule\\PVC\\obscurio\\app\\build\\intermediates\\merged_res\\debug\\drawable_pot.png.flat",
+        "source": "D:\\Hochschule\\PVC\\obscurio\\app\\src\\main\\res\\drawable\\pot.png"
     },
     {
         "merged": "D:\\Hochschule\\PVC\\obscurio\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xhdpi_ic_launcher.webp.flat",
         "source": "D:\\Hochschule\\PVC\\obscurio\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.webp"
     },
     {
-        "merged": "D:\\Hochschule\\PVC\\obscurio\\app\\build\\intermediates\\merged_res\\debug\\drawable_pot.png.flat",
-        "source": "D:\\Hochschule\\PVC\\obscurio\\app\\src\\main\\res\\drawable\\pot.png"
+        "merged": "D:\\Hochschule\\PVC\\obscurio\\app\\build\\intermediates\\merged_res\\debug\\drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
+        "source": "D:\\Hochschule\\PVC\\obscurio\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v24\\ic_launcher_foreground.xml"
     },
     {
         "merged": "D:\\Hochschule\\PVC\\obscurio\\app\\build\\intermediates\\merged_res\\debug\\drawable_monk.png.flat",

@@ -1,5 +1,7 @@
 package de.hft.ubq
 
+import android.animation.Animator
+import android.animation.ObjectAnimator
 import android.content.Intent
 import android.media.MediaPlayer
 import android.os.Bundle
@@ -11,6 +13,7 @@ import com.example.ubq.R
 import kotlinx.android.synthetic.main.activity_main.*
 import android.view.MotionEvent
 import android.view.View.OnTouchListener
+import android.view.animation.DecelerateInterpolator
 
 
 
@@ -48,8 +51,6 @@ class MainActivityGM : AppCompatActivity() {
 
 
 
-
-
         button1.setOnClickListener {
             openPictureFullscreen()
         }
@@ -61,6 +62,22 @@ class MainActivityGM : AppCompatActivity() {
         button3.setOnClickListener {
             openPictureFullscreen()
         }
+
+        val pb = findViewById<View>(R.id.progressbar) as ProgressBar
+
+        val animation = ObjectAnimator.ofInt(pb, "progress", 0, 100)
+        animation.duration = 5000
+        animation.interpolator = DecelerateInterpolator()
+        animation.addListener(object : Animator.AnimatorListener {
+            override fun onAnimationStart(animator: Animator) {}
+            override fun onAnimationEnd(animator: Animator) {
+                //do something when the countdown is complete
+            }
+
+            override fun onAnimationCancel(animator: Animator) {}
+            override fun onAnimationRepeat(animator: Animator) {}
+        })
+        animation.start()
     }
 
     private fun onTouchListener(): OnTouchListener {

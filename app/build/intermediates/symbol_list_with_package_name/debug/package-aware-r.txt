@@ -2997,6 +2997,7 @@ id position
 id postLayout
 id progress_circular
 id progress_horizontal
+id progressbar
 id radio
 id ratio
 id rectangles
