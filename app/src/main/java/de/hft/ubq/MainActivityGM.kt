@@ -4,30 +4,40 @@ import android.content.Intent
 import android.media.MediaPlayer
 import android.os.Bundle
 import android.os.CountDownTimer
-import android.view.Menu
-import android.view.MenuItem
-import android.widget.ImageButton
-import android.widget.ImageView
-import android.widget.Toast
+import android.view.*
+import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
 import com.example.ubq.R
 import kotlinx.android.synthetic.main.activity_main.*
+import android.view.MotionEvent
+import android.view.View.OnTouchListener
+
+
+
+/*                                   Global Variables                             */
+
 
 
 class MainActivityGM : AppCompatActivity() {
 
     lateinit var countDownTimer: CountDownTimer
     private var countDownProgress: Int = 60000
+    private var mainLayout: ViewGroup? = null
+    private var image: ImageView? = null
+    private var xDelta = 0
+    private var yDelta = 0
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_gm_main)
 
         val mediaPlayer = MediaPlayer.create(this, R.raw.music)
-        mediaPlayer?.start()
+        //mediaPlayer?.start()
         mediaPlayer?.isLooping = true
         //countdown()   <-- crashed die app
-
+        mainLayout = findViewById<View>(R.id.mainGM) as RelativeLayout
+        image = findViewById<View>(R.id.Arrow) as ImageView
+        image!!.setOnTouchListener(onTouchListener())
 
 
         //-----------------------------onClick Listener------------------------------//
@@ -40,7 +50,7 @@ class MainActivityGM : AppCompatActivity() {
 
 
 
-        button1.setOnClickListener{
+        button1.setOnClickListener {
             openPictureFullscreen()
         }
 
@@ -53,7 +63,34 @@ class MainActivityGM : AppCompatActivity() {
         }
     }
 
-    fun openPictureFullscreen() {
+    private fun onTouchListener(): OnTouchListener {
+        return OnTouchListener { view, event ->
+            val x = event.rawX.toInt()
+            val y = event.rawY.toInt()
+            when (event.action and MotionEvent.ACTION_MASK) {
+                MotionEvent.ACTION_DOWN -> {
+                    val lParams = view.layoutParams as RelativeLayout.LayoutParams
+                    xDelta = x - lParams.leftMargin
+                    yDelta = y - lParams.topMargin
+                }
+
+
+                MotionEvent.ACTION_MOVE -> {
+                    val layoutParams = view
+                        .layoutParams as RelativeLayout.LayoutParams
+                    layoutParams.leftMargin = x - xDelta
+                    layoutParams.topMargin = y - yDelta
+                    layoutParams.rightMargin = 0
+                    layoutParams.bottomMargin = 0
+                    view.layoutParams = layoutParams
+                }
+            }
+            mainLayout!!.invalidate()
+            true
+        }
+    }
+
+    private fun openPictureFullscreen() {
         val intent = Intent(this, PictureFullscreen::class.java)
         startActivity(intent)
     }

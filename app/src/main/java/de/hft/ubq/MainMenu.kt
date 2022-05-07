@@ -16,7 +16,7 @@ class MainMenu : AppCompatActivity() {
         setContentView(R.layout.main_menu)
 
         val mediaPlayer = MediaPlayer.create(this, R.raw.music)
-        mediaPlayer?.start()
+        //mediaPlayer?.start()
         mediaPlayer?.isLooping = true
 
         val bttNeuSpiel = findViewById<Button>(R.id.ButtonNeuSpiel)

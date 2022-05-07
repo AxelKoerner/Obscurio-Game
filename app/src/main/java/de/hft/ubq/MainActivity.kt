@@ -24,7 +24,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         val mediaPlayer = MediaPlayer.create(this, R.raw.music)
-        mediaPlayer?.start()
+        //mediaPlayer?.start()
         mediaPlayer?.isLooping = true
         countdown()
 

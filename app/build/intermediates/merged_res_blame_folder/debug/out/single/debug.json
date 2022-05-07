@@ -44,6 +44,10 @@
         "source": "D:\\Hochschule\\PVC\\obscurio\\app\\src\\main\\res\\drawable\\roundcorner.xml"
     },
     {
+        "merged": "D:\\Hochschule\\PVC\\obscurio\\app\\build\\intermediates\\merged_res\\debug\\drawable_arrow.jpg.flat",
+        "source": "D:\\Hochschule\\PVC\\obscurio\\app\\src\\main\\res\\drawable\\arrow.jpg"
+    },
+    {
         "merged": "D:\\Hochschule\\PVC\\obscurio\\app\\build\\intermediates\\merged_res\\debug\\mipmap-mdpi_ic_launcher_round.webp.flat",
         "source": "D:\\Hochschule\\PVC\\obscurio\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.webp"
     },
@@ -96,6 +100,10 @@
         "source": "D:\\Hochschule\\PVC\\obscurio\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.webp"
     },
     {
+        "merged": "D:\\Hochschule\\PVC\\obscurio\\app\\build\\intermediates\\merged_res\\debug\\navigation_nav_graph.xml.flat",
+        "source": "D:\\Hochschule\\PVC\\obscurio\\app\\src\\main\\res\\navigation\\nav_graph.xml"
+    },
+    {
         "merged": "D:\\Hochschule\\PVC\\obscurio\\app\\build\\intermediates\\merged_res\\debug\\layout_main_menu.xml.flat",
         "source": "D:\\Hochschule\\PVC\\obscurio\\app\\src\\main\\res\\layout\\main_menu.xml"
     },
@@ -104,12 +112,12 @@
         "source": "D:\\Hochschule\\PVC\\obscurio\\app\\src\\main\\res\\raw\\music.mp3"
     },
     {
-        "merged": "D:\\Hochschule\\PVC\\obscurio\\app\\build\\intermediates\\merged_res\\debug\\xml_root_preferences.xml.flat",
-        "source": "D:\\Hochschule\\PVC\\obscurio\\app\\src\\main\\res\\xml\\root_preferences.xml"
-    },
-    {
         "merged": "D:\\Hochschule\\PVC\\obscurio\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_picture_fullscreen.xml.flat",
         "source": "D:\\Hochschule\\PVC\\obscurio\\app\\src\\main\\res\\layout\\activity_picture_fullscreen.xml"
+    },
+    {
+        "merged": "D:\\Hochschule\\PVC\\obscurio\\app\\build\\intermediates\\merged_res\\debug\\xml_root_preferences.xml.flat",
+        "source": "D:\\Hochschule\\PVC\\obscurio\\app\\src\\main\\res\\xml\\root_preferences.xml"
     },
     {
         "merged": "D:\\Hochschule\\PVC\\obscurio\\app\\build\\intermediates\\merged_res\\debug\\drawable_spielbrett.png.flat",

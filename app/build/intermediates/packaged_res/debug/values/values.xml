@@ -15,16 +15,24 @@
     <color name="teal_200">#FF03DAC5</color>
     <color name="teal_700">#FF018786</color>
     <color name="white">#FFFFFFFF</color>
+    <dimen name="fab_margin">16dp</dimen>
     <string name="app_name">test</string>
     <string name="attachment_summary_off">Only download attachments when manually requested</string>
     <string name="attachment_summary_on">Automatically download attachments for incoming emails
     </string>
     <string name="attachment_title">Download incoming attachments</string>
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
     <string name="messages_header">Messages</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
     <string name="reply_title">Default reply action</string>
+    <string name="second_fragment_label">Second Fragment</string>
     <string name="signature_title">Your signature</string>
     <string name="sync_header">Sync</string>
     <string name="sync_title">Sync email periodically</string>
+    <string name="title_activity_moving_arrow">MovingArrow</string>
     <string name="title_activity_settings">SettingsActivity</string>
     <style name="Theme.Test" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
         <!-- Primary brand color. -->
@@ -39,4 +47,10 @@
         <item name="android:statusBarColor" ns1:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
     </style>
+    <style name="Theme.Test.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+    <style name="Theme.Test.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="Theme.Test.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
 </resources>
