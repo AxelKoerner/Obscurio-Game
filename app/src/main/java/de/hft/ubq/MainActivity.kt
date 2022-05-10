@@ -1,7 +1,6 @@
 package de.hft.ubq
 
 import android.content.Intent
-import android.graphics.*
 import android.media.MediaPlayer
 import android.os.Bundle
 import android.os.CountDownTimer
@@ -42,7 +41,7 @@ class MainActivity : AppCompatActivity() {
         val button8 = findViewById<ImageButton>(R.id.Picture8)
 
         fun openPictureFullscreen() {
-            val intent = Intent(this, PictureFullscreen::class.java)
+            val intent = Intent(this, PictureFullscreenGM::class.java)
             startActivity(intent)
         }
 

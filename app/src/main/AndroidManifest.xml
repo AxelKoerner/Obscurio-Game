@@ -1,29 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.ubq" >
+        package="com.example.ubq">
 
     <application
-        android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
-        android:supportsRtl="true"
-        android:theme="@style/Theme.Test" >
+            android:allowBackup="true"
+            android:icon="@mipmap/ic_launcher"
+            android:label="@string/app_name"
+            android:roundIcon="@mipmap/ic_launcher_round"
+            android:supportsRtl="true"
+            android:theme="@style/Theme.Test">
         <activity
-            android:name="de.hft.ubq.PictureFullscreen"
-            android:exported="true" />
+                android:name="de.hft.ubq.GM_ReferenceChoice"
+                android:exported="false" />
         <activity
-            android:name="de.hft.ubq.Settings"
-            android:exported="true" />
+                android:name="de.hft.ubq.PictureFullscreenReferenceChoice"
+                android:exported="false" />
         <activity
-            android:name="de.hft.ubq.MainActivity"
-            android:exported="true" />
+                android:name="de.hft.ubq.PictureFullscreenGM"
+                android:exported="true" />
         <activity
-            android:name="de.hft.ubq.MainActivityGM"
-            android:exported="true" />
+                android:name="de.hft.ubq.Settings"
+                android:exported="true" />
         <activity
-            android:name="de.hft.ubq.MainMenu"
-            android:exported="true" >
+                android:name="de.hft.ubq.MainActivity"
+                android:exported="true" />
+        <activity
+                android:name="de.hft.ubq.MainActivityGM"
+                android:exported="true" />
+        <activity
+                android:name="de.hft.ubq.MainMenu"
+                android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

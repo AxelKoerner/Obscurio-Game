@@ -1,6 +1,7 @@
 package de.hft.ubq
 
 
+import android.content.Context
 import android.content.Intent
 import android.media.MediaPlayer
 import android.os.Bundle
@@ -9,6 +10,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.example.ubq.R
 
 class MainMenu : AppCompatActivity() {
+    val shared_Preferences:String = "shared_Preferences"
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -26,7 +28,8 @@ class MainMenu : AppCompatActivity() {
 
 
         bttNeuSpiel.setOnClickListener {
-            val intent = Intent(this, MainActivityGM::class.java)
+            val intent = Intent(this, GM_ReferenceChoice::class.java)
+            clearPreferences()
             startActivity(intent)
         }
 
@@ -47,7 +50,24 @@ class MainMenu : AppCompatActivity() {
 
 
     }
+    fun clearPreferences(){
 
+        val sharedPreferences = getSharedPreferences(shared_Preferences, Context.MODE_PRIVATE)
+        val editor = sharedPreferences.edit()
+
+        editor.apply{
+            putBoolean("isRunning", false)
+            putInt("Picture1", 700015)
+            putInt("Picture2", 700015)
+            putInt("Picture3", 700015)
+            putInt("Picture4", 700015)
+            putInt("Picture5", 700015)
+            putInt("Picture6", 700015)
+            putInt("Picture7", 700015)
+            putInt("ChosenReference1", 700015)
+            putInt("ChosenReference2", 700015)
+        }.apply()
+    }
 
 
 
