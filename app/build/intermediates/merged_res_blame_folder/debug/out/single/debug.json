@@ -72,8 +72,16 @@
         "source": "D:\\Hochschule\\PVC\\obscurio\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.webp"
     },
     {
+        "merged": "D:\\Hochschule\\PVC\\obscurio\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_gm_reference_choice.xml.flat",
+        "source": "D:\\Hochschule\\PVC\\obscurio\\app\\src\\main\\res\\layout\\activity_gm_reference_choice.xml"
+    },
+    {
         "merged": "D:\\Hochschule\\PVC\\obscurio\\app\\build\\intermediates\\merged_res\\debug\\menu_nav.xml.flat",
         "source": "D:\\Hochschule\\PVC\\obscurio\\app\\src\\main\\res\\menu\\nav.xml"
+    },
+    {
+        "merged": "D:\\Hochschule\\PVC\\obscurio\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_picture_fullscreen_gm.xml.flat",
+        "source": "D:\\Hochschule\\PVC\\obscurio\\app\\src\\main\\res\\layout\\activity_picture_fullscreen_gm.xml"
     },
     {
         "merged": "D:\\Hochschule\\PVC\\obscurio\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_settings.xml.flat",
@@ -130,5 +138,9 @@
     {
         "merged": "D:\\Hochschule\\PVC\\obscurio\\app\\build\\intermediates\\merged_res\\debug\\drawable_background_gameboard.xml.flat",
         "source": "D:\\Hochschule\\PVC\\obscurio\\app\\src\\main\\res\\drawable\\background_gameboard.xml"
+    },
+    {
+        "merged": "D:\\Hochschule\\PVC\\obscurio\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_picture_fullscreen_reference_choice.xml.flat",
+        "source": "D:\\Hochschule\\PVC\\obscurio\\app\\src\\main\\res\\layout\\activity_picture_fullscreen_reference_choice.xml"
     }
 ]

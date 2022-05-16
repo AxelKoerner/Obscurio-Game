@@ -33,7 +33,6 @@
             android:scaleType="fitCenter"
             android:src="@drawable/monk"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView"
             tools:ignore="MissingConstraints"
             android:layout_marginTop="89dp"
             android:layout_alignParentTop="true" />
@@ -50,7 +49,6 @@
             android:scaleType="fitCenter"
             android:src="@drawable/monk"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView"
             tools:ignore="MissingConstraints"
             android:layout_marginTop="20dp"
             android:layout_below="@+id/Picture1_gm" />
@@ -68,17 +66,8 @@
             android:scaleType="fitCenter"
             android:src="@drawable/monk"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView"
             tools:ignore="MissingConstraints"
             android:layout_below="@+id/Picture2_gm" />
 
-    <ImageView
-            android:id="@+id/Arrow"
-            android:layout_width="102dp"
-            android:layout_height="99dp"
-            android:layout_alignParentLeft="true"
-            android:src="@drawable/arrow"
-            android:layout_marginLeft="164dp"
-            android:layout_marginTop="87dp"
-            android:layout_below="@+id/Picture3_gm" />
+
 </RelativeLayout>

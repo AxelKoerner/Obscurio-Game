@@ -11,99 +11,111 @@
 9-->D:\Hochschule\PVC\obscurio\app\src\main\AndroidManifest.xml
 10
 11    <application
-11-->D:\Hochschule\PVC\obscurio\app\src\main\AndroidManifest.xml:5:5-33:19
+11-->D:\Hochschule\PVC\obscurio\app\src\main\AndroidManifest.xml:5:5-39:19
 12        android:allowBackup="true"
-12-->D:\Hochschule\PVC\obscurio\app\src\main\AndroidManifest.xml:6:9-35
+12-->D:\Hochschule\PVC\obscurio\app\src\main\AndroidManifest.xml:6:13-39
 13        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
 13-->[androidx.core:core:1.7.0] C:\Users\axel_\.gradle\caches\transforms-3\ec8778f597115131b77fc5968136215d\transformed\core-1.7.0\AndroidManifest.xml:24:18-86
 14        android:debuggable="true"
 15        android:icon="@mipmap/ic_launcher"
-15-->D:\Hochschule\PVC\obscurio\app\src\main\AndroidManifest.xml:7:9-43
+15-->D:\Hochschule\PVC\obscurio\app\src\main\AndroidManifest.xml:7:13-47
 16        android:label="@string/app_name"
-16-->D:\Hochschule\PVC\obscurio\app\src\main\AndroidManifest.xml:8:9-41
+16-->D:\Hochschule\PVC\obscurio\app\src\main\AndroidManifest.xml:8:13-45
 17        android:roundIcon="@mipmap/ic_launcher_round"
-17-->D:\Hochschule\PVC\obscurio\app\src\main\AndroidManifest.xml:9:9-54
+17-->D:\Hochschule\PVC\obscurio\app\src\main\AndroidManifest.xml:9:13-58
 18        android:supportsRtl="true"
-18-->D:\Hochschule\PVC\obscurio\app\src\main\AndroidManifest.xml:10:9-35
+18-->D:\Hochschule\PVC\obscurio\app\src\main\AndroidManifest.xml:10:13-39
 19        android:testOnly="true"
 20        android:theme="@style/Theme.Test" >
-20-->D:\Hochschule\PVC\obscurio\app\src\main\AndroidManifest.xml:11:9-42
+20-->D:\Hochschule\PVC\obscurio\app\src\main\AndroidManifest.xml:11:13-46
 21        <activity
-21-->D:\Hochschule\PVC\obscurio\app\src\main\AndroidManifest.xml:12:9-14:39
-22            android:name="de.hft.ubq.PictureFullscreen"
-22-->D:\Hochschule\PVC\obscurio\app\src\main\AndroidManifest.xml:13:13-56
-23            android:exported="true" />
-23-->D:\Hochschule\PVC\obscurio\app\src\main\AndroidManifest.xml:14:13-36
+21-->D:\Hochschule\PVC\obscurio\app\src\main\AndroidManifest.xml:12:9-14:44
+22            android:name="de.hft.ubq.GM_ReferenceChoice"
+22-->D:\Hochschule\PVC\obscurio\app\src\main\AndroidManifest.xml:13:17-61
+23            android:exported="false" />
+23-->D:\Hochschule\PVC\obscurio\app\src\main\AndroidManifest.xml:14:17-41
 24        <activity
-24-->D:\Hochschule\PVC\obscurio\app\src\main\AndroidManifest.xml:15:9-17:39
-25            android:name="de.hft.ubq.Settings"
-25-->D:\Hochschule\PVC\obscurio\app\src\main\AndroidManifest.xml:16:13-47
-26            android:exported="true" />
-26-->D:\Hochschule\PVC\obscurio\app\src\main\AndroidManifest.xml:17:13-36
+24-->D:\Hochschule\PVC\obscurio\app\src\main\AndroidManifest.xml:15:9-17:44
+25            android:name="de.hft.ubq.PictureFullscreenReferenceChoice"
+25-->D:\Hochschule\PVC\obscurio\app\src\main\AndroidManifest.xml:16:17-75
+26            android:exported="false" />
+26-->D:\Hochschule\PVC\obscurio\app\src\main\AndroidManifest.xml:17:17-41
 27        <activity
-27-->D:\Hochschule\PVC\obscurio\app\src\main\AndroidManifest.xml:18:9-20:39
-28            android:name="de.hft.ubq.MainActivity"
-28-->D:\Hochschule\PVC\obscurio\app\src\main\AndroidManifest.xml:19:13-51
+27-->D:\Hochschule\PVC\obscurio\app\src\main\AndroidManifest.xml:18:9-20:43
+28            android:name="de.hft.ubq.PictureFullscreenGM"
+28-->D:\Hochschule\PVC\obscurio\app\src\main\AndroidManifest.xml:19:17-62
 29            android:exported="true" />
-29-->D:\Hochschule\PVC\obscurio\app\src\main\AndroidManifest.xml:20:13-36
+29-->D:\Hochschule\PVC\obscurio\app\src\main\AndroidManifest.xml:20:17-40
 30        <activity
-30-->D:\Hochschule\PVC\obscurio\app\src\main\AndroidManifest.xml:21:9-23:39
-31            android:name="de.hft.ubq.MainActivityGM"
-31-->D:\Hochschule\PVC\obscurio\app\src\main\AndroidManifest.xml:22:13-53
+30-->D:\Hochschule\PVC\obscurio\app\src\main\AndroidManifest.xml:21:9-23:43
+31            android:name="de.hft.ubq.Settings"
+31-->D:\Hochschule\PVC\obscurio\app\src\main\AndroidManifest.xml:22:17-51
 32            android:exported="true" />
-32-->D:\Hochschule\PVC\obscurio\app\src\main\AndroidManifest.xml:23:13-36
+32-->D:\Hochschule\PVC\obscurio\app\src\main\AndroidManifest.xml:23:17-40
 33        <activity
-33-->D:\Hochschule\PVC\obscurio\app\src\main\AndroidManifest.xml:24:9-32:20
-34            android:name="de.hft.ubq.MainMenu"
-34-->D:\Hochschule\PVC\obscurio\app\src\main\AndroidManifest.xml:25:13-47
-35            android:exported="true" >
-35-->D:\Hochschule\PVC\obscurio\app\src\main\AndroidManifest.xml:26:13-36
-36            <intent-filter>
-36-->D:\Hochschule\PVC\obscurio\app\src\main\AndroidManifest.xml:27:13-31:29
-37                <action android:name="android.intent.action.MAIN" />
-37-->D:\Hochschule\PVC\obscurio\app\src\main\AndroidManifest.xml:28:17-69
-37-->D:\Hochschule\PVC\obscurio\app\src\main\AndroidManifest.xml:28:25-66
-38
-39                <category android:name="android.intent.category.LAUNCHER" />
-39-->D:\Hochschule\PVC\obscurio\app\src\main\AndroidManifest.xml:30:17-77
-39-->D:\Hochschule\PVC\obscurio\app\src\main\AndroidManifest.xml:30:27-74
-40            </intent-filter>
-41        </activity>
-42
-43        <uses-library
-43-->[androidx.window:window:1.0.0] C:\Users\axel_\.gradle\caches\transforms-3\41004c6afba06d0783c2e16168671df4\transformed\window-1.0.0\AndroidManifest.xml:25:9-27:40
-44            android:name="androidx.window.extensions"
-44-->[androidx.window:window:1.0.0] C:\Users\axel_\.gradle\caches\transforms-3\41004c6afba06d0783c2e16168671df4\transformed\window-1.0.0\AndroidManifest.xml:26:13-54
-45            android:required="false" />
-45-->[androidx.window:window:1.0.0] C:\Users\axel_\.gradle\caches\transforms-3\41004c6afba06d0783c2e16168671df4\transformed\window-1.0.0\AndroidManifest.xml:27:13-37
-46        <uses-library
-46-->[androidx.window:window:1.0.0] C:\Users\axel_\.gradle\caches\transforms-3\41004c6afba06d0783c2e16168671df4\transformed\window-1.0.0\AndroidManifest.xml:28:9-30:40
-47            android:name="androidx.window.sidecar"
-47-->[androidx.window:window:1.0.0] C:\Users\axel_\.gradle\caches\transforms-3\41004c6afba06d0783c2e16168671df4\transformed\window-1.0.0\AndroidManifest.xml:29:13-51
-48            android:required="false" />
-48-->[androidx.window:window:1.0.0] C:\Users\axel_\.gradle\caches\transforms-3\41004c6afba06d0783c2e16168671df4\transformed\window-1.0.0\AndroidManifest.xml:30:13-37
-49
-50        <provider
-50-->[androidx.emoji2:emoji2:1.0.0] C:\Users\axel_\.gradle\caches\transforms-3\69d291d347a635c15fd15a8466543966\transformed\emoji2-1.0.0\AndroidManifest.xml:26:9-34:20
-51            android:name="androidx.startup.InitializationProvider"
-51-->[androidx.emoji2:emoji2:1.0.0] C:\Users\axel_\.gradle\caches\transforms-3\69d291d347a635c15fd15a8466543966\transformed\emoji2-1.0.0\AndroidManifest.xml:27:13-67
-52            android:authorities="com.example.test.androidx-startup"
-52-->[androidx.emoji2:emoji2:1.0.0] C:\Users\axel_\.gradle\caches\transforms-3\69d291d347a635c15fd15a8466543966\transformed\emoji2-1.0.0\AndroidManifest.xml:28:13-68
-53            android:exported="false" >
-53-->[androidx.emoji2:emoji2:1.0.0] C:\Users\axel_\.gradle\caches\transforms-3\69d291d347a635c15fd15a8466543966\transformed\emoji2-1.0.0\AndroidManifest.xml:29:13-37
-54            <meta-data
-54-->[androidx.emoji2:emoji2:1.0.0] C:\Users\axel_\.gradle\caches\transforms-3\69d291d347a635c15fd15a8466543966\transformed\emoji2-1.0.0\AndroidManifest.xml:31:13-33:52
-55                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-55-->[androidx.emoji2:emoji2:1.0.0] C:\Users\axel_\.gradle\caches\transforms-3\69d291d347a635c15fd15a8466543966\transformed\emoji2-1.0.0\AndroidManifest.xml:32:17-75
-56                android:value="androidx.startup" />
-56-->[androidx.emoji2:emoji2:1.0.0] C:\Users\axel_\.gradle\caches\transforms-3\69d291d347a635c15fd15a8466543966\transformed\emoji2-1.0.0\AndroidManifest.xml:33:17-49
-57            <meta-data
-57-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\axel_\.gradle\caches\transforms-3\5518efa1c1ca29993905068db3381641\transformed\lifecycle-process-2.4.0\AndroidManifest.xml:31:13-33:52
-58                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-58-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\axel_\.gradle\caches\transforms-3\5518efa1c1ca29993905068db3381641\transformed\lifecycle-process-2.4.0\AndroidManifest.xml:32:17-78
-59                android:value="androidx.startup" />
-59-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\axel_\.gradle\caches\transforms-3\5518efa1c1ca29993905068db3381641\transformed\lifecycle-process-2.4.0\AndroidManifest.xml:33:17-49
-60        </provider>
-61    </application>
-62
-63</manifest>
+33-->D:\Hochschule\PVC\obscurio\app\src\main\AndroidManifest.xml:24:9-26:43
+34            android:name="de.hft.ubq.MainActivity"
+34-->D:\Hochschule\PVC\obscurio\app\src\main\AndroidManifest.xml:25:17-55
+35            android:exported="true" />
+35-->D:\Hochschule\PVC\obscurio\app\src\main\AndroidManifest.xml:26:17-40
+36        <activity
+36-->D:\Hochschule\PVC\obscurio\app\src\main\AndroidManifest.xml:27:9-29:43
+37            android:name="de.hft.ubq.MainActivityGM"
+37-->D:\Hochschule\PVC\obscurio\app\src\main\AndroidManifest.xml:28:17-57
+38            android:exported="true" />
+38-->D:\Hochschule\PVC\obscurio\app\src\main\AndroidManifest.xml:29:17-40
+39        <activity
+39-->D:\Hochschule\PVC\obscurio\app\src\main\AndroidManifest.xml:30:9-38:20
+40            android:name="de.hft.ubq.MainMenu"
+40-->D:\Hochschule\PVC\obscurio\app\src\main\AndroidManifest.xml:31:17-51
+41            android:exported="true" >
+41-->D:\Hochschule\PVC\obscurio\app\src\main\AndroidManifest.xml:32:17-40
+42            <intent-filter>
+42-->D:\Hochschule\PVC\obscurio\app\src\main\AndroidManifest.xml:33:13-37:29
+43                <action android:name="android.intent.action.MAIN" />
+43-->D:\Hochschule\PVC\obscurio\app\src\main\AndroidManifest.xml:34:17-69
+43-->D:\Hochschule\PVC\obscurio\app\src\main\AndroidManifest.xml:34:25-66
+44
+45                <category android:name="android.intent.category.LAUNCHER" />
+45-->D:\Hochschule\PVC\obscurio\app\src\main\AndroidManifest.xml:36:17-77
+45-->D:\Hochschule\PVC\obscurio\app\src\main\AndroidManifest.xml:36:27-74
+46            </intent-filter>
+47        </activity>
+48
+49        <uses-library
+49-->[androidx.window:window:1.0.0] C:\Users\axel_\.gradle\caches\transforms-3\41004c6afba06d0783c2e16168671df4\transformed\window-1.0.0\AndroidManifest.xml:25:9-27:40
+50            android:name="androidx.window.extensions"
+50-->[androidx.window:window:1.0.0] C:\Users\axel_\.gradle\caches\transforms-3\41004c6afba06d0783c2e16168671df4\transformed\window-1.0.0\AndroidManifest.xml:26:13-54
+51            android:required="false" />
+51-->[androidx.window:window:1.0.0] C:\Users\axel_\.gradle\caches\transforms-3\41004c6afba06d0783c2e16168671df4\transformed\window-1.0.0\AndroidManifest.xml:27:13-37
+52        <uses-library
+52-->[androidx.window:window:1.0.0] C:\Users\axel_\.gradle\caches\transforms-3\41004c6afba06d0783c2e16168671df4\transformed\window-1.0.0\AndroidManifest.xml:28:9-30:40
+53            android:name="androidx.window.sidecar"
+53-->[androidx.window:window:1.0.0] C:\Users\axel_\.gradle\caches\transforms-3\41004c6afba06d0783c2e16168671df4\transformed\window-1.0.0\AndroidManifest.xml:29:13-51
+54            android:required="false" />
+54-->[androidx.window:window:1.0.0] C:\Users\axel_\.gradle\caches\transforms-3\41004c6afba06d0783c2e16168671df4\transformed\window-1.0.0\AndroidManifest.xml:30:13-37
+55
+56        <provider
+56-->[androidx.emoji2:emoji2:1.0.0] C:\Users\axel_\.gradle\caches\transforms-3\69d291d347a635c15fd15a8466543966\transformed\emoji2-1.0.0\AndroidManifest.xml:26:9-34:20
+57            android:name="androidx.startup.InitializationProvider"
+57-->[androidx.emoji2:emoji2:1.0.0] C:\Users\axel_\.gradle\caches\transforms-3\69d291d347a635c15fd15a8466543966\transformed\emoji2-1.0.0\AndroidManifest.xml:27:13-67
+58            android:authorities="com.example.test.androidx-startup"
+58-->[androidx.emoji2:emoji2:1.0.0] C:\Users\axel_\.gradle\caches\transforms-3\69d291d347a635c15fd15a8466543966\transformed\emoji2-1.0.0\AndroidManifest.xml:28:13-68
+59            android:exported="false" >
+59-->[androidx.emoji2:emoji2:1.0.0] C:\Users\axel_\.gradle\caches\transforms-3\69d291d347a635c15fd15a8466543966\transformed\emoji2-1.0.0\AndroidManifest.xml:29:13-37
+60            <meta-data
+60-->[androidx.emoji2:emoji2:1.0.0] C:\Users\axel_\.gradle\caches\transforms-3\69d291d347a635c15fd15a8466543966\transformed\emoji2-1.0.0\AndroidManifest.xml:31:13-33:52
+61                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+61-->[androidx.emoji2:emoji2:1.0.0] C:\Users\axel_\.gradle\caches\transforms-3\69d291d347a635c15fd15a8466543966\transformed\emoji2-1.0.0\AndroidManifest.xml:32:17-75
+62                android:value="androidx.startup" />
+62-->[androidx.emoji2:emoji2:1.0.0] C:\Users\axel_\.gradle\caches\transforms-3\69d291d347a635c15fd15a8466543966\transformed\emoji2-1.0.0\AndroidManifest.xml:33:17-49
+63            <meta-data
+63-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\axel_\.gradle\caches\transforms-3\5518efa1c1ca29993905068db3381641\transformed\lifecycle-process-2.4.0\AndroidManifest.xml:31:13-33:52
+64                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+64-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\axel_\.gradle\caches\transforms-3\5518efa1c1ca29993905068db3381641\transformed\lifecycle-process-2.4.0\AndroidManifest.xml:32:17-78
+65                android:value="androidx.startup" />
+65-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\axel_\.gradle\caches\transforms-3\5518efa1c1ca29993905068db3381641\transformed\lifecycle-process-2.4.0\AndroidManifest.xml:33:17-49
+66        </provider>
+67    </application>
+68
+69</manifest>

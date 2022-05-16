@@ -12,8 +12,6 @@ import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
 import com.example.ubq.R
 import kotlinx.android.synthetic.main.activity_main.*
-import android.view.MotionEvent
-import android.view.View.OnTouchListener
 import android.view.animation.DecelerateInterpolator
 import kotlinx.android.synthetic.main.activity_gm_main.*
 
@@ -27,10 +25,7 @@ class MainActivityGM : AppCompatActivity() {
     val shared_Preferences:String = "shared_Preferences"
     lateinit var countDownTimer: CountDownTimer
     private var countDownProgress: Int = 60000
-    private var mainLayout: ViewGroup? = null
-    private var image: ImageView? = null
-    private var xDelta = 0
-    private var yDelta = 0
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -40,9 +35,7 @@ class MainActivityGM : AppCompatActivity() {
         //mediaPlayer?.start()
         mediaPlayer?.isLooping = true
         //countdown()   <-- crashed die app
-        mainLayout = findViewById<View>(R.id.mainGM) as RelativeLayout
-        image = findViewById<View>(R.id.Arrow) as ImageView
-        image!!.setOnTouchListener(onTouchListener())
+
 
 
 
@@ -84,32 +77,7 @@ class MainActivityGM : AppCompatActivity() {
         animation.start()
     }
 
-    private fun onTouchListener(): OnTouchListener {
-        return OnTouchListener { view, event ->
-            val x = event.rawX.toInt()
-            val y = event.rawY.toInt()
-            when (event.action and MotionEvent.ACTION_MASK) {
-                MotionEvent.ACTION_DOWN -> {
-                    val lParams = view.layoutParams as RelativeLayout.LayoutParams
-                    xDelta = x - lParams.leftMargin
-                    yDelta = y - lParams.topMargin
-                }
 
-
-                MotionEvent.ACTION_MOVE -> {
-                    val layoutParams = view
-                        .layoutParams as RelativeLayout.LayoutParams
-                    layoutParams.leftMargin = x - xDelta
-                    layoutParams.topMargin = y - yDelta
-                    layoutParams.rightMargin = 0
-                    layoutParams.bottomMargin = 0
-                    view.layoutParams = layoutParams
-                }
-            }
-            mainLayout!!.invalidate()
-            true
-        }
-    }
 
     private fun openPictureFullscreen() {
         val intent = Intent(this, PictureFullscreenGM::class.java)
