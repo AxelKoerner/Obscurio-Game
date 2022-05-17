@@ -27,6 +27,7 @@ class MainActivityGM : AppCompatActivity() {
     private var countDownProgress: Int = 60000
 
 
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_gm_main)
@@ -48,22 +49,37 @@ class MainActivityGM : AppCompatActivity() {
 
         loadImages()
 
+        fun openPictureFullscreenGM(button: ImageButton) {
+            val intent = Intent(this, PictureFullscreenGM::class.java)
+            var resource = "Picture0"
+            if(button==button1){
+                resource = "ChosenReference1"
+            }
+            if(button==button2){
+                resource = "ChosenReference2"
+            }
+            intent.putExtra("chosenImage", resource)
+            startActivity(intent)
+        }
+
         button1.setOnClickListener {
-            openPictureFullscreen()
+            openPictureFullscreenGM(button1)
         }
 
         button2.setOnClickListener {
-            openPictureFullscreen()
+            openPictureFullscreenGM(button2)
         }
 
         button3.setOnClickListener {
             openPictureFullscreen()
         }
 
+
+
         val pb = findViewById<View>(R.id.progressbar) as ProgressBar
 
         val animation = ObjectAnimator.ofInt(pb, "progress", 0, 100)
-        animation.duration = 5000
+        animation.duration = 60000
         animation.interpolator = DecelerateInterpolator()
         animation.addListener(object : Animator.AnimatorListener {
             override fun onAnimationStart(animator: Animator) {}
@@ -79,8 +95,14 @@ class MainActivityGM : AppCompatActivity() {
 
 
 
-    private fun openPictureFullscreen() {
-        val intent = Intent(this, PictureFullscreenGM::class.java)
+
+
+    fun openPictureFullscreen() {
+        val intent = Intent(this, PictureFullscreen::class.java)
+        var resource = "Picture7"
+
+        intent.putExtra("chosenImage", resource)
+        intent.putExtra("origin", "MainActivityGM")
         startActivity(intent)
     }
 

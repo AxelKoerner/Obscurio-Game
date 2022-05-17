@@ -8,7 +8,7 @@
     tools:context="de.hft.ubq.PictureFullscreenGM">
 
     <ImageButton
-        android:id="@+id/Button_fullscreen"
+        android:id="@+id/Button_fullscreen_standard"
         style="?android:attr/borderlessButtonStyle"
         android:layout_width="405dp"
         android:layout_height="658dp"

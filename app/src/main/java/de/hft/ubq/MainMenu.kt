@@ -66,6 +66,10 @@ class MainMenu : AppCompatActivity() {
             putInt("Picture7", 700015)
             putInt("ChosenReference1", 700015)
             putInt("ChosenReference2", 700015)
+            putInt("PositionX_ChosenReference1", 0)
+            putInt("PositionY_ChosenReference1", 0)
+            putInt("PositionX_ChosenReference2", 0)
+            putInt("PositionY_ChosenReference2", 0)
         }.apply()
     }
 

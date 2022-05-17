@@ -65,8 +65,8 @@ class GM_ReferenceChoice : AppCompatActivity() {
         }
 
 
-        fun openPictureFullscreenGM() {
-            val intent = Intent(this, PictureFullscreenGM::class.java)
+        fun openPictureFullscreen() {
+            val intent = Intent(this, PictureFullscreen::class.java)
             var resource = "Picture7"
 
             intent.putExtra("chosenImage", resource)
@@ -126,7 +126,7 @@ class GM_ReferenceChoice : AppCompatActivity() {
         }
 
         button7.setOnClickListener {
-            openPictureFullscreenGM()
+            openPictureFullscreen()
         }
         confirm.setOnClickListener{
             val sharedPreferences = getSharedPreferences(shared_Preferences, Context.MODE_PRIVATE)
@@ -139,7 +139,7 @@ class GM_ReferenceChoice : AppCompatActivity() {
                 openMainActivityGM()
             }
             else{
-                Toast.makeText(this, "Chose 2 References to Continue", Toast.LENGTH_SHORT)
+                Toast.makeText(this, "Chose 2 References to Continue", Toast.LENGTH_SHORT).show()
             }
         }
 
