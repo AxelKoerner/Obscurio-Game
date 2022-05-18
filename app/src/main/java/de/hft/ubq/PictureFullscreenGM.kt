@@ -27,7 +27,7 @@ class PictureFullscreenGM : AppCompatActivity() {
 
 
         mainLayout = findViewById<View>(R.id.fullscreenGM) as RelativeLayout
-        image = findViewById<View>(R.id.Arrow) as ImageView
+        image = findViewById<View>(R.id.pointer) as ImageView
         image!!.setOnTouchListener(onTouchListener())
 
 
@@ -47,6 +47,35 @@ class PictureFullscreenGM : AppCompatActivity() {
 
             var savedInt = sharedPreferences.getInt(res_image, 700015)
             pictureFull.setImageResource(savedInt)
+
+
+            if(res_image=="ChosenReference1"){
+                var x = sharedPreferences.getInt("PositionX_ChosenReference1", 100)
+                var y = sharedPreferences.getInt("PositionY_ChosenReference1", 100)
+
+                val view = image
+
+                if(x!=100 && y!=100){
+                    var pointerRelativeLayout = view!!.layoutParams as RelativeLayout.LayoutParams
+                    pointerRelativeLayout.setMargins(x ,y,0,0)
+                    image!!.layoutParams = pointerRelativeLayout
+                    }
+
+                }
+
+
+            if(res_image=="ChosenReference2"){
+                var x = sharedPreferences.getInt("PositionX_ChosenReference2", 100)
+                var y = sharedPreferences.getInt("PositionY_ChosenReference2", 100)
+
+                val view = image
+
+                if(x!=100 && y!=100){
+                    var pointerRelativeLayout = view!!.layoutParams as RelativeLayout.LayoutParams
+                    pointerRelativeLayout.setMargins(x ,y,0,0)
+                    image!!.layoutParams = pointerRelativeLayout
+                }
+            }
         }
 
         pictureFull.setOnClickListener(View.OnClickListener {
@@ -66,10 +95,11 @@ class PictureFullscreenGM : AppCompatActivity() {
         val editor = sharedPreferences.edit()
         var bundle = getIntent().getExtras()
         var res_image = bundle?.getString("chosenImage")
+        var pointerRelativeLayout = image!!.layoutParams as RelativeLayout.LayoutParams
 
         editor.apply{
-            putInt("PositionX_"+res_image, xDelta)
-            putInt("PositionY_"+res_image, yDelta)
+            putInt("PositionX_"+res_image, pointerRelativeLayout.leftMargin)
+            putInt("PositionY_"+res_image, pointerRelativeLayout.topMargin)
 
         }.apply()
 

@@ -56,6 +56,9 @@ class MainMenu : AppCompatActivity() {
         val editor = sharedPreferences.edit()
 
         editor.apply{
+            putInt("Lifepoints", -50)
+            putInt("Round", 0)
+            putString("UsedPicture", "")
             putBoolean("isRunning", false)
             putInt("Picture1", 700015)
             putInt("Picture2", 700015)
@@ -66,10 +69,10 @@ class MainMenu : AppCompatActivity() {
             putInt("Picture7", 700015)
             putInt("ChosenReference1", 700015)
             putInt("ChosenReference2", 700015)
-            putInt("PositionX_ChosenReference1", 0)
-            putInt("PositionY_ChosenReference1", 0)
-            putInt("PositionX_ChosenReference2", 0)
-            putInt("PositionY_ChosenReference2", 0)
+            putInt("PositionX_ChosenReference1", 100)
+            putInt("PositionY_ChosenReference1", 100)
+            putInt("PositionX_ChosenReference2", 100)
+            putInt("PositionY_ChosenReference2", 100)
         }.apply()
     }
 

@@ -10,6 +10,9 @@
             android:supportsRtl="true"
             android:theme="@style/Theme.Test">
         <activity
+                android:name="de.hft.ubq.PictureFullscreenMarked"
+                android:exported="false" />
+        <activity
                 android:name="de.hft.ubq.PictureFullscreen"
                 android:exported="false" />
         <activity

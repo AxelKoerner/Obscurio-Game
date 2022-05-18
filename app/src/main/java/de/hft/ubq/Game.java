@@ -1,5 +1,7 @@
 package de.hft.ubq;
 
+import android.content.Context;
+import android.content.SharedPreferences;
 import android.widget.ImageButton;
 
 import com.example.ubq.R;
@@ -7,12 +9,9 @@ import com.example.ubq.R;
 public class Game {
     public boolean GM = false;
     public int door = 0;
-    public int usedpicture1=0;
-    public int usedpicture2=0;
-    public int usedpicture3=0;
-    public int usedpicture4=0;
-    public int usedpicture5=0;
-    public int usedpicture6=0;
+
+    public static final String shared_Preferences = "shared_Preferences";
+    public static final String usedDoors = "";
 
 
     public int set_door(){
@@ -20,26 +19,14 @@ public class Game {
 
         door = (int)(Math.random()*(max+1));
 
-        if (usedpicture1==0) usedpicture1 = door;
-        if (door == usedpicture1) set_door();
 
-        if (usedpicture2==0 && usedpicture1!=0) usedpicture2 = door;
-        if (door == usedpicture2) set_door();
 
-        if (usedpicture3==0 && usedpicture2!=0) usedpicture3 = door;
-        if (door == usedpicture3) set_door();
 
-        if (usedpicture4==0 && usedpicture3!=0) usedpicture4 = door;
-        if (door == usedpicture4) set_door();
-
-        if (usedpicture5==0 && usedpicture4!=0) usedpicture5 = door;
-        if (door == usedpicture5) set_door();
-
-        if (usedpicture6==0 && usedpicture5!=0) usedpicture1 = door;
-        if (door == usedpicture6) set_door();
 
         return door;
     }
+
+
 
 
 

@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.os.CountDownTimer
 import android.view.Menu
 import android.view.MenuItem
+import android.widget.Button
 import android.widget.ImageButton
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
@@ -16,7 +17,7 @@ import kotlinx.android.synthetic.main.activity_main.*
 class MainActivity : AppCompatActivity() {
 
     lateinit var countDownTimer: CountDownTimer
-    private var countDownProgress: Int = 60000
+    private var countDownProgress: Int = 180000
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -31,17 +32,31 @@ class MainActivity : AppCompatActivity() {
 
         //-----------------------------onClick Listener------------------------------//
 
-        val button1 = findViewById<ImageButton>(R.id.Picture1)
-        val button2 = findViewById<ImageButton>(R.id.Picture2)
-        val button3 = findViewById<ImageButton>(R.id.Picture3)
-        val button4 = findViewById<ImageButton>(R.id.Picture4)
-        val button5 = findViewById<ImageButton>(R.id.Picture5)
-        val button6 = findViewById<ImageButton>(R.id.Picture6)
-        val button7 = findViewById<ImageButton>(R.id.Picture7)
-        val button8 = findViewById<ImageButton>(R.id.Picture8)
+        val button1 = findViewById<ImageButton>(R.id.Picture1Main)
+        val button2 = findViewById<ImageButton>(R.id.Picture2Main)
+        val button3 = findViewById<ImageButton>(R.id.Picture3Main)
+        val button4 = findViewById<ImageButton>(R.id.Picture4Main)
+        val button5 = findViewById<ImageButton>(R.id.Picture5Main)
+        val button6 = findViewById<ImageButton>(R.id.Picture6Main)
+        val button7 = findViewById<ImageButton>(R.id.MarkedReference1)
+        val button8 = findViewById<ImageButton>(R.id.MarkedReference2)
+        val confirm = findViewById<Button>(R.id.ConfirmMain)
 
         fun openPictureFullscreen() {
             val intent = Intent(this, PictureFullscreenGM::class.java)
+            startActivity(intent)
+        }
+
+        fun openPictureFullscreenMarked(button: ImageButton) {
+            val intent = Intent(this, PictureFullscreenMarked::class.java)
+            var resource = "Picture0"
+            if(button==button7){
+                resource = "ChosenReference1"
+            }
+            if(button==button8){
+                resource = "ChosenReference2"
+            }
+            intent.putExtra("chosenImage", resource)
             startActivity(intent)
         }
 
@@ -71,11 +86,11 @@ class MainActivity : AppCompatActivity() {
         }
 
         button7.setOnClickListener {
-            openPictureFullscreen()
+            openPictureFullscreenMarked(button7)
         }
 
         button8.setOnClickListener {
-            openPictureFullscreen()
+            openPictureFullscreenMarked(button8)
         }
 
 
@@ -104,11 +119,11 @@ class MainActivity : AppCompatActivity() {
         countDownTimer = object : CountDownTimer(5000,1000) {
             override fun onTick(millisUntilFinished: Long) {
                 countDownProgress--
-                timer.text = countDownProgress.toString()
+                timerMain.text = countDownProgress.toString()
             }
 
             override fun onFinish() {
-                timer.setText("done!")
+                timerMain.setText("done!")
             }
         }.start()
 

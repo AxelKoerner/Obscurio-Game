@@ -12,6 +12,7 @@ import android.widget.ImageButton
 import android.widget.Toast
 import com.example.ubq.R
 import kotlinx.android.synthetic.main.activity_gm_reference_choice.*
+import kotlinx.android.synthetic.main.activity_main.*
 
 class GM_ReferenceChoice : AppCompatActivity() {
     var isRunning = false
@@ -39,7 +40,7 @@ class GM_ReferenceChoice : AppCompatActivity() {
         val button7 = findViewById<ImageButton>(R.id.Picture7_ReferenceChoice)
         val confirm = findViewById<Button>(R.id.confirm_ReferenceChoice)
 
-        val game = Game()
+
 
         loadGame()
 
@@ -48,6 +49,7 @@ class GM_ReferenceChoice : AppCompatActivity() {
         }
 
         if(!isRunning){
+            /*
             game.matchdoor(Picture1_ReferenceChoice)
             game.matchdoor(Picture2_ReferenceChoice)
             game.matchdoor(Picture3_ReferenceChoice)
@@ -55,14 +57,27 @@ class GM_ReferenceChoice : AppCompatActivity() {
             game.matchdoor(Picture5_ReferenceChoice)
             game.matchdoor(Picture6_ReferenceChoice)
             game.matchdoor(Picture7_ReferenceChoice)
+             */
+            duplicationPrevention(Picture1_ReferenceChoice)
+            duplicationPrevention(Picture2_ReferenceChoice)
+            duplicationPrevention(Picture3_ReferenceChoice)
+            duplicationPrevention(Picture4_ReferenceChoice)
+            duplicationPrevention(Picture5_ReferenceChoice)
+            duplicationPrevention(Picture6_ReferenceChoice)
+            duplicationPrevention(Picture7_ReferenceChoice)
+
             isRunning = true
             saveData()
         }
+
+
 
         fun openMainActivityGM() {
             val intent = Intent(this, MainActivityGM::class.java)
             startActivity(intent)
         }
+
+
 
 
         fun openPictureFullscreen() {
@@ -143,6 +158,30 @@ class GM_ReferenceChoice : AppCompatActivity() {
             }
         }
 
+
+
+    }
+
+    fun duplicationPrevention(button: ImageButton){
+        val game = Game()
+        game.matchdoor(button)
+        val sharedPreferences = getSharedPreferences(shared_Preferences, Context.MODE_PRIVATE)
+        var buttonTag = button.getTag().toString().toInt()
+
+        var savedInt = sharedPreferences.getInt("Picture1", 700015)
+        if(buttonTag == savedInt){duplicationPrevention(button)}
+        savedInt = sharedPreferences.getInt("Picture2", 700015)
+        if(buttonTag == savedInt){duplicationPrevention(button)}
+        savedInt = sharedPreferences.getInt("Picture3", 700015)
+        if(buttonTag == savedInt){duplicationPrevention(button)}
+        savedInt = sharedPreferences.getInt("Picture4", 700015)
+        if(buttonTag == savedInt){duplicationPrevention(button)}
+        savedInt = sharedPreferences.getInt("Picture5", 700015)
+        if(buttonTag == savedInt){duplicationPrevention(button)}
+        savedInt = sharedPreferences.getInt("Picture6", 700015)
+        if(buttonTag == savedInt){duplicationPrevention(button)}
+        savedInt = sharedPreferences.getInt("Picture7", 700015)
+        if(buttonTag == savedInt){duplicationPrevention(button)}
 
 
     }
