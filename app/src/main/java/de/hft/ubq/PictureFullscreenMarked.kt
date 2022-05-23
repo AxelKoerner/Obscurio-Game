@@ -29,6 +29,7 @@ class PictureFullscreenMarked : AppCompatActivity() {
 
 
 
+
         fun returnToMain() {
            finish()
         }
@@ -79,6 +80,7 @@ class PictureFullscreenMarked : AppCompatActivity() {
             returnToMain()
 
         })
+
     }
 }
 

@@ -8,10 +8,10 @@
     tools:context="de.hft.ubq.MainActivity">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/textViewMain"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/timer"
+        android:layout_below="@+id/timerMain"
         android:layout_alignParentEnd="true"
         android:layout_marginTop="4dp"
         android:layout_marginEnd="126dp"
@@ -26,24 +26,24 @@
         app:layout_constraintVertical_bias="0.049" />
 
     <ImageButton
-        android:id="@+id/Picture1"
+        android:id="@+id/Picture1Main"
         style="?android:attr/borderlessButtonStyle"
         android:layout_width="110dp"
         android:layout_height="110dp"
-        android:layout_below="@+id/timer"
+        android:layout_below="@+id/timerMain"
         android:layout_alignParentStart="true"
         android:layout_marginStart="21dp"
         android:layout_marginTop="69dp"
         android:adjustViewBounds="true"
         android:background="@drawable/button"
         android:scaleType="fitCenter"
-        android:src="@drawable/monk"
+        android:src="@drawable/p_0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textViewMain"
         tools:ignore="MissingConstraints" />
 
     <ImageButton
-        android:id="@+id/Picture2"
+        android:id="@+id/Picture2Main"
         style="?android:attr/borderlessButtonStyle"
         android:layout_width="110dp"
         android:layout_height="110dp"
@@ -54,81 +54,81 @@
         android:adjustViewBounds="true"
         android:background="@drawable/button"
         android:scaleType="fitCenter"
-        android:src="@drawable/monk"
+        android:src="@drawable/p_0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textViewMain"
         tools:ignore="MissingConstraints" />
 
     <ImageButton
-        android:id="@+id/Picture3"
+        android:id="@+id/Picture3Main"
         style="?android:attr/borderlessButtonStyle"
         android:layout_width="110dp"
         android:layout_height="110dp"
-        android:layout_below="@+id/timer"
+        android:layout_below="@+id/timerMain"
         android:layout_alignParentStart="true"
         android:layout_marginStart="21dp"
         android:layout_marginTop="213dp"
         android:adjustViewBounds="true"
         android:background="@drawable/button"
         android:scaleType="fitCenter"
-        android:src="@drawable/monk"
+        android:src="@drawable/p_0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textViewMain"
         tools:ignore="MissingConstraints" />
 
     <ImageButton
-        android:id="@+id/Picture4"
+        android:id="@+id/Picture4Main"
         style="?android:attr/borderlessButtonStyle"
         android:layout_width="110dp"
         android:layout_height="110dp"
-        android:layout_below="@+id/timer"
+        android:layout_below="@+id/timerMain"
         android:layout_alignParentStart="true"
         android:layout_marginStart="282dp"
         android:layout_marginTop="211dp"
         android:adjustViewBounds="true"
         android:background="@drawable/button"
         android:scaleType="fitCenter"
-        android:src="@drawable/monk"
+        android:src="@drawable/p_0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textViewMain"
         tools:ignore="MissingConstraints" />
 
     <ImageButton
-        android:id="@+id/Picture5"
+        android:id="@+id/Picture5Main"
         style="?android:attr/borderlessButtonStyle"
         android:layout_width="110dp"
         android:layout_height="110dp"
-        android:layout_below="@+id/timer"
+        android:layout_below="@+id/timerMain"
         android:layout_alignParentStart="true"
         android:layout_marginStart="15dp"
         android:layout_marginTop="343dp"
         android:adjustViewBounds="true"
         android:background="@drawable/button"
         android:scaleType="fitCenter"
-        android:src="@drawable/monk"
+        android:src="@drawable/p_0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textViewMain"
         tools:ignore="MissingConstraints" />
 
     <ImageButton
-        android:id="@+id/Picture6"
+        android:id="@+id/Picture6Main"
         style="?android:attr/borderlessButtonStyle"
         android:layout_width="110dp"
         android:layout_height="110dp"
-        android:layout_below="@+id/timer"
+        android:layout_below="@+id/timerMain"
         android:layout_alignParentStart="true"
         android:layout_marginStart="288dp"
         android:layout_marginTop="346dp"
         android:adjustViewBounds="true"
         android:background="@drawable/button"
         android:scaleType="fitCenter"
-        android:src="@drawable/monk"
+        android:src="@drawable/p_0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textViewMain"
         tools:ignore="MissingConstraints" />
 
     <ImageButton
-        android:id="@+id/Picture7"
+        android:id="@+id/MarkedReference1"
         android:layout_width="110dp"
         android:layout_height="110dp"
         android:layout_alignParentEnd="true"
@@ -138,10 +138,10 @@
         android:background="@drawable/button"
         android:scaleType="fitCenter"
         android:adjustViewBounds="true"
-        android:src="@drawable/monk"/>
+        android:src="@drawable/p_0"/>
 
     <ImageButton
-        android:id="@+id/Picture8"
+        android:id="@+id/MarkedReference2"
         android:layout_width="110dp"
         android:layout_height="110dp"
         android:layout_alignParentEnd="true"
@@ -151,10 +151,10 @@
         android:scaleType="fitCenter"
         android:background="@drawable/button"
         android:adjustViewBounds="true"
-        android:src="@drawable/monk"/>
+        android:src="@drawable/p_0"/>
 
     <TextView
-        android:id="@+id/timer"
+        android:id="@+id/timerMain"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
@@ -166,6 +166,17 @@
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="175dp"
         tools:layout_editor_absoluteY="59dp" />
+
+    <Button
+            android:id="@+id/ConfirmMain"
+            android:text="Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="150dp"
+            android:layout_marginBottom="200dp"
+             />
 
 
 </RelativeLayout>

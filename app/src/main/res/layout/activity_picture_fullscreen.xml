@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background"
-    tools:context="de.hft.ubq.PictureFullscreenGM">
+    tools:context="de.hft.ubq.PictureFullscreen">
 
     <ImageButton
         android:id="@+id/Button_fullscreen_standard"
@@ -15,5 +15,5 @@
         android:layout_centerInParent="true"
         android:adjustViewBounds="true"
         android:scaleType="fitCenter"
-        android:src="@drawable/monk" />
+        android:src="@drawable/p_0" />
 </RelativeLayout>
