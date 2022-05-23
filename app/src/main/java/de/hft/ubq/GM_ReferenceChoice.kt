@@ -13,10 +13,12 @@ import android.widget.Toast
 import com.example.ubq.R
 import kotlinx.android.synthetic.main.activity_gm_reference_choice.*
 import kotlinx.android.synthetic.main.activity_main.*
+import java.util.*
 
 class GM_ReferenceChoice : AppCompatActivity() {
     var isRunning = false
     val shared_Preferences:String = "shared_Preferences"
+    var availablePictures = IntArray(76)
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -44,28 +46,32 @@ class GM_ReferenceChoice : AppCompatActivity() {
 
         loadGame()
 
+
         if(isRunning==true) {
             loadData()
         }
 
         if(!isRunning){
-            /*
-            game.matchdoor(Picture1_ReferenceChoice)
-            game.matchdoor(Picture2_ReferenceChoice)
-            game.matchdoor(Picture3_ReferenceChoice)
-            game.matchdoor(Picture4_ReferenceChoice)
-            game.matchdoor(Picture5_ReferenceChoice)
-            game.matchdoor(Picture6_ReferenceChoice)
-            game.matchdoor(Picture7_ReferenceChoice)
-             */
-            duplicationPrevention(Picture1_ReferenceChoice)
-            duplicationPrevention(Picture2_ReferenceChoice)
-            duplicationPrevention(Picture3_ReferenceChoice)
-            duplicationPrevention(Picture4_ReferenceChoice)
-            duplicationPrevention(Picture5_ReferenceChoice)
-            duplicationPrevention(Picture6_ReferenceChoice)
-            duplicationPrevention(Picture7_ReferenceChoice)
 
+            val game = Game()
+            shuffleDoors()
+
+            game.matchdoor(Picture1_ReferenceChoice,provideDoor())
+            game.matchdoor(Picture2_ReferenceChoice,provideDoor())
+            game.matchdoor(Picture3_ReferenceChoice,provideDoor())
+            game.matchdoor(Picture4_ReferenceChoice,provideDoor())
+            game.matchdoor(Picture5_ReferenceChoice,provideDoor())
+            game.matchdoor(Picture6_ReferenceChoice,provideDoor())
+            game.matchdoor(Picture7_ReferenceChoice,provideDoor())
+            /*
+           duplicationPrevention(Picture1_ReferenceChoice)
+           duplicationPrevention(Picture2_ReferenceChoice)
+           duplicationPrevention(Picture3_ReferenceChoice)
+           duplicationPrevention(Picture4_ReferenceChoice)
+           duplicationPrevention(Picture5_ReferenceChoice)
+           duplicationPrevention(Picture6_ReferenceChoice)
+           duplicationPrevention(Picture7_ReferenceChoice)
+           */
             isRunning = true
             saveData()
         }
@@ -161,7 +167,7 @@ class GM_ReferenceChoice : AppCompatActivity() {
 
 
     }
-
+/*
     fun duplicationPrevention(button: ImageButton){
         val game = Game()
         game.matchdoor(button)
@@ -182,8 +188,31 @@ class GM_ReferenceChoice : AppCompatActivity() {
         if(buttonTag == savedInt){duplicationPrevention(button)}
         savedInt = sharedPreferences.getInt("Picture7", 700015)
         if(buttonTag == savedInt){duplicationPrevention(button)}
+    }
+*/
+    fun shuffleDoors(){
+        val sharedPreferences = getSharedPreferences(shared_Preferences, Context.MODE_PRIVATE)
+        var savedString = sharedPreferences.getString("AvailablePictures", "1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20," +
+                "21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40," +
+                "41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60," +
+                "61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76")
+        var st = StringTokenizer(savedString, ",")
 
+        for(i in 1..76){
+            availablePictures[i-1] = Integer.parseInt(st.nextToken())
+        }
+        availablePictures.shuffle()
 
+    }
+
+    fun provideDoor(): Int{
+        val max = availablePictures.size
+        val gate = (Math.random() * (max + 1)).toInt()
+        val mutaMapPictures = availablePictures.toMutableList()
+        var output = mutaMapPictures.removeAt(gate-1)
+        availablePictures = mutaMapPictures.toIntArray()
+        availablePictures.shuffle()
+        return output
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
@@ -206,6 +235,10 @@ class GM_ReferenceChoice : AppCompatActivity() {
     fun saveData(){
         val sharedPreferences = getSharedPreferences(shared_Preferences, Context.MODE_PRIVATE)
         val editor = sharedPreferences.edit()
+        var str = StringBuilder();
+        for( i in 1..availablePictures.size){
+            str.append(availablePictures[i-1]).append(",")
+        }
 
         editor.apply{
             putBoolean("isRunning", isRunning)
@@ -216,6 +249,7 @@ class GM_ReferenceChoice : AppCompatActivity() {
             putInt("Picture5", Picture5_ReferenceChoice.getTag().toString().toInt())
             putInt("Picture6", Picture6_ReferenceChoice.getTag().toString().toInt())
             putInt("Picture7", Picture7_ReferenceChoice.getTag().toString().toInt())
+            putString("AvailablePictures",str.toString())
         }.apply()
 
         Toast.makeText(this, "Data saved", Toast.LENGTH_SHORT).show()

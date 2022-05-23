@@ -69,5 +69,14 @@
             tools:ignore="MissingConstraints"
             android:layout_below="@+id/Picture2_gm" />
 
+    <Button
+            android:text="Confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="157dp"
+            android:layout_marginTop="500dp"
+            android:id="@+id/confirm_gm_main" />
+
 
 </RelativeLayout>

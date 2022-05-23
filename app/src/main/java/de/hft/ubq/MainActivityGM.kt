@@ -8,12 +8,13 @@ import android.media.MediaPlayer
 import android.os.Bundle
 import android.os.CountDownTimer
 import android.view.*
+import android.view.animation.DecelerateInterpolator
 import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
 import com.example.ubq.R
-import kotlinx.android.synthetic.main.activity_main.*
-import android.view.animation.DecelerateInterpolator
 import kotlinx.android.synthetic.main.activity_gm_main.*
+import kotlinx.android.synthetic.main.activity_gm_reference_choice.*
+import kotlinx.android.synthetic.main.activity_main.*
 
 
 /*                                   Global Variables                             */
@@ -106,6 +107,40 @@ class MainActivityGM : AppCompatActivity() {
         startActivity(intent)
     }
 
+    fun shuffleIllusionDoor(): Int{
+        val maxIllusionGate = 76
+        val shuffledIllusion =(Math.random() * (maxIllusionGate + 1)).toInt()
+        return shuffledIllusion
+    }
+
+    fun shufflePlayerDoors(){
+        val sharedPreferences = getSharedPreferences(shared_Preferences, Context.MODE_PRIVATE)
+        val editor = sharedPreferences.edit()
+
+        val maxRightGate = 6
+        val rightGate = (Math.random() * (maxRightGate + 1)).toInt()
+
+        val illusionGate1 = shuffleIllusionDoor()
+        val illusionGate2 = shuffleIllusionDoor()
+        if (illusionGate2==illusionGate1)
+
+
+
+
+
+        when (rightGate){
+            1 -> {
+                editor.apply{
+                    putInt("Picture1Main", Picture7_ReferenceChoice.getTag().toString().toInt())
+                    putInt("Picture2Main", Picture7_ReferenceChoice.getTag().toString().toInt())
+                    putInt("Picture3Main", Picture7_ReferenceChoice.getTag().toString().toInt())
+                    putInt("Picture4Main", Picture7_ReferenceChoice.getTag().toString().toInt())
+                    putInt("Picture5Main", Picture7_ReferenceChoice.getTag().toString().toInt())
+                    putInt("Picture6Main", Picture7_ReferenceChoice.getTag().toString().toInt())
+            }.apply()}
+        }
+    }
+
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
         menuInflater.inflate(R.menu.nav,menu)
         return true
@@ -127,11 +162,11 @@ class MainActivityGM : AppCompatActivity() {
         countDownTimer = object : CountDownTimer(5000,1000) {
             override fun onTick(millisUntilFinished: Long) {
                 countDownProgress--
-                timer.text = countDownProgress.toString()
+                timerMain.text = countDownProgress.toString()
             }
 
             override fun onFinish() {
-                timer.setText("done!")
+                timerMain.setText("done!")
             }
         }.start()
 

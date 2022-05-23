@@ -30,8 +30,8 @@ public class Game {
 
 
 
-    public void matchdoor( ImageButton button){
-        set_door();
+    public void matchdoor( ImageButton button, int door){
+       // set_door();
 
 
         switch (door){
