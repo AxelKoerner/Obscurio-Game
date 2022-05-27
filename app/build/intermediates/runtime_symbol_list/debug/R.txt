@@ -3333,6 +3333,7 @@ int layout abc_search_dropdown_item_icons_2line 0x7f0c0018
 int layout abc_search_view 0x7f0c0019
 int layout abc_select_dialog_material 0x7f0c001a
 int layout abc_tooltip 0x7f0c001b
+int layout activity_endscreen 0x7f0c008f
 int layout activity_gm_main 0x7f0c001c
 int layout activity_gm_reference_choice 0x7f0c001d
 int layout activity_main 0x7f0c001e

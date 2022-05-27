@@ -18,6 +18,7 @@ class PictureFullscreenReferenceChoice : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_picture_fullscreen_reference_choice)
+        supportActionBar?.hide()
 
         fun backtoReferenceChoice() {
             val intent = Intent(this, GM_ReferenceChoice::class.java)

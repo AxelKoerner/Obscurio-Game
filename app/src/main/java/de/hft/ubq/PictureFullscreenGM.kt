@@ -24,7 +24,7 @@ class PictureFullscreenGM : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_picture_fullscreen_gm)
-
+        supportActionBar?.hide()
 
         mainLayout = findViewById<View>(R.id.fullscreenGM) as RelativeLayout
         image = findViewById<View>(R.id.pointer) as ImageView

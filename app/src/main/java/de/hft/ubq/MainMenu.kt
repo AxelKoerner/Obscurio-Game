@@ -16,7 +16,7 @@ class MainMenu : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.main_menu)
-
+        supportActionBar?.hide()
         val mediaPlayer = MediaPlayer.create(this, R.raw.music)
         //mediaPlayer?.start()
         mediaPlayer?.isLooping = true

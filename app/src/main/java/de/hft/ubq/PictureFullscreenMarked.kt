@@ -22,7 +22,7 @@ class PictureFullscreenMarked : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_picture_fullscreen_marked)
-
+        supportActionBar?.hide()
 
         mainLayout = findViewById<View>(R.id.fullscreenMarked) as RelativeLayout
         image = findViewById<View>(R.id.pointer_marked) as ImageView

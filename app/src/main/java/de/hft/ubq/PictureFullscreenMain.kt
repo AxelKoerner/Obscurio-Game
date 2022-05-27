@@ -24,7 +24,7 @@ class PictureFullscreenMain : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_picture_fullscreen_main)
-
+        supportActionBar?.hide()
 
         val pictureFull = findViewById<ImageButton>(R.id.Button_fullscreen_main)
         val confirmSwitch: Switch = findViewById(R.id.switch_Main)

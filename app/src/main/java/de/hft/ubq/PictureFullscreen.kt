@@ -23,7 +23,7 @@ class PictureFullscreen : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_picture_fullscreen)
-
+        supportActionBar?.hide()
 
         val pictureFull = findViewById<ImageButton>(R.id.Button_fullscreen_standard)
         var bundle = getIntent().getExtras()
