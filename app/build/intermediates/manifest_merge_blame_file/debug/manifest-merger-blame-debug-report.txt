@@ -6,116 +6,134 @@
 6
 7    <uses-sdk
 8        android:minSdkVersion="21"
-8-->D:\Hochschule\PVC\obscurio\app\src\main\AndroidManifest.xml
+8-->D:\Hochschule\PVC\Obscurio Game App\Obscurio-Game\app\src\main\AndroidManifest.xml
 9        android:targetSdkVersion="32" />
-9-->D:\Hochschule\PVC\obscurio\app\src\main\AndroidManifest.xml
+9-->D:\Hochschule\PVC\Obscurio Game App\Obscurio-Game\app\src\main\AndroidManifest.xml
 10
 11    <application
-11-->D:\Hochschule\PVC\obscurio\app\src\main\AndroidManifest.xml:5:5-39:19
+11-->D:\Hochschule\PVC\Obscurio Game App\Obscurio-Game\app\src\main\AndroidManifest.xml:5:5-48:19
 12        android:allowBackup="true"
-12-->D:\Hochschule\PVC\obscurio\app\src\main\AndroidManifest.xml:6:13-39
+12-->D:\Hochschule\PVC\Obscurio Game App\Obscurio-Game\app\src\main\AndroidManifest.xml:6:13-39
 13        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
 13-->[androidx.core:core:1.7.0] C:\Users\axel_\.gradle\caches\transforms-3\ec8778f597115131b77fc5968136215d\transformed\core-1.7.0\AndroidManifest.xml:24:18-86
 14        android:debuggable="true"
 15        android:icon="@mipmap/ic_launcher"
-15-->D:\Hochschule\PVC\obscurio\app\src\main\AndroidManifest.xml:7:13-47
+15-->D:\Hochschule\PVC\Obscurio Game App\Obscurio-Game\app\src\main\AndroidManifest.xml:7:13-47
 16        android:label="@string/app_name"
-16-->D:\Hochschule\PVC\obscurio\app\src\main\AndroidManifest.xml:8:13-45
+16-->D:\Hochschule\PVC\Obscurio Game App\Obscurio-Game\app\src\main\AndroidManifest.xml:8:13-45
 17        android:roundIcon="@mipmap/ic_launcher_round"
-17-->D:\Hochschule\PVC\obscurio\app\src\main\AndroidManifest.xml:9:13-58
+17-->D:\Hochschule\PVC\Obscurio Game App\Obscurio-Game\app\src\main\AndroidManifest.xml:9:13-58
 18        android:supportsRtl="true"
-18-->D:\Hochschule\PVC\obscurio\app\src\main\AndroidManifest.xml:10:13-39
+18-->D:\Hochschule\PVC\Obscurio Game App\Obscurio-Game\app\src\main\AndroidManifest.xml:10:13-39
 19        android:testOnly="true"
 20        android:theme="@style/Theme.Test" >
-20-->D:\Hochschule\PVC\obscurio\app\src\main\AndroidManifest.xml:11:13-46
+20-->D:\Hochschule\PVC\Obscurio Game App\Obscurio-Game\app\src\main\AndroidManifest.xml:11:13-46
 21        <activity
-21-->D:\Hochschule\PVC\obscurio\app\src\main\AndroidManifest.xml:12:9-14:44
-22            android:name="de.hft.ubq.GM_ReferenceChoice"
-22-->D:\Hochschule\PVC\obscurio\app\src\main\AndroidManifest.xml:13:17-61
+21-->D:\Hochschule\PVC\Obscurio Game App\Obscurio-Game\app\src\main\AndroidManifest.xml:12:9-14:44
+22            android:name="de.hft.ubq.PictureFullscreenMain"
+22-->D:\Hochschule\PVC\Obscurio Game App\Obscurio-Game\app\src\main\AndroidManifest.xml:13:17-64
 23            android:exported="false" />
-23-->D:\Hochschule\PVC\obscurio\app\src\main\AndroidManifest.xml:14:17-41
+23-->D:\Hochschule\PVC\Obscurio Game App\Obscurio-Game\app\src\main\AndroidManifest.xml:14:17-41
 24        <activity
-24-->D:\Hochschule\PVC\obscurio\app\src\main\AndroidManifest.xml:15:9-17:44
-25            android:name="de.hft.ubq.PictureFullscreenReferenceChoice"
-25-->D:\Hochschule\PVC\obscurio\app\src\main\AndroidManifest.xml:16:17-75
+24-->D:\Hochschule\PVC\Obscurio Game App\Obscurio-Game\app\src\main\AndroidManifest.xml:15:9-17:44
+25            android:name="de.hft.ubq.PictureFullscreenMarked"
+25-->D:\Hochschule\PVC\Obscurio Game App\Obscurio-Game\app\src\main\AndroidManifest.xml:16:17-66
 26            android:exported="false" />
-26-->D:\Hochschule\PVC\obscurio\app\src\main\AndroidManifest.xml:17:17-41
+26-->D:\Hochschule\PVC\Obscurio Game App\Obscurio-Game\app\src\main\AndroidManifest.xml:17:17-41
 27        <activity
-27-->D:\Hochschule\PVC\obscurio\app\src\main\AndroidManifest.xml:18:9-20:43
-28            android:name="de.hft.ubq.PictureFullscreenGM"
-28-->D:\Hochschule\PVC\obscurio\app\src\main\AndroidManifest.xml:19:17-62
-29            android:exported="true" />
-29-->D:\Hochschule\PVC\obscurio\app\src\main\AndroidManifest.xml:20:17-40
+27-->D:\Hochschule\PVC\Obscurio Game App\Obscurio-Game\app\src\main\AndroidManifest.xml:18:9-20:44
+28            android:name="de.hft.ubq.PictureFullscreen"
+28-->D:\Hochschule\PVC\Obscurio Game App\Obscurio-Game\app\src\main\AndroidManifest.xml:19:17-60
+29            android:exported="false" />
+29-->D:\Hochschule\PVC\Obscurio Game App\Obscurio-Game\app\src\main\AndroidManifest.xml:20:17-41
 30        <activity
-30-->D:\Hochschule\PVC\obscurio\app\src\main\AndroidManifest.xml:21:9-23:43
-31            android:name="de.hft.ubq.Settings"
-31-->D:\Hochschule\PVC\obscurio\app\src\main\AndroidManifest.xml:22:17-51
-32            android:exported="true" />
-32-->D:\Hochschule\PVC\obscurio\app\src\main\AndroidManifest.xml:23:17-40
+30-->D:\Hochschule\PVC\Obscurio Game App\Obscurio-Game\app\src\main\AndroidManifest.xml:21:9-23:44
+31            android:name="de.hft.ubq.GM_ReferenceChoice"
+31-->D:\Hochschule\PVC\Obscurio Game App\Obscurio-Game\app\src\main\AndroidManifest.xml:22:17-61
+32            android:exported="false" />
+32-->D:\Hochschule\PVC\Obscurio Game App\Obscurio-Game\app\src\main\AndroidManifest.xml:23:17-41
 33        <activity
-33-->D:\Hochschule\PVC\obscurio\app\src\main\AndroidManifest.xml:24:9-26:43
-34            android:name="de.hft.ubq.MainActivity"
-34-->D:\Hochschule\PVC\obscurio\app\src\main\AndroidManifest.xml:25:17-55
-35            android:exported="true" />
-35-->D:\Hochschule\PVC\obscurio\app\src\main\AndroidManifest.xml:26:17-40
+33-->D:\Hochschule\PVC\Obscurio Game App\Obscurio-Game\app\src\main\AndroidManifest.xml:24:9-26:44
+34            android:name="de.hft.ubq.PictureFullscreenReferenceChoice"
+34-->D:\Hochschule\PVC\Obscurio Game App\Obscurio-Game\app\src\main\AndroidManifest.xml:25:17-75
+35            android:exported="false" />
+35-->D:\Hochschule\PVC\Obscurio Game App\Obscurio-Game\app\src\main\AndroidManifest.xml:26:17-41
 36        <activity
-36-->D:\Hochschule\PVC\obscurio\app\src\main\AndroidManifest.xml:27:9-29:43
-37            android:name="de.hft.ubq.MainActivityGM"
-37-->D:\Hochschule\PVC\obscurio\app\src\main\AndroidManifest.xml:28:17-57
+36-->D:\Hochschule\PVC\Obscurio Game App\Obscurio-Game\app\src\main\AndroidManifest.xml:27:9-29:43
+37            android:name="de.hft.ubq.PictureFullscreenGM"
+37-->D:\Hochschule\PVC\Obscurio Game App\Obscurio-Game\app\src\main\AndroidManifest.xml:28:17-62
 38            android:exported="true" />
-38-->D:\Hochschule\PVC\obscurio\app\src\main\AndroidManifest.xml:29:17-40
+38-->D:\Hochschule\PVC\Obscurio Game App\Obscurio-Game\app\src\main\AndroidManifest.xml:29:17-40
 39        <activity
-39-->D:\Hochschule\PVC\obscurio\app\src\main\AndroidManifest.xml:30:9-38:20
-40            android:name="de.hft.ubq.MainMenu"
-40-->D:\Hochschule\PVC\obscurio\app\src\main\AndroidManifest.xml:31:17-51
-41            android:exported="true" >
-41-->D:\Hochschule\PVC\obscurio\app\src\main\AndroidManifest.xml:32:17-40
-42            <intent-filter>
-42-->D:\Hochschule\PVC\obscurio\app\src\main\AndroidManifest.xml:33:13-37:29
-43                <action android:name="android.intent.action.MAIN" />
-43-->D:\Hochschule\PVC\obscurio\app\src\main\AndroidManifest.xml:34:17-69
-43-->D:\Hochschule\PVC\obscurio\app\src\main\AndroidManifest.xml:34:25-66
-44
-45                <category android:name="android.intent.category.LAUNCHER" />
-45-->D:\Hochschule\PVC\obscurio\app\src\main\AndroidManifest.xml:36:17-77
-45-->D:\Hochschule\PVC\obscurio\app\src\main\AndroidManifest.xml:36:27-74
-46            </intent-filter>
-47        </activity>
-48
-49        <uses-library
-49-->[androidx.window:window:1.0.0] C:\Users\axel_\.gradle\caches\transforms-3\41004c6afba06d0783c2e16168671df4\transformed\window-1.0.0\AndroidManifest.xml:25:9-27:40
-50            android:name="androidx.window.extensions"
-50-->[androidx.window:window:1.0.0] C:\Users\axel_\.gradle\caches\transforms-3\41004c6afba06d0783c2e16168671df4\transformed\window-1.0.0\AndroidManifest.xml:26:13-54
-51            android:required="false" />
-51-->[androidx.window:window:1.0.0] C:\Users\axel_\.gradle\caches\transforms-3\41004c6afba06d0783c2e16168671df4\transformed\window-1.0.0\AndroidManifest.xml:27:13-37
-52        <uses-library
-52-->[androidx.window:window:1.0.0] C:\Users\axel_\.gradle\caches\transforms-3\41004c6afba06d0783c2e16168671df4\transformed\window-1.0.0\AndroidManifest.xml:28:9-30:40
-53            android:name="androidx.window.sidecar"
-53-->[androidx.window:window:1.0.0] C:\Users\axel_\.gradle\caches\transforms-3\41004c6afba06d0783c2e16168671df4\transformed\window-1.0.0\AndroidManifest.xml:29:13-51
-54            android:required="false" />
-54-->[androidx.window:window:1.0.0] C:\Users\axel_\.gradle\caches\transforms-3\41004c6afba06d0783c2e16168671df4\transformed\window-1.0.0\AndroidManifest.xml:30:13-37
-55
-56        <provider
-56-->[androidx.emoji2:emoji2:1.0.0] C:\Users\axel_\.gradle\caches\transforms-3\69d291d347a635c15fd15a8466543966\transformed\emoji2-1.0.0\AndroidManifest.xml:26:9-34:20
-57            android:name="androidx.startup.InitializationProvider"
-57-->[androidx.emoji2:emoji2:1.0.0] C:\Users\axel_\.gradle\caches\transforms-3\69d291d347a635c15fd15a8466543966\transformed\emoji2-1.0.0\AndroidManifest.xml:27:13-67
-58            android:authorities="com.example.test.androidx-startup"
-58-->[androidx.emoji2:emoji2:1.0.0] C:\Users\axel_\.gradle\caches\transforms-3\69d291d347a635c15fd15a8466543966\transformed\emoji2-1.0.0\AndroidManifest.xml:28:13-68
-59            android:exported="false" >
-59-->[androidx.emoji2:emoji2:1.0.0] C:\Users\axel_\.gradle\caches\transforms-3\69d291d347a635c15fd15a8466543966\transformed\emoji2-1.0.0\AndroidManifest.xml:29:13-37
-60            <meta-data
-60-->[androidx.emoji2:emoji2:1.0.0] C:\Users\axel_\.gradle\caches\transforms-3\69d291d347a635c15fd15a8466543966\transformed\emoji2-1.0.0\AndroidManifest.xml:31:13-33:52
-61                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-61-->[androidx.emoji2:emoji2:1.0.0] C:\Users\axel_\.gradle\caches\transforms-3\69d291d347a635c15fd15a8466543966\transformed\emoji2-1.0.0\AndroidManifest.xml:32:17-75
-62                android:value="androidx.startup" />
-62-->[androidx.emoji2:emoji2:1.0.0] C:\Users\axel_\.gradle\caches\transforms-3\69d291d347a635c15fd15a8466543966\transformed\emoji2-1.0.0\AndroidManifest.xml:33:17-49
-63            <meta-data
-63-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\axel_\.gradle\caches\transforms-3\5518efa1c1ca29993905068db3381641\transformed\lifecycle-process-2.4.0\AndroidManifest.xml:31:13-33:52
-64                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-64-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\axel_\.gradle\caches\transforms-3\5518efa1c1ca29993905068db3381641\transformed\lifecycle-process-2.4.0\AndroidManifest.xml:32:17-78
-65                android:value="androidx.startup" />
-65-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\axel_\.gradle\caches\transforms-3\5518efa1c1ca29993905068db3381641\transformed\lifecycle-process-2.4.0\AndroidManifest.xml:33:17-49
-66        </provider>
-67    </application>
-68
-69</manifest>
+39-->D:\Hochschule\PVC\Obscurio Game App\Obscurio-Game\app\src\main\AndroidManifest.xml:30:9-32:43
+40            android:name="de.hft.ubq.Settings"
+40-->D:\Hochschule\PVC\Obscurio Game App\Obscurio-Game\app\src\main\AndroidManifest.xml:31:17-51
+41            android:exported="true" />
+41-->D:\Hochschule\PVC\Obscurio Game App\Obscurio-Game\app\src\main\AndroidManifest.xml:32:17-40
+42        <activity
+42-->D:\Hochschule\PVC\Obscurio Game App\Obscurio-Game\app\src\main\AndroidManifest.xml:33:9-35:43
+43            android:name="de.hft.ubq.MainActivity"
+43-->D:\Hochschule\PVC\Obscurio Game App\Obscurio-Game\app\src\main\AndroidManifest.xml:34:17-55
+44            android:exported="true" />
+44-->D:\Hochschule\PVC\Obscurio Game App\Obscurio-Game\app\src\main\AndroidManifest.xml:35:17-40
+45        <activity
+45-->D:\Hochschule\PVC\Obscurio Game App\Obscurio-Game\app\src\main\AndroidManifest.xml:36:9-38:43
+46            android:name="de.hft.ubq.MainActivityGM"
+46-->D:\Hochschule\PVC\Obscurio Game App\Obscurio-Game\app\src\main\AndroidManifest.xml:37:17-57
+47            android:exported="true" />
+47-->D:\Hochschule\PVC\Obscurio Game App\Obscurio-Game\app\src\main\AndroidManifest.xml:38:17-40
+48        <activity
+48-->D:\Hochschule\PVC\Obscurio Game App\Obscurio-Game\app\src\main\AndroidManifest.xml:39:9-47:20
+49            android:name="de.hft.ubq.MainMenu"
+49-->D:\Hochschule\PVC\Obscurio Game App\Obscurio-Game\app\src\main\AndroidManifest.xml:40:17-51
+50            android:exported="true" >
+50-->D:\Hochschule\PVC\Obscurio Game App\Obscurio-Game\app\src\main\AndroidManifest.xml:41:17-40
+51            <intent-filter>
+51-->D:\Hochschule\PVC\Obscurio Game App\Obscurio-Game\app\src\main\AndroidManifest.xml:42:13-46:29
+52                <action android:name="android.intent.action.MAIN" />
+52-->D:\Hochschule\PVC\Obscurio Game App\Obscurio-Game\app\src\main\AndroidManifest.xml:43:17-69
+52-->D:\Hochschule\PVC\Obscurio Game App\Obscurio-Game\app\src\main\AndroidManifest.xml:43:25-66
+53
+54                <category android:name="android.intent.category.LAUNCHER" />
+54-->D:\Hochschule\PVC\Obscurio Game App\Obscurio-Game\app\src\main\AndroidManifest.xml:45:17-77
+54-->D:\Hochschule\PVC\Obscurio Game App\Obscurio-Game\app\src\main\AndroidManifest.xml:45:27-74
+55            </intent-filter>
+56        </activity>
+57
+58        <uses-library
+58-->[androidx.window:window:1.0.0] C:\Users\axel_\.gradle\caches\transforms-3\41004c6afba06d0783c2e16168671df4\transformed\window-1.0.0\AndroidManifest.xml:25:9-27:40
+59            android:name="androidx.window.extensions"
+59-->[androidx.window:window:1.0.0] C:\Users\axel_\.gradle\caches\transforms-3\41004c6afba06d0783c2e16168671df4\transformed\window-1.0.0\AndroidManifest.xml:26:13-54
+60            android:required="false" />
+60-->[androidx.window:window:1.0.0] C:\Users\axel_\.gradle\caches\transforms-3\41004c6afba06d0783c2e16168671df4\transformed\window-1.0.0\AndroidManifest.xml:27:13-37
+61        <uses-library
+61-->[androidx.window:window:1.0.0] C:\Users\axel_\.gradle\caches\transforms-3\41004c6afba06d0783c2e16168671df4\transformed\window-1.0.0\AndroidManifest.xml:28:9-30:40
+62            android:name="androidx.window.sidecar"
+62-->[androidx.window:window:1.0.0] C:\Users\axel_\.gradle\caches\transforms-3\41004c6afba06d0783c2e16168671df4\transformed\window-1.0.0\AndroidManifest.xml:29:13-51
+63            android:required="false" />
+63-->[androidx.window:window:1.0.0] C:\Users\axel_\.gradle\caches\transforms-3\41004c6afba06d0783c2e16168671df4\transformed\window-1.0.0\AndroidManifest.xml:30:13-37
+64
+65        <provider
+65-->[androidx.emoji2:emoji2:1.0.0] C:\Users\axel_\.gradle\caches\transforms-3\69d291d347a635c15fd15a8466543966\transformed\emoji2-1.0.0\AndroidManifest.xml:26:9-34:20
+66            android:name="androidx.startup.InitializationProvider"
+66-->[androidx.emoji2:emoji2:1.0.0] C:\Users\axel_\.gradle\caches\transforms-3\69d291d347a635c15fd15a8466543966\transformed\emoji2-1.0.0\AndroidManifest.xml:27:13-67
+67            android:authorities="com.example.test.androidx-startup"
+67-->[androidx.emoji2:emoji2:1.0.0] C:\Users\axel_\.gradle\caches\transforms-3\69d291d347a635c15fd15a8466543966\transformed\emoji2-1.0.0\AndroidManifest.xml:28:13-68
+68            android:exported="false" >
+68-->[androidx.emoji2:emoji2:1.0.0] C:\Users\axel_\.gradle\caches\transforms-3\69d291d347a635c15fd15a8466543966\transformed\emoji2-1.0.0\AndroidManifest.xml:29:13-37
+69            <meta-data
+69-->[androidx.emoji2:emoji2:1.0.0] C:\Users\axel_\.gradle\caches\transforms-3\69d291d347a635c15fd15a8466543966\transformed\emoji2-1.0.0\AndroidManifest.xml:31:13-33:52
+70                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+70-->[androidx.emoji2:emoji2:1.0.0] C:\Users\axel_\.gradle\caches\transforms-3\69d291d347a635c15fd15a8466543966\transformed\emoji2-1.0.0\AndroidManifest.xml:32:17-75
+71                android:value="androidx.startup" />
+71-->[androidx.emoji2:emoji2:1.0.0] C:\Users\axel_\.gradle\caches\transforms-3\69d291d347a635c15fd15a8466543966\transformed\emoji2-1.0.0\AndroidManifest.xml:33:17-49
+72            <meta-data
+72-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\axel_\.gradle\caches\transforms-3\5518efa1c1ca29993905068db3381641\transformed\lifecycle-process-2.4.0\AndroidManifest.xml:31:13-33:52
+73                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+73-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\axel_\.gradle\caches\transforms-3\5518efa1c1ca29993905068db3381641\transformed\lifecycle-process-2.4.0\AndroidManifest.xml:32:17-78
+74                android:value="androidx.startup" />
+74-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\axel_\.gradle\caches\transforms-3\5518efa1c1ca29993905068db3381641\transformed\lifecycle-process-2.4.0\AndroidManifest.xml:33:17-49
+75        </provider>
+76    </application>
+77
+78</manifest>

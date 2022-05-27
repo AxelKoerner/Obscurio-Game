@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\Hochschule\\PVC\\obscurio\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-night-v8\\values-night-v8.xml",
+            "outputFile": "D:\\Hochschule\\PVC\\Obscurio Game App\\Obscurio-Game\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-night-v8\\values-night-v8.xml",
             "map": [
                 {
                     "source": "C:\\Users\\axel_\\.gradle\\caches\\transforms-3\\cdd8388d8eb0bb4101b550377669da59\\transformed\\appcompat-1.4.1\\res\\values-night-v8\\values-night-v8.xml",
@@ -38,14 +38,14 @@
                     }
                 },
                 {
-                    "source": "D:\\Hochschule\\PVC\\obscurio\\app\\src\\main\\res\\values-night\\themes.xml",
+                    "source": "D:\\Hochschule\\PVC\\Obscurio Game App\\Obscurio-Game\\app\\src\\main\\res\\values-night\\themes.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
-                        "startOffsets": "100",
+                        "startOffsets": "102",
                         "endLines": "14",
                         "endColumns": "12",
-                        "endOffsets": "813"
+                        "endOffsets": "827"
                     },
                     "to": {
                         "startLines": "33",

@@ -1,15 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
     <item>
-        <shape  android:shape="rectangle">
-            <gradient
-                android:startColor="#555C88"
-                android:endColor="#655780"
-                android:angle="270"/>
-            <size
-                android:width="100dp"
-                android:height="300dp" />
+        <shape  android:shape="rectangle"
+                >
         </shape>
+    </item>
+
+    <item>
+        <bitmap android:src="@drawable/background2"/>
     </item>
     <item android:drawable="@drawable/spielbrett"
         android:top="16dp"

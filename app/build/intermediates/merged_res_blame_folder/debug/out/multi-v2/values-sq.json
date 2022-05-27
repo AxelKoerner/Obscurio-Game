@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\Hochschule\\PVC\\obscurio\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-sq\\values-sq.xml",
+            "outputFile": "D:\\Hochschule\\PVC\\Obscurio Game App\\Obscurio-Game\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-sq\\values-sq.xml",
             "map": [
                 {
                     "source": "C:\\Users\\axel_\\.gradle\\caches\\transforms-3\\1af98939a167f3aa8048d8f13e2b5b63\\transformed\\material-1.5.0\\res\\values-sq\\values-sq.xml",

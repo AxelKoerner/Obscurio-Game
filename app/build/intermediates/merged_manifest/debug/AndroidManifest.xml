@@ -19,6 +19,15 @@
         android:testOnly="true"
         android:theme="@style/Theme.Test" >
         <activity
+            android:name="de.hft.ubq.PictureFullscreenMain"
+            android:exported="false" />
+        <activity
+            android:name="de.hft.ubq.PictureFullscreenMarked"
+            android:exported="false" />
+        <activity
+            android:name="de.hft.ubq.PictureFullscreen"
+            android:exported="false" />
+        <activity
             android:name="de.hft.ubq.GM_ReferenceChoice"
             android:exported="false" />
         <activity
