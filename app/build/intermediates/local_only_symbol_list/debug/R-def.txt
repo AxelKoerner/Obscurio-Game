@@ -1,5 +1,9 @@
 R_DEF: Internal format may change without notice
 local
+array com_google_android_gms_fonts_certs
+array com_google_android_gms_fonts_certs_dev
+array com_google_android_gms_fonts_certs_prod
+array preloaded_fonts
 array reply_entries
 array reply_values
 color black
@@ -96,11 +100,13 @@ drawable p_75
 drawable p_76
 drawable p_8
 drawable p_9
-drawable pointer
 drawable pot
 drawable roundcorner
 drawable spielbrett
+font roboto_black
+font roboto_thin
 id ButtonEsc
+id ButtonEscEndLoss
 id ButtonNeuSpiel
 id ButtonOpt
 id ButtonSpielBeit
@@ -110,6 +116,7 @@ id Button_fullscreen_main
 id Button_fullscreen_marked
 id Button_fullscreen_standard
 id ConfirmMain
+id ErneutSpielen
 id MarkedReference1
 id MarkedReference2
 id Picture1Main
@@ -151,7 +158,7 @@ id textViewMain
 id textView_ReferenceChoice
 id timerMain
 id timer_ReferenceChoice
-layout activity_endscreen
+layout activity_endscreen_loss
 layout activity_gm_main
 layout activity_gm_reference_choice
 layout activity_main
@@ -161,6 +168,7 @@ layout activity_picture_fullscreen_main
 layout activity_picture_fullscreen_marked
 layout activity_picture_fullscreen_reference_choice
 layout activity_settings
+layout activity_win
 layout main_menu
 menu nav
 mipmap ic_launcher

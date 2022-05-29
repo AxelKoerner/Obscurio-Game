@@ -15,12 +15,24 @@
         <entry key="..\:/Hochschule/PVC-UBQ/test/Obscurio-Game-uebung/test2/app/src/main/res/layout/activity_picture1_fullscreen.xml" value="0.3125" />
         <entry key="..\:/Hochschule/PVC-UBQ/test/Obscurio-Game-uebung/test2/app/src/main/res/layout/activity_settings.xml" value="0.3125" />
         <entry key="..\:/Hochschule/PVC-UBQ/test/Obscurio-Game-uebung/test2/app/src/main/res/menu/nav.xml" value="0.2" />
+        <entry key="..\:/Hochschule/PVC/Obscurio Game App/Obscurio-Game/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.392" />
+        <entry key="..\:/Hochschule/PVC/Obscurio Game App/Obscurio-Game/app/src/main/res/drawable/background.xml" value="0.392" />
+        <entry key="..\:/Hochschule/PVC/Obscurio Game App/Obscurio-Game/app/src/main/res/drawable/background_gameboard.xml" value="0.392" />
+        <entry key="..\:/Hochschule/PVC/Obscurio Game App/Obscurio-Game/app/src/main/res/drawable/button.xml" value="0.392" />
+        <entry key="..\:/Hochschule/PVC/Obscurio Game App/Obscurio-Game/app/src/main/res/drawable/ic_baseline_chat_24.xml" value="0.392" />
+        <entry key="..\:/Hochschule/PVC/Obscurio Game App/Obscurio-Game/app/src/main/res/drawable/ic_launcher_background.xml" value="0.392" />
         <entry key="..\:/Hochschule/PVC/Obscurio Game App/Obscurio-Game/app/src/main/res/layout/activity_endscreen.xml" value="0.19858156028368795" />
         <entry key="..\:/Hochschule/PVC/Obscurio Game App/Obscurio-Game/app/src/main/res/layout/activity_endscreen_loss.xml" value="0.264" />
         <entry key="..\:/Hochschule/PVC/Obscurio Game App/Obscurio-Game/app/src/main/res/layout/activity_endscreen_win.xml" value="0.2" />
         <entry key="..\:/Hochschule/PVC/Obscurio Game App/Obscurio-Game/app/src/main/res/layout/activity_gm_main.xml" value="0.30842391304347827" />
-        <entry key="..\:/Hochschule/PVC/Obscurio Game App/Obscurio-Game/app/src/main/res/layout/activity_gm_reference_choice.xml" value="0.264" />
-        <entry key="..\:/Hochschule/PVC/Obscurio Game App/Obscurio-Game/app/src/main/res/layout/activity_settings.xml" value="0.19908814589665655" />
+        <entry key="..\:/Hochschule/PVC/Obscurio Game App/Obscurio-Game/app/src/main/res/layout/activity_gm_reference_choice.xml" value="0.4" />
+        <entry key="..\:/Hochschule/PVC/Obscurio Game App/Obscurio-Game/app/src/main/res/layout/activity_main.xml" value="0.409375" />
+        <entry key="..\:/Hochschule/PVC/Obscurio Game App/Obscurio-Game/app/src/main/res/layout/activity_picture_fullscreen.xml" value="0.409375" />
+        <entry key="..\:/Hochschule/PVC/Obscurio Game App/Obscurio-Game/app/src/main/res/layout/activity_picture_fullscreen_gm.xml" value="0.409375" />
+        <entry key="..\:/Hochschule/PVC/Obscurio Game App/Obscurio-Game/app/src/main/res/layout/activity_picture_fullscreen_main.xml" value="0.409375" />
+        <entry key="..\:/Hochschule/PVC/Obscurio Game App/Obscurio-Game/app/src/main/res/layout/activity_picture_fullscreen_marked.xml" value="0.409375" />
+        <entry key="..\:/Hochschule/PVC/Obscurio Game App/Obscurio-Game/app/src/main/res/layout/activity_picture_fullscreen_reference_choice.xml" value="0.409375" />
+        <entry key="..\:/Hochschule/PVC/Obscurio Game App/Obscurio-Game/app/src/main/res/layout/activity_settings.xml" value="0.4" />
         <entry key="..\:/Hochschule/PVC/Obscurio Game App/Obscurio-Game/app/src/main/res/layout/activity_win.xml" value="0.2821557971014493" />
         <entry key="..\:/Hochschule/PVC/Obscurio Game App/Obscurio-Game/app/src/main/res/layout/main_menu.xml" value="0.264" />
         <entry key="..\:/Hochschule/PVC/obscurio/app/src/main/res/drawable/background.xml" value="0.346" />

@@ -52,16 +52,12 @@
         "source": "D:\\Hochschule\\PVC\\Obscurio Game App\\Obscurio-Game\\app\\src\\main\\res\\drawable\\p_73.webp"
     },
     {
-        "merged": "D:\\Hochschule\\PVC\\Obscurio Game App\\Obscurio-Game\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_endscreen.xml.flat",
-        "source": "D:\\Hochschule\\PVC\\Obscurio Game App\\Obscurio-Game\\app\\src\\main\\res\\layout\\activity_endscreen.xml"
+        "merged": "D:\\Hochschule\\PVC\\Obscurio Game App\\Obscurio-Game\\app\\build\\intermediates\\merged_res\\debug\\drawable_p_75.webp.flat",
+        "source": "D:\\Hochschule\\PVC\\Obscurio Game App\\Obscurio-Game\\app\\src\\main\\res\\drawable\\p_75.webp"
     },
     {
         "merged": "D:\\Hochschule\\PVC\\Obscurio Game App\\Obscurio-Game\\app\\build\\intermediates\\merged_res\\debug\\drawable_p_36.webp.flat",
         "source": "D:\\Hochschule\\PVC\\Obscurio Game App\\Obscurio-Game\\app\\src\\main\\res\\drawable\\p_36.webp"
-    },
-    {
-        "merged": "D:\\Hochschule\\PVC\\Obscurio Game App\\Obscurio-Game\\app\\build\\intermediates\\merged_res\\debug\\drawable_p_75.webp.flat",
-        "source": "D:\\Hochschule\\PVC\\Obscurio Game App\\Obscurio-Game\\app\\src\\main\\res\\drawable\\p_75.webp"
     },
     {
         "merged": "D:\\Hochschule\\PVC\\Obscurio Game App\\Obscurio-Game\\app\\build\\intermediates\\merged_res\\debug\\drawable_p_65.webp.flat",
@@ -70,6 +66,10 @@
     {
         "merged": "D:\\Hochschule\\PVC\\Obscurio Game App\\Obscurio-Game\\app\\build\\intermediates\\merged_res\\debug\\drawable_p_45.webp.flat",
         "source": "D:\\Hochschule\\PVC\\Obscurio Game App\\Obscurio-Game\\app\\src\\main\\res\\drawable\\p_45.webp"
+    },
+    {
+        "merged": "D:\\Hochschule\\PVC\\Obscurio Game App\\Obscurio-Game\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_win.xml.flat",
+        "source": "D:\\Hochschule\\PVC\\Obscurio Game App\\Obscurio-Game\\app\\src\\main\\res\\layout\\activity_win.xml"
     },
     {
         "merged": "D:\\Hochschule\\PVC\\Obscurio Game App\\Obscurio-Game\\app\\build\\intermediates\\merged_res\\debug\\drawable_p_55.webp.flat",
@@ -84,12 +84,12 @@
         "source": "D:\\Hochschule\\PVC\\Obscurio Game App\\Obscurio-Game\\app\\src\\main\\res\\drawable\\p_25.webp"
     },
     {
-        "merged": "D:\\Hochschule\\PVC\\Obscurio Game App\\Obscurio-Game\\app\\build\\intermediates\\merged_res\\debug\\raw_music.mp3.flat",
-        "source": "D:\\Hochschule\\PVC\\Obscurio Game App\\Obscurio-Game\\app\\src\\main\\res\\raw\\music.mp3"
-    },
-    {
         "merged": "D:\\Hochschule\\PVC\\Obscurio Game App\\Obscurio-Game\\app\\build\\intermediates\\merged_res\\debug\\drawable_background.xml.flat",
         "source": "D:\\Hochschule\\PVC\\Obscurio Game App\\Obscurio-Game\\app\\src\\main\\res\\drawable\\background.xml"
+    },
+    {
+        "merged": "D:\\Hochschule\\PVC\\Obscurio Game App\\Obscurio-Game\\app\\build\\intermediates\\merged_res\\debug\\raw_music.mp3.flat",
+        "source": "D:\\Hochschule\\PVC\\Obscurio Game App\\Obscurio-Game\\app\\src\\main\\res\\raw\\music.mp3"
     },
     {
         "merged": "D:\\Hochschule\\PVC\\Obscurio Game App\\Obscurio-Game\\app\\build\\intermediates\\merged_res\\debug\\drawable_p_35.webp.flat",
@@ -180,12 +180,12 @@
         "source": "D:\\Hochschule\\PVC\\Obscurio Game App\\Obscurio-Game\\app\\src\\main\\res\\drawable\\p_49.webp"
     },
     {
-        "merged": "D:\\Hochschule\\PVC\\Obscurio Game App\\Obscurio-Game\\app\\build\\intermediates\\merged_res\\debug\\drawable_p_29.webp.flat",
-        "source": "D:\\Hochschule\\PVC\\Obscurio Game App\\Obscurio-Game\\app\\src\\main\\res\\drawable\\p_29.webp"
-    },
-    {
         "merged": "D:\\Hochschule\\PVC\\Obscurio Game App\\Obscurio-Game\\app\\build\\intermediates\\merged_res\\debug\\drawable_p_39.webp.flat",
         "source": "D:\\Hochschule\\PVC\\Obscurio Game App\\Obscurio-Game\\app\\src\\main\\res\\drawable\\p_39.webp"
+    },
+    {
+        "merged": "D:\\Hochschule\\PVC\\Obscurio Game App\\Obscurio-Game\\app\\build\\intermediates\\merged_res\\debug\\drawable_p_29.webp.flat",
+        "source": "D:\\Hochschule\\PVC\\Obscurio Game App\\Obscurio-Game\\app\\src\\main\\res\\drawable\\p_29.webp"
     },
     {
         "merged": "D:\\Hochschule\\PVC\\Obscurio Game App\\Obscurio-Game\\app\\build\\intermediates\\merged_res\\debug\\drawable_background_gameboard.xml.flat",
@@ -296,6 +296,10 @@
         "source": "D:\\Hochschule\\PVC\\Obscurio Game App\\Obscurio-Game\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
     },
     {
+        "merged": "D:\\Hochschule\\PVC\\Obscurio Game App\\Obscurio-Game\\app\\build\\intermediates\\merged_res\\debug\\font_roboto_black.xml.flat",
+        "source": "D:\\Hochschule\\PVC\\Obscurio Game App\\Obscurio-Game\\app\\src\\main\\res\\font\\roboto_black.xml"
+    },
+    {
         "merged": "D:\\Hochschule\\PVC\\Obscurio Game App\\Obscurio-Game\\app\\build\\intermediates\\merged_res\\debug\\drawable_p_0.webp.flat",
         "source": "D:\\Hochschule\\PVC\\Obscurio Game App\\Obscurio-Game\\app\\src\\main\\res\\drawable\\p_0.webp"
     },
@@ -306,10 +310,6 @@
     {
         "merged": "D:\\Hochschule\\PVC\\Obscurio Game App\\Obscurio-Game\\app\\build\\intermediates\\merged_res\\debug\\mipmap-hdpi_ic_launcher.webp.flat",
         "source": "D:\\Hochschule\\PVC\\Obscurio Game App\\Obscurio-Game\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.webp"
-    },
-    {
-        "merged": "D:\\Hochschule\\PVC\\Obscurio Game App\\Obscurio-Game\\app\\build\\intermediates\\merged_res\\debug\\drawable_pointer.webp.flat",
-        "source": "D:\\Hochschule\\PVC\\Obscurio Game App\\Obscurio-Game\\app\\src\\main\\res\\drawable\\pointer.webp"
     },
     {
         "merged": "D:\\Hochschule\\PVC\\Obscurio Game App\\Obscurio-Game\\app\\build\\intermediates\\merged_res\\debug\\drawable_button.xml.flat",
@@ -396,16 +396,20 @@
         "source": "D:\\Hochschule\\PVC\\Obscurio Game App\\Obscurio-Game\\app\\src\\main\\res\\layout\\activity_gm_reference_choice.xml"
     },
     {
+        "merged": "D:\\Hochschule\\PVC\\Obscurio Game App\\Obscurio-Game\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_endscreen_loss.xml.flat",
+        "source": "D:\\Hochschule\\PVC\\Obscurio Game App\\Obscurio-Game\\app\\src\\main\\res\\layout\\activity_endscreen_loss.xml"
+    },
+    {
         "merged": "D:\\Hochschule\\PVC\\Obscurio Game App\\Obscurio-Game\\app\\build\\intermediates\\merged_res\\debug\\drawable_p_23.webp.flat",
         "source": "D:\\Hochschule\\PVC\\Obscurio Game App\\Obscurio-Game\\app\\src\\main\\res\\drawable\\p_23.webp"
     },
     {
-        "merged": "D:\\Hochschule\\PVC\\Obscurio Game App\\Obscurio-Game\\app\\build\\intermediates\\merged_res\\debug\\mipmap-mdpi_ic_launcher.webp.flat",
-        "source": "D:\\Hochschule\\PVC\\Obscurio Game App\\Obscurio-Game\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.webp"
-    },
-    {
         "merged": "D:\\Hochschule\\PVC\\Obscurio Game App\\Obscurio-Game\\app\\build\\intermediates\\merged_res\\debug\\drawable_roundcorner.xml.flat",
         "source": "D:\\Hochschule\\PVC\\Obscurio Game App\\Obscurio-Game\\app\\src\\main\\res\\drawable\\roundcorner.xml"
+    },
+    {
+        "merged": "D:\\Hochschule\\PVC\\Obscurio Game App\\Obscurio-Game\\app\\build\\intermediates\\merged_res\\debug\\mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "D:\\Hochschule\\PVC\\Obscurio Game App\\Obscurio-Game\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.webp"
     },
     {
         "merged": "D:\\Hochschule\\PVC\\Obscurio Game App\\Obscurio-Game\\app\\build\\intermediates\\merged_res\\debug\\drawable_p_52.webp.flat",
@@ -414,6 +418,10 @@
     {
         "merged": "D:\\Hochschule\\PVC\\Obscurio Game App\\Obscurio-Game\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_settings.xml.flat",
         "source": "D:\\Hochschule\\PVC\\Obscurio Game App\\Obscurio-Game\\app\\src\\main\\res\\layout\\activity_settings.xml"
+    },
+    {
+        "merged": "D:\\Hochschule\\PVC\\Obscurio Game App\\Obscurio-Game\\app\\build\\intermediates\\merged_res\\debug\\font_roboto_thin.xml.flat",
+        "source": "D:\\Hochschule\\PVC\\Obscurio Game App\\Obscurio-Game\\app\\src\\main\\res\\font\\roboto_thin.xml"
     },
     {
         "merged": "D:\\Hochschule\\PVC\\Obscurio Game App\\Obscurio-Game\\app\\build\\intermediates\\merged_res\\debug\\drawable_p_32.webp.flat",

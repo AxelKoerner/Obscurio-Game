@@ -11,7 +11,7 @@
 9-->D:\Hochschule\PVC\Obscurio Game App\Obscurio-Game\app\src\main\AndroidManifest.xml
 10
 11    <application
-11-->D:\Hochschule\PVC\Obscurio Game App\Obscurio-Game\app\src\main\AndroidManifest.xml:5:5-48:19
+11-->D:\Hochschule\PVC\Obscurio Game App\Obscurio-Game\app\src\main\AndroidManifest.xml:5:5-52:19
 12        android:allowBackup="true"
 12-->D:\Hochschule\PVC\Obscurio Game App\Obscurio-Game\app\src\main\AndroidManifest.xml:6:13-39
 13        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -100,40 +100,47 @@
 55            </intent-filter>
 56        </activity>
 57
-58        <uses-library
-58-->[androidx.window:window:1.0.0] C:\Users\axel_\.gradle\caches\transforms-3\41004c6afba06d0783c2e16168671df4\transformed\window-1.0.0\AndroidManifest.xml:25:9-27:40
-59            android:name="androidx.window.extensions"
-59-->[androidx.window:window:1.0.0] C:\Users\axel_\.gradle\caches\transforms-3\41004c6afba06d0783c2e16168671df4\transformed\window-1.0.0\AndroidManifest.xml:26:13-54
-60            android:required="false" />
-60-->[androidx.window:window:1.0.0] C:\Users\axel_\.gradle\caches\transforms-3\41004c6afba06d0783c2e16168671df4\transformed\window-1.0.0\AndroidManifest.xml:27:13-37
-61        <uses-library
-61-->[androidx.window:window:1.0.0] C:\Users\axel_\.gradle\caches\transforms-3\41004c6afba06d0783c2e16168671df4\transformed\window-1.0.0\AndroidManifest.xml:28:9-30:40
-62            android:name="androidx.window.sidecar"
-62-->[androidx.window:window:1.0.0] C:\Users\axel_\.gradle\caches\transforms-3\41004c6afba06d0783c2e16168671df4\transformed\window-1.0.0\AndroidManifest.xml:29:13-51
-63            android:required="false" />
-63-->[androidx.window:window:1.0.0] C:\Users\axel_\.gradle\caches\transforms-3\41004c6afba06d0783c2e16168671df4\transformed\window-1.0.0\AndroidManifest.xml:30:13-37
-64
-65        <provider
-65-->[androidx.emoji2:emoji2:1.0.0] C:\Users\axel_\.gradle\caches\transforms-3\69d291d347a635c15fd15a8466543966\transformed\emoji2-1.0.0\AndroidManifest.xml:26:9-34:20
-66            android:name="androidx.startup.InitializationProvider"
-66-->[androidx.emoji2:emoji2:1.0.0] C:\Users\axel_\.gradle\caches\transforms-3\69d291d347a635c15fd15a8466543966\transformed\emoji2-1.0.0\AndroidManifest.xml:27:13-67
-67            android:authorities="com.example.test.androidx-startup"
-67-->[androidx.emoji2:emoji2:1.0.0] C:\Users\axel_\.gradle\caches\transforms-3\69d291d347a635c15fd15a8466543966\transformed\emoji2-1.0.0\AndroidManifest.xml:28:13-68
-68            android:exported="false" >
-68-->[androidx.emoji2:emoji2:1.0.0] C:\Users\axel_\.gradle\caches\transforms-3\69d291d347a635c15fd15a8466543966\transformed\emoji2-1.0.0\AndroidManifest.xml:29:13-37
-69            <meta-data
-69-->[androidx.emoji2:emoji2:1.0.0] C:\Users\axel_\.gradle\caches\transforms-3\69d291d347a635c15fd15a8466543966\transformed\emoji2-1.0.0\AndroidManifest.xml:31:13-33:52
-70                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-70-->[androidx.emoji2:emoji2:1.0.0] C:\Users\axel_\.gradle\caches\transforms-3\69d291d347a635c15fd15a8466543966\transformed\emoji2-1.0.0\AndroidManifest.xml:32:17-75
-71                android:value="androidx.startup" />
-71-->[androidx.emoji2:emoji2:1.0.0] C:\Users\axel_\.gradle\caches\transforms-3\69d291d347a635c15fd15a8466543966\transformed\emoji2-1.0.0\AndroidManifest.xml:33:17-49
-72            <meta-data
-72-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\axel_\.gradle\caches\transforms-3\5518efa1c1ca29993905068db3381641\transformed\lifecycle-process-2.4.0\AndroidManifest.xml:31:13-33:52
-73                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-73-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\axel_\.gradle\caches\transforms-3\5518efa1c1ca29993905068db3381641\transformed\lifecycle-process-2.4.0\AndroidManifest.xml:32:17-78
-74                android:value="androidx.startup" />
-74-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\axel_\.gradle\caches\transforms-3\5518efa1c1ca29993905068db3381641\transformed\lifecycle-process-2.4.0\AndroidManifest.xml:33:17-49
-75        </provider>
-76    </application>
-77
-78</manifest>
+58        <meta-data
+58-->D:\Hochschule\PVC\Obscurio Game App\Obscurio-Game\app\src\main\AndroidManifest.xml:49:9-51:61
+59            android:name="preloaded_fonts"
+59-->D:\Hochschule\PVC\Obscurio Game App\Obscurio-Game\app\src\main\AndroidManifest.xml:50:17-47
+60            android:resource="@array/preloaded_fonts" />
+60-->D:\Hochschule\PVC\Obscurio Game App\Obscurio-Game\app\src\main\AndroidManifest.xml:51:17-58
+61
+62        <uses-library
+62-->[androidx.window:window:1.0.0] C:\Users\axel_\.gradle\caches\transforms-3\41004c6afba06d0783c2e16168671df4\transformed\window-1.0.0\AndroidManifest.xml:25:9-27:40
+63            android:name="androidx.window.extensions"
+63-->[androidx.window:window:1.0.0] C:\Users\axel_\.gradle\caches\transforms-3\41004c6afba06d0783c2e16168671df4\transformed\window-1.0.0\AndroidManifest.xml:26:13-54
+64            android:required="false" />
+64-->[androidx.window:window:1.0.0] C:\Users\axel_\.gradle\caches\transforms-3\41004c6afba06d0783c2e16168671df4\transformed\window-1.0.0\AndroidManifest.xml:27:13-37
+65        <uses-library
+65-->[androidx.window:window:1.0.0] C:\Users\axel_\.gradle\caches\transforms-3\41004c6afba06d0783c2e16168671df4\transformed\window-1.0.0\AndroidManifest.xml:28:9-30:40
+66            android:name="androidx.window.sidecar"
+66-->[androidx.window:window:1.0.0] C:\Users\axel_\.gradle\caches\transforms-3\41004c6afba06d0783c2e16168671df4\transformed\window-1.0.0\AndroidManifest.xml:29:13-51
+67            android:required="false" />
+67-->[androidx.window:window:1.0.0] C:\Users\axel_\.gradle\caches\transforms-3\41004c6afba06d0783c2e16168671df4\transformed\window-1.0.0\AndroidManifest.xml:30:13-37
+68
+69        <provider
+69-->[androidx.emoji2:emoji2:1.0.0] C:\Users\axel_\.gradle\caches\transforms-3\69d291d347a635c15fd15a8466543966\transformed\emoji2-1.0.0\AndroidManifest.xml:26:9-34:20
+70            android:name="androidx.startup.InitializationProvider"
+70-->[androidx.emoji2:emoji2:1.0.0] C:\Users\axel_\.gradle\caches\transforms-3\69d291d347a635c15fd15a8466543966\transformed\emoji2-1.0.0\AndroidManifest.xml:27:13-67
+71            android:authorities="com.example.test.androidx-startup"
+71-->[androidx.emoji2:emoji2:1.0.0] C:\Users\axel_\.gradle\caches\transforms-3\69d291d347a635c15fd15a8466543966\transformed\emoji2-1.0.0\AndroidManifest.xml:28:13-68
+72            android:exported="false" >
+72-->[androidx.emoji2:emoji2:1.0.0] C:\Users\axel_\.gradle\caches\transforms-3\69d291d347a635c15fd15a8466543966\transformed\emoji2-1.0.0\AndroidManifest.xml:29:13-37
+73            <meta-data
+73-->[androidx.emoji2:emoji2:1.0.0] C:\Users\axel_\.gradle\caches\transforms-3\69d291d347a635c15fd15a8466543966\transformed\emoji2-1.0.0\AndroidManifest.xml:31:13-33:52
+74                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+74-->[androidx.emoji2:emoji2:1.0.0] C:\Users\axel_\.gradle\caches\transforms-3\69d291d347a635c15fd15a8466543966\transformed\emoji2-1.0.0\AndroidManifest.xml:32:17-75
+75                android:value="androidx.startup" />
+75-->[androidx.emoji2:emoji2:1.0.0] C:\Users\axel_\.gradle\caches\transforms-3\69d291d347a635c15fd15a8466543966\transformed\emoji2-1.0.0\AndroidManifest.xml:33:17-49
+76            <meta-data
+76-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\axel_\.gradle\caches\transforms-3\5518efa1c1ca29993905068db3381641\transformed\lifecycle-process-2.4.0\AndroidManifest.xml:31:13-33:52
+77                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+77-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\axel_\.gradle\caches\transforms-3\5518efa1c1ca29993905068db3381641\transformed\lifecycle-process-2.4.0\AndroidManifest.xml:32:17-78
+78                android:value="androidx.startup" />
+78-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\axel_\.gradle\caches\transforms-3\5518efa1c1ca29993905068db3381641\transformed\lifecycle-process-2.4.0\AndroidManifest.xml:33:17-49
+79        </provider>
+80    </application>
+81
+82</manifest>

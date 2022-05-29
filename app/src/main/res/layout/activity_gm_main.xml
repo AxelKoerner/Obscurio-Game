@@ -16,8 +16,8 @@
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginEnd="67dp"
-            android:layout_marginBottom="548dp"
+            android:layout_marginEnd="81dp"
+            android:layout_marginBottom="26dp"
             android:max="100"
             android:layout_centerInParent="true" />
 
@@ -27,14 +27,14 @@
             android:layout_width="110dp"
             android:layout_height="110dp"
             android:layout_alignParentStart="true"
-            android:layout_marginStart="158dp"
+            android:layout_marginStart="145dp"
             android:adjustViewBounds="true"
             android:background="@drawable/button"
             android:scaleType="fitCenter"
             android:src="@drawable/monk"
             app:layout_constraintStart_toStartOf="parent"
             tools:ignore="MissingConstraints"
-            android:layout_marginTop="89dp"
+            android:layout_marginTop="87dp"
             android:layout_alignParentTop="true" />
 
     <ImageButton
@@ -43,14 +43,14 @@
             android:layout_width="110dp"
             android:layout_height="110dp"
             android:layout_alignParentStart="true"
-            android:layout_marginStart="153dp"
+            android:layout_marginStart="144dp"
             android:adjustViewBounds="true"
             android:background="@drawable/button"
             android:scaleType="fitCenter"
             android:src="@drawable/monk"
             app:layout_constraintStart_toStartOf="parent"
             tools:ignore="MissingConstraints"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="19dp"
             android:layout_below="@+id/Picture1_gm" />
 
     <ImageButton
@@ -59,8 +59,8 @@
             android:layout_width="110dp"
             android:layout_height="110dp"
             android:layout_alignParentStart="true"
-            android:layout_marginStart="157dp"
-            android:layout_marginTop="16dp"
+            android:layout_marginStart="142dp"
+            android:layout_marginTop="18dp"
             android:adjustViewBounds="true"
             android:background="@drawable/button"
             android:scaleType="fitCenter"
@@ -74,7 +74,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
-            android:layout_marginStart="157dp"
+            android:layout_marginStart="150dp"
             android:layout_marginTop="500dp"
             android:id="@+id/confirm_gm_main" />
 

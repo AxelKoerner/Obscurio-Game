@@ -71,6 +71,10 @@ animator nav_default_enter_anim
 animator nav_default_exit_anim
 animator nav_default_pop_enter_anim
 animator nav_default_pop_exit_anim
+array com_google_android_gms_fonts_certs
+array com_google_android_gms_fonts_certs_dev
+array com_google_android_gms_fonts_certs_prod
+array preloaded_fonts
 array reply_entries
 array reply_values
 attr SharedValue
@@ -2698,7 +2702,6 @@ drawable p_75
 drawable p_76
 drawable p_8
 drawable p_9
-drawable pointer
 drawable pot
 drawable preference_list_divider_material
 drawable roundcorner
@@ -2707,10 +2710,13 @@ drawable test_custom_background
 drawable test_level_drawable
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
+font roboto_black
+font roboto_thin
 id ALT
 id BOTTOM_END
 id BOTTOM_START
 id ButtonEsc
+id ButtonEscEndLoss
 id ButtonNeuSpiel
 id ButtonOpt
 id ButtonSpielBeit
@@ -2721,6 +2727,7 @@ id Button_fullscreen_marked
 id Button_fullscreen_standard
 id CTRL
 id ConfirmMain
+id ErneutSpielen
 id FUNCTION
 id META
 id MarkedReference1
@@ -3334,7 +3341,7 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
-layout activity_endscreen
+layout activity_endscreen_loss
 layout activity_gm_main
 layout activity_gm_reference_choice
 layout activity_main
@@ -3344,6 +3351,7 @@ layout activity_picture_fullscreen_main
 layout activity_picture_fullscreen_marked
 layout activity_picture_fullscreen_reference_choice
 layout activity_settings
+layout activity_win
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog

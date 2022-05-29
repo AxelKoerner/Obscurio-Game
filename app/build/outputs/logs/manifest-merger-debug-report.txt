@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\Hochschule\PVC\Obscurio Game App\Obscurio-Game\app\src\main\AndroidManifest.xml:2:1-50:12
-INJECTED from D:\Hochschule\PVC\Obscurio Game App\Obscurio-Game\app\src\main\AndroidManifest.xml:2:1-50:12
-INJECTED from D:\Hochschule\PVC\Obscurio Game App\Obscurio-Game\app\src\main\AndroidManifest.xml:2:1-50:12
-INJECTED from D:\Hochschule\PVC\Obscurio Game App\Obscurio-Game\app\src\main\AndroidManifest.xml:2:1-50:12
+ADDED from D:\Hochschule\PVC\Obscurio Game App\Obscurio-Game\app\src\main\AndroidManifest.xml:2:1-54:12
+INJECTED from D:\Hochschule\PVC\Obscurio Game App\Obscurio-Game\app\src\main\AndroidManifest.xml:2:1-54:12
+INJECTED from D:\Hochschule\PVC\Obscurio Game App\Obscurio-Game\app\src\main\AndroidManifest.xml:2:1-54:12
+INJECTED from D:\Hochschule\PVC\Obscurio Game App\Obscurio-Game\app\src\main\AndroidManifest.xml:2:1-54:12
 MERGED from [androidx.databinding:viewbinding:7.1.3] C:\Users\axel_\.gradle\caches\transforms-3\945dedb21ad80e4f73d715e94c4e9c32\transformed\viewbinding-7.1.3\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.navigation:navigation-fragment-ktx:2.4.2] C:\Users\axel_\.gradle\caches\transforms-3\d753fd949586320a7e7149aec892095e\transformed\navigation-fragment-ktx-2.4.2\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.navigation:navigation-fragment:2.4.2] C:\Users\axel_\.gradle\caches\transforms-3\d952012faf72c5edd0ea9a74a69969df\transformed\navigation-fragment-2.4.2\AndroidManifest.xml:17:1-24:12
@@ -62,25 +62,25 @@ MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\axel_\.gradle\ca
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\axel_\.gradle\caches\transforms-3\9d0c77dd1770378002ff54115441683e\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.print:print:1.0.0] C:\Users\axel_\.gradle\caches\transforms-3\b3b5854c62d88c11253ad4ee9675c88b\transformed\print-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\axel_\.gradle\caches\transforms-3\c2136a09f4ba6174dc1f03fabe769ae4\transformed\annotation-experimental-1.1.0\AndroidManifest.xml:17:1-24:12
-INJECTED from D:\Hochschule\PVC\Obscurio Game App\Obscurio-Game\app\src\main\AndroidManifest.xml:2:1-50:12
-INJECTED from D:\Hochschule\PVC\Obscurio Game App\Obscurio-Game\app\src\main\AndroidManifest.xml:2:1-50:12
-INJECTED from D:\Hochschule\PVC\Obscurio Game App\Obscurio-Game\app\src\main\AndroidManifest.xml:2:1-50:12
+INJECTED from D:\Hochschule\PVC\Obscurio Game App\Obscurio-Game\app\src\main\AndroidManifest.xml:2:1-54:12
+INJECTED from D:\Hochschule\PVC\Obscurio Game App\Obscurio-Game\app\src\main\AndroidManifest.xml:2:1-54:12
+INJECTED from D:\Hochschule\PVC\Obscurio Game App\Obscurio-Game\app\src\main\AndroidManifest.xml:2:1-54:12
 	package
 		ADDED from D:\Hochschule\PVC\Obscurio Game App\Obscurio-Game\app\src\main\AndroidManifest.xml:3:9-34
 		INJECTED from D:\Hochschule\PVC\Obscurio Game App\Obscurio-Game\app\src\main\AndroidManifest.xml
 		INJECTED from D:\Hochschule\PVC\Obscurio Game App\Obscurio-Game\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from D:\Hochschule\PVC\Obscurio Game App\Obscurio-Game\app\src\main\AndroidManifest.xml
-		ADDED from D:\Hochschule\PVC\Obscurio Game App\Obscurio-Game\app\src\main\AndroidManifest.xml:2:1-50:12
+		ADDED from D:\Hochschule\PVC\Obscurio Game App\Obscurio-Game\app\src\main\AndroidManifest.xml:2:1-54:12
 		INJECTED from D:\Hochschule\PVC\Obscurio Game App\Obscurio-Game\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from D:\Hochschule\PVC\Obscurio Game App\Obscurio-Game\app\src\main\AndroidManifest.xml
-		ADDED from D:\Hochschule\PVC\Obscurio Game App\Obscurio-Game\app\src\main\AndroidManifest.xml:2:1-50:12
+		ADDED from D:\Hochschule\PVC\Obscurio Game App\Obscurio-Game\app\src\main\AndroidManifest.xml:2:1-54:12
 		INJECTED from D:\Hochschule\PVC\Obscurio Game App\Obscurio-Game\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from D:\Hochschule\PVC\Obscurio Game App\Obscurio-Game\app\src\main\AndroidManifest.xml:2:11-69
 application
-ADDED from D:\Hochschule\PVC\Obscurio Game App\Obscurio-Game\app\src\main\AndroidManifest.xml:5:5-48:19
+ADDED from D:\Hochschule\PVC\Obscurio Game App\Obscurio-Game\app\src\main\AndroidManifest.xml:5:5-52:19
 MERGED from [androidx.window:window:1.0.0] C:\Users\axel_\.gradle\caches\transforms-3\41004c6afba06d0783c2e16168671df4\transformed\window-1.0.0\AndroidManifest.xml:24:5-31:19
 MERGED from [androidx.window:window:1.0.0] C:\Users\axel_\.gradle\caches\transforms-3\41004c6afba06d0783c2e16168671df4\transformed\window-1.0.0\AndroidManifest.xml:24:5-31:19
 MERGED from [com.google.android.material:material:1.5.0] C:\Users\axel_\.gradle\caches\transforms-3\1af98939a167f3aa8048d8f13e2b5b63\transformed\material-1.5.0\AndroidManifest.xml:22:5-20
@@ -181,6 +181,12 @@ category#android.intent.category.LAUNCHER
 ADDED from D:\Hochschule\PVC\Obscurio Game App\Obscurio-Game\app\src\main\AndroidManifest.xml:45:17-77
 	android:name
 		ADDED from D:\Hochschule\PVC\Obscurio Game App\Obscurio-Game\app\src\main\AndroidManifest.xml:45:27-74
+meta-data#preloaded_fonts
+ADDED from D:\Hochschule\PVC\Obscurio Game App\Obscurio-Game\app\src\main\AndroidManifest.xml:49:9-51:61
+	android:resource
+		ADDED from D:\Hochschule\PVC\Obscurio Game App\Obscurio-Game\app\src\main\AndroidManifest.xml:51:17-58
+	android:name
+		ADDED from D:\Hochschule\PVC\Obscurio Game App\Obscurio-Game\app\src\main\AndroidManifest.xml:50:17-47
 uses-sdk
 INJECTED from D:\Hochschule\PVC\Obscurio Game App\Obscurio-Game\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from D:\Hochschule\PVC\Obscurio Game App\Obscurio-Game\app\src\main\AndroidManifest.xml

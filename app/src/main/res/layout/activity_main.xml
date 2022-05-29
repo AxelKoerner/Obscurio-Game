@@ -162,6 +162,7 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="179dp"
         android:text="TextView"
+            android:visibility="invisible"
         android:textColor="@color/white"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="175dp"
