@@ -8,6 +8,17 @@
     android:id="@+id/mainGM"
     tools:context="de.hft.ubq.MainActivity">
 
+    <TextView
+            android:layout_width="179dp"
+            android:layout_height="wrap_content"
+            android:text="Leben: 10"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="664dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="118dp"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="30dp" />
 
     <ProgressBar
             android:id="@+id/progressbar"
