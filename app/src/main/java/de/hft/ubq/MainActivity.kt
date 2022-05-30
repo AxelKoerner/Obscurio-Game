@@ -1,5 +1,7 @@
 package de.hft.ubq
 
+import android.animation.Animator
+import android.animation.ObjectAnimator
 import android.content.Context
 import android.content.Intent
 import android.media.MediaPlayer
@@ -7,8 +9,11 @@ import android.os.Bundle
 import android.os.CountDownTimer
 import android.view.Menu
 import android.view.MenuItem
+import android.view.View
+import android.view.animation.DecelerateInterpolator
 import android.widget.Button
 import android.widget.ImageButton
+import android.widget.ProgressBar
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.ubq.R
@@ -122,8 +127,27 @@ class MainActivity : AppCompatActivity() {
         }
 
 
+    progressBarStart()
+
+    }
 
 
+    fun progressBarStart() {
+        val pb = findViewById<View>(R.id.progressbar_player) as ProgressBar
+
+        val animation = ObjectAnimator.ofInt(pb, "progress", 0, 100)
+        animation.duration = 60000
+        animation.interpolator = DecelerateInterpolator()
+        animation.addListener(object : Animator.AnimatorListener {
+            override fun onAnimationStart(animator: Animator) {}
+            override fun onAnimationEnd(animator: Animator) {
+                //do something when the countdown is complete
+            }
+
+            override fun onAnimationCancel(animator: Animator) {}
+            override fun onAnimationRepeat(animator: Animator) {}
+        })
+        animation.start()
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {

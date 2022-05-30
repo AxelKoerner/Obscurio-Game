@@ -1,5 +1,6 @@
 package de.hft.ubq
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
@@ -16,6 +17,14 @@ class Settings : AppCompatActivity() {
         b.setOnClickListener{
             setContentView(R.layout.activity_main)
         }
+
+
+        val intentMusic = Intent(this, BackgroundSoundService::class.java)
+        val musicOnOffBtn = findViewById<Button>(R.id.musicOnOff)
+        musicOnOffBtn.setOnClickListener {
+            BackgroundSoundService().onDestroy()
+        }
+
 
     }
 }

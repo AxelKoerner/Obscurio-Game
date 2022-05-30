@@ -95,9 +95,14 @@ class MainActivityGM : AppCompatActivity() {
             }
         }
 
+        progressBarStart()
+
+    }
 
 
-        val pb = findViewById<View>(R.id.progressbar) as ProgressBar
+
+    fun progressBarStart() {
+        val pb = findViewById<View>(R.id.progressbar_gm) as ProgressBar
 
         val animation = ObjectAnimator.ofInt(pb, "progress", 0, 100)
         animation.duration = 60000
@@ -113,9 +118,6 @@ class MainActivityGM : AppCompatActivity() {
         })
         animation.start()
     }
-
-
-
 
 
     fun openPictureFullscreen() {

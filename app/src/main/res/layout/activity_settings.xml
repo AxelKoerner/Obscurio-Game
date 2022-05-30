@@ -8,37 +8,46 @@
     tools:context="de.hft.ubq.Settings">
 
     <TextView
-        android:id="@+id/soundtext"
-        android:layout_width="68dp"
-        android:layout_height="37dp"
-        android:text="Sound"
-        android:textSize="23dp"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="16dp"
-            tools:ignore="MissingConstraints" />
-
-    <TextView
-        android:id="@+id/text1"
-        android:layout_width="126dp"
-        android:layout_height="21dp"
-        android:text="Background Music"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="60dp"
-            tools:ignore="MissingConstraints" />
-
-    <SeekBar
-        android:id="@+id/backgroundVolume"
-        android:layout_width="398dp"
-        android:layout_height="35dp"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="83dp" />
+            android:id="@+id/soundtext"
+            android:layout_width="68dp"
+            android:layout_height="37dp"
+            android:text="Sound"
+            android:textSize="23dp"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="MissingConstraints"
+            android:layout_marginStart="156dp"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="4dp" />
 
     <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Button"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="146dp"
-            tools:ignore="MissingConstraints" />
+            android:id="@+id/musicOnOff"
+            android:layout_width="157dp"
+            android:layout_height="52dp"
+            android:text="Music on/off"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="MissingConstraints"
+            android:layout_marginStart="116dp"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="52dp" />
+
+    <SeekBar
+            android:id="@+id/backgroundVolume"
+            android:layout_width="398dp"
+            android:layout_height="35dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.461"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="128dp" />
+
+    <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Button"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="MissingConstraints"
+            android:layout_marginStart="148dp"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="172dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>

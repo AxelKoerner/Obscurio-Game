@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">test</string>
+    <string name="app_name">Obscurio</string>
     <string name="title_activity_settings">SettingsActivity</string>
 
     <!-- Preference Titles -->

@@ -3,7 +3,6 @@ package de.hft.ubq
 
 import android.content.Context
 import android.content.Intent
-import android.media.MediaPlayer
 import android.os.Bundle
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
@@ -17,9 +16,11 @@ class MainMenu : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.main_menu)
         supportActionBar?.hide()
-        val mediaPlayer = MediaPlayer.create(this, R.raw.music)
-        //mediaPlayer?.start()
-        mediaPlayer?.isLooping = true
+
+
+        //kümmert sich um die Musik
+        val intentMusic = Intent(this, BackgroundSoundService::class.java)
+        startService(intentMusic)
 
         val bttNeuSpiel = findViewById<Button>(R.id.ButtonNeuSpiel)
         val bttSpielBeit = findViewById<Button>(R.id.ButtonSpielBeit)
@@ -40,6 +41,7 @@ class MainMenu : AppCompatActivity() {
 
         bttOpt.setOnClickListener {
             val intent = Intent(this, Settings::class.java)
+            startActivity(intent)
         }
 
         bttBeenden.setOnClickListener {
@@ -50,6 +52,9 @@ class MainMenu : AppCompatActivity() {
 
 
     }
+
+
+
     fun clearPreferences(){
 
         val sharedPreferences = getSharedPreferences(shared_Preferences, Context.MODE_PRIVATE)

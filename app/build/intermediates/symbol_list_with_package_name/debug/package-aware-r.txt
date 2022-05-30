@@ -3049,6 +3049,7 @@ id mtrl_picker_text_input_range_start
 id mtrl_picker_title_text
 id mtrl_view_tag_bottom_padding
 id multiply
+id musicOnOff
 id nav_controller_view_tag
 id nav_host_fragment_container
 id navigation_bar_item_active_indicator_view
@@ -3095,7 +3096,8 @@ id position
 id postLayout
 id progress_circular
 id progress_horizontal
-id progressbar
+id progressbar_gm
+id progressbar_player
 id radio
 id ratio
 id rectangles
@@ -3197,7 +3199,6 @@ id test_checkbox_app_button_tint
 id test_radiobutton_android_button_tint
 id test_radiobutton_app_button_tint
 id text
-id text1
 id text2
 id textEnd
 id textSpacerNoButtons
@@ -3517,6 +3518,7 @@ string hello_second_fragment
 string hide_bottom_view_on_scroll_behavior
 string icon_content_description
 string item_view_role_description
+string lebensanzeige
 string m3_ref_typeface_brand_display_regular
 string m3_ref_typeface_brand_medium
 string m3_ref_typeface_brand_regular

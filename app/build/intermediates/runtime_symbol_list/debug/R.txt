@@ -3048,6 +3048,7 @@ int id mtrl_picker_text_input_range_start 0x7f0a014d
 int id mtrl_picker_title_text 0x7f0a014e
 int id mtrl_view_tag_bottom_padding 0x7f0a014f
 int id multiply 0x7f0a0150
+int id musicOnOff 0x7f0a0221
 int id nav_controller_view_tag 0x7f0a0151
 int id nav_host_fragment_container 0x7f0a0152
 int id navigation_bar_item_active_indicator_view 0x7f0a0153
@@ -3094,7 +3095,8 @@ int id position 0x7f0a017b
 int id postLayout 0x7f0a017c
 int id progress_circular 0x7f0a017d
 int id progress_horizontal 0x7f0a017e
-int id progressbar 0x7f0a017f
+int id progressbar_gm 0x7f0a021f
+int id progressbar_player 0x7f0a0220
 int id radio 0x7f0a0180
 int id ratio 0x7f0a0181
 int id rectangles 0x7f0a0182
@@ -3196,7 +3198,6 @@ int id test_checkbox_app_button_tint 0x7f0a01e1
 int id test_radiobutton_android_button_tint 0x7f0a01e2
 int id test_radiobutton_app_button_tint 0x7f0a01e3
 int id text 0x7f0a01e4
-int id text1 0x7f0a01e5
 int id text2 0x7f0a01e6
 int id textEnd 0x7f0a01e7
 int id textSpacerNoButtons 0x7f0a01e8
@@ -3516,6 +3517,7 @@ int string hello_second_fragment 0x7f120030
 int string hide_bottom_view_on_scroll_behavior 0x7f120031
 int string icon_content_description 0x7f120032
 int string item_view_role_description 0x7f120033
+int string lebensanzeige 0x7f12009d
 int string m3_ref_typeface_brand_display_regular 0x7f120034
 int string m3_ref_typeface_brand_medium 0x7f120035
 int string m3_ref_typeface_brand_regular 0x7f120036

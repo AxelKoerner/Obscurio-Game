@@ -145,15 +145,16 @@ id fullscreenGM
 id fullscreenMarked
 id leave
 id mainGM
+id musicOnOff
 id option
 id player
 id pointer
 id pointer_marked
-id progressbar
+id progressbar_gm
+id progressbar_player
 id soundtext
 id switch_Main
 id switch_referenceChoice
-id text1
 id textViewMain
 id textView_ReferenceChoice
 id timerMain
@@ -181,6 +182,7 @@ string attachment_title
 string first_fragment_label
 string hello_first_fragment
 string hello_second_fragment
+string lebensanzeige
 string messages_header
 string next
 string previous
