@@ -39,4 +39,50 @@
             android:textSize="40sp"
             tools:layout_editor_absoluteY="28dp"
             tools:layout_editor_absoluteX="79dp" />
+
+    <TextView
+            android:text="Leben"
+            android:layout_width="172dp"
+            android:layout_height="42dp"
+            android:id="@+id/textView5"
+            tools:layout_editor_absoluteY="139dp"
+            tools:layout_editor_absoluteX="17dp"
+            android:textAlignment="center"
+            android:fontFamily="@font/roboto_black"
+            android:textStyle="bold"
+            android:autoSizeTextType="uniform"/>
+
+    <TextView
+            android:text="Spieler"
+            android:layout_width="172dp"
+            android:layout_height="42dp"
+            android:id="@+id/textView6"
+            tools:layout_editor_absoluteY="139dp"
+            tools:layout_editor_absoluteX="223dp"
+            android:textAlignment="center"
+            android:fontFamily="@font/roboto_black"
+            android:textStyle="bold"
+            android:autoSizeTextType="uniform"/>
+
+    <EditText
+            android:layout_width="75dp"
+            android:layout_height="45dp"
+            android:inputType="textPersonName"
+            android:text="7"
+            android:ems="10"
+            android:id="@+id/lebensText"
+            tools:layout_editor_absoluteY="190dp"
+            tools:layout_editor_absoluteX="48dp"
+            />
+
+    <EditText
+            android:layout_width="75dp"
+            android:layout_height="45dp"
+            android:inputType="textPersonName"
+            android:text="3"
+            android:ems="10"
+            android:id="@+id/lebensText2"
+            tools:layout_editor_absoluteY="190dp"
+            tools:layout_editor_absoluteX="268dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

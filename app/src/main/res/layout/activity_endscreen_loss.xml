@@ -18,7 +18,9 @@
             android:fontFamily="@font/roboto_black"
             android:textAlignment="center"
             android:textColor="@color/purple_700"
-            android:textSize="40sp" />
+            android:textSize="40sp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="538dp" />
 
     <Button
             android:id="@+id/ErneutSpielenLoss"
@@ -26,10 +28,13 @@
             android:layout_height="89dp"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginTop="84dp"
+            android:layout_marginTop="291dp"
             android:layout_marginEnd="108dp"
             android:layout_marginBottom="351dp"
-            android:text="Noch mal spielen" />
+            android:text="Noch mal spielen"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="110dp"
+            android:layout_alignParentTop="true" />
 
     <Button
             android:id="@+id/ButtonEscEndLoss"
@@ -37,10 +42,13 @@
             android:layout_height="89dp"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginTop="50dp"
+            android:layout_marginTop="434dp"
             android:layout_marginEnd="110dp"
             android:layout_marginBottom="208dp"
-            android:text="Spiel Beenden" />
+            android:text="Spiel Beenden"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="108dp"
+            android:layout_alignParentTop="true" />
 
 
 </RelativeLayout>
