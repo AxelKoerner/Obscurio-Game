@@ -43,6 +43,8 @@
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
     <string name="lebensanzeige">Leben: 10</string>
     <string name="messages_header">Messages</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="next">Next</string>
     <string name="previous">Previous</string>
     <string name="reply_title">Default reply action</string>
@@ -52,6 +54,16 @@
     <string name="sync_title">Sync email periodically</string>
     <string name="title_activity_moving_arrow">MovingArrow</string>
     <string name="title_activity_settings">SettingsActivity</string>
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+
+        <item name="colorPrimary">#FF6CAEDA</item>
+        <item name="colorPrimaryDark">#FF6CAEDA</item>
+    </style>
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+    </style>
     <style name="Theme.Test" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/purple_500</item>

@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\Hochschule\\PVC\\Obscurio Game\\Obscurio-Game\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v23\\values-v23.xml",
+            "outputFile": "C:\\Users\\trung\\Desktop\\PVC\\Obscurio-Game\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v23\\values-v23.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\axel_\\.gradle\\caches\\transforms-3\\7e1d7580135d94ce1e7d324c560c75d4\\transformed\\cardview-1.0.0\\res\\values-v23\\values-v23.xml",
+                    "source": "C:\\Users\\trung\\.gradle\\caches\\transforms-3\\7e1d7580135d94ce1e7d324c560c75d4\\transformed\\cardview-1.0.0\\res\\values-v23\\values-v23.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -23,7 +23,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\axel_\\.gradle\\caches\\transforms-3\\1af98939a167f3aa8048d8f13e2b5b63\\transformed\\material-1.5.0\\res\\values-v23\\values-v23.xml",
+                    "source": "C:\\Users\\trung\\.gradle\\caches\\transforms-3\\1af98939a167f3aa8048d8f13e2b5b63\\transformed\\material-1.5.0\\res\\values-v23\\values-v23.xml",
                     "from": {
                         "startLines": "2,5,8,13,17,20,23,26,31,34,38",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4",
@@ -42,7 +42,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\axel_\\.gradle\\caches\\transforms-3\\cdd8388d8eb0bb4101b550377669da59\\transformed\\appcompat-1.4.1\\res\\values-v23\\values-v23.xml",
+                    "source": "C:\\Users\\trung\\.gradle\\caches\\transforms-3\\cdd8388d8eb0bb4101b550377669da59\\transformed\\appcompat-1.4.1\\res\\values-v23\\values-v23.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,20,34,35,36,39,43,44,45,46",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4",

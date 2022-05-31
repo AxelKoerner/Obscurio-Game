@@ -19,6 +19,12 @@
         android:testOnly="true"
         android:theme="@style/Theme.Test" >
         <activity
+            android:name="de.hft.ubq.Modus"
+            android:exported="false" />
+        <activity
+            android:name="de.hft.ubq.Midscreen"
+            android:exported="false" />
+        <activity
             android:name="de.hft.ubq.PictureFullscreenMain"
             android:exported="false" />
 
@@ -52,7 +58,8 @@
             android:exported="true" />
         <activity
             android:name="de.hft.ubq.MainMenu"
-            android:exported="true" >
+            android:exported="true"
+            android:theme="@style/AppTheme.NoActionBar" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

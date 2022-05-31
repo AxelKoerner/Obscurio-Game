@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\Hochschule\\PVC\\Obscurio Game\\Obscurio-Game\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-pl\\values-pl.xml",
+            "outputFile": "C:\\Users\\trung\\Desktop\\PVC\\Obscurio-Game\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-pl\\values-pl.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\axel_\\.gradle\\caches\\transforms-3\\cdd8388d8eb0bb4101b550377669da59\\transformed\\appcompat-1.4.1\\res\\values-pl\\values-pl.xml",
+                    "source": "C:\\Users\\trung\\.gradle\\caches\\transforms-3\\cdd8388d8eb0bb4101b550377669da59\\transformed\\appcompat-1.4.1\\res\\values-pl\\values-pl.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -21,24 +21,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\axel_\\.gradle\\caches\\transforms-3\\ec8778f597115131b77fc5968136215d\\transformed\\core-1.7.0\\res\\values-pl\\values-pl.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "100",
-                        "endOffsets": "151"
-                    },
-                    "to": {
-                        "startLines": "96",
-                        "startColumns": "4",
-                        "startOffsets": "8090",
-                        "endColumns": "100",
-                        "endOffsets": "8186"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\axel_\\.gradle\\caches\\transforms-3\\3fdceb8ad5de51ae9ddbda278c1f933e\\transformed\\preference-1.1.1\\res\\values-pl\\values-pl.xml",
+                    "source": "C:\\Users\\trung\\.gradle\\caches\\transforms-3\\3fdceb8ad5de51ae9ddbda278c1f933e\\transformed\\preference-1.1.1\\res\\values-pl\\values-pl.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8",
                         "startColumns": "4,4,4,4,4,4,4",
@@ -55,7 +38,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\axel_\\.gradle\\caches\\transforms-3\\982d649a54bc7a2732d3b4f526e67c3c\\transformed\\navigation-ui-2.4.2\\res\\values-pl\\values-pl.xml",
+                    "source": "C:\\Users\\trung\\.gradle\\caches\\transforms-3\\982d649a54bc7a2732d3b4f526e67c3c\\transformed\\navigation-ui-2.4.2\\res\\values-pl\\values-pl.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",
@@ -72,7 +55,24 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\axel_\\.gradle\\caches\\transforms-3\\1af98939a167f3aa8048d8f13e2b5b63\\transformed\\material-1.5.0\\res\\values-pl\\values-pl.xml",
+                    "source": "C:\\Users\\trung\\.gradle\\caches\\transforms-3\\ec8778f597115131b77fc5968136215d\\transformed\\core-1.7.0\\res\\values-pl\\values-pl.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    },
+                    "to": {
+                        "startLines": "96",
+                        "startColumns": "4",
+                        "startOffsets": "8090",
+                        "endColumns": "100",
+                        "endOffsets": "8186"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\trung\\.gradle\\caches\\transforms-3\\1af98939a167f3aa8048d8f13e2b5b63\\transformed\\material-1.5.0\\res\\values-pl\\values-pl.xml",
                     "from": {
                         "startLines": "2,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",

@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\Hochschule\\PVC\\Obscurio Game\\Obscurio-Game\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-large-v4\\values-large-v4.xml",
+            "outputFile": "C:\\Users\\trung\\Desktop\\PVC\\Obscurio-Game\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-large-v4\\values-large-v4.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\axel_\\.gradle\\caches\\transforms-3\\cdd8388d8eb0bb4101b550377669da59\\transformed\\appcompat-1.4.1\\res\\values-large-v4\\values-large-v4.xml",
+                    "source": "C:\\Users\\trung\\.gradle\\caches\\transforms-3\\cdd8388d8eb0bb4101b550377669da59\\transformed\\appcompat-1.4.1\\res\\values-large-v4\\values-large-v4.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10",
                         "startColumns": "4,4,4,4,4,4,4,4,4",
@@ -14,7 +14,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\axel_\\.gradle\\caches\\transforms-3\\1af98939a167f3aa8048d8f13e2b5b63\\transformed\\material-1.5.0\\res\\values-large-v4\\values-large-v4.xml",
+                    "source": "C:\\Users\\trung\\.gradle\\caches\\transforms-3\\1af98939a167f3aa8048d8f13e2b5b63\\transformed\\material-1.5.0\\res\\values-large-v4\\values-large-v4.xml",
                     "from": {
                         "startLines": "2,3,4,10",
                         "startColumns": "4,4,4,4",

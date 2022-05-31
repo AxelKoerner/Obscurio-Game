@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_gameboard"
+        android:id="@+id/mainGM"
+        tools:context="de.hft.ubq.MainActivity">
+
+    <TextView
+            android:layout_width="179dp"
+            android:layout_height="wrap_content"
+            android:text="@string/lebensanzeige"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="113dp"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="30dp"
+            android:layout_marginTop="28dp"
+            android:layout_alignParentTop="true" />
+
+    <ProgressBar
+            android:id="@+id/progressbar_gm"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:layout_width="267dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="81dp"
+            android:layout_marginBottom="26dp"
+            android:max="100"
+            android:layout_centerInParent="true" />
+
+    <ImageButton
+            android:id="@+id/Picture1_gm"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="149dp"
+            android:adjustViewBounds="true"
+            android:background="@drawable/button"
+            android:scaleType="fitCenter"
+            android:src="@drawable/monk"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="MissingConstraints"
+            android:layout_marginTop="121dp"
+            android:layout_alignParentTop="true" />
+
+    <ImageButton
+            android:id="@+id/Picture2_gm"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="145dp"
+            android:adjustViewBounds="true"
+            android:background="@drawable/button"
+            android:scaleType="fitCenter"
+            android:src="@drawable/monk"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="MissingConstraints"
+            android:layout_marginTop="45dp"
+            android:layout_below="@+id/Picture1_gm" />
+
+    <ImageButton
+            android:id="@+id/Picture3_gm"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="144dp"
+            android:layout_marginTop="48dp"
+            android:adjustViewBounds="true"
+            android:background="@drawable/button"
+            android:scaleType="fitCenter"
+            android:src="@drawable/monk"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="MissingConstraints"
+            android:layout_below="@+id/Picture2_gm" />
+
+    <Button
+            android:text="Confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="155dp"
+            android:layout_marginTop="588dp"
+            android:id="@+id/confirm_gm_main"
+            android:layout_alignParentTop="true" />
+
+
+</RelativeLayout>

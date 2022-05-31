@@ -1,0 +1,62 @@
+[
+    {
+        "merged": "C:\\Users\\trung\\Desktop\\PVC\\Obscurio-Game\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_main.xml",
+        "source": "C:\\Users\\trung\\Desktop\\PVC\\Obscurio-Game\\app\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\trung\\Desktop\\PVC\\Obscurio-Game\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_settings.xml",
+        "source": "C:\\Users\\trung\\Desktop\\PVC\\Obscurio-Game\\app\\src\\main\\res\\layout\\activity_settings.xml"
+    },
+    {
+        "merged": "C:\\Users\\trung\\Desktop\\PVC\\Obscurio-Game\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_picture_fullscreen_gm.xml",
+        "source": "C:\\Users\\trung\\Desktop\\PVC\\Obscurio-Game\\app\\src\\main\\res\\layout\\activity_picture_fullscreen_gm.xml"
+    },
+    {
+        "merged": "C:\\Users\\trung\\Desktop\\PVC\\Obscurio-Game\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_midscreen.xml",
+        "source": "C:\\Users\\trung\\Desktop\\PVC\\Obscurio-Game\\app\\src\\main\\res\\layout\\activity_midscreen.xml"
+    },
+    {
+        "merged": "C:\\Users\\trung\\Desktop\\PVC\\Obscurio-Game\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_picture_fullscreen_marked.xml",
+        "source": "C:\\Users\\trung\\Desktop\\PVC\\Obscurio-Game\\app\\src\\main\\res\\layout\\activity_picture_fullscreen_marked.xml"
+    },
+    {
+        "merged": "C:\\Users\\trung\\Desktop\\PVC\\Obscurio-Game\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_picture_fullscreen_reference_choice.xml",
+        "source": "C:\\Users\\trung\\Desktop\\PVC\\Obscurio-Game\\app\\src\\main\\res\\layout\\activity_picture_fullscreen_reference_choice.xml"
+    },
+    {
+        "merged": "C:\\Users\\trung\\Desktop\\PVC\\Obscurio-Game\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\main_menu.xml",
+        "source": "C:\\Users\\trung\\Desktop\\PVC\\Obscurio-Game\\app\\src\\main\\res\\layout\\main_menu.xml"
+    },
+    {
+        "merged": "C:\\Users\\trung\\Desktop\\PVC\\Obscurio-Game\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_endscreen_loss.xml",
+        "source": "C:\\Users\\trung\\Desktop\\PVC\\Obscurio-Game\\app\\src\\main\\res\\layout\\activity_endscreen_loss.xml"
+    },
+    {
+        "merged": "C:\\Users\\trung\\Desktop\\PVC\\Obscurio-Game\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_win.xml",
+        "source": "C:\\Users\\trung\\Desktop\\PVC\\Obscurio-Game\\app\\src\\main\\res\\layout\\activity_win.xml"
+    },
+    {
+        "merged": "C:\\Users\\trung\\Desktop\\PVC\\Obscurio-Game\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_gm_reference_choice.xml",
+        "source": "C:\\Users\\trung\\Desktop\\PVC\\Obscurio-Game\\app\\src\\main\\res\\layout\\activity_gm_reference_choice.xml"
+    },
+    {
+        "merged": "C:\\Users\\trung\\Desktop\\PVC\\Obscurio-Game\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_gm_main.xml",
+        "source": "C:\\Users\\trung\\Desktop\\PVC\\Obscurio-Game\\app\\src\\main\\res\\layout\\activity_gm_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\trung\\Desktop\\PVC\\Obscurio-Game\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_picture_fullscreen.xml",
+        "source": "C:\\Users\\trung\\Desktop\\PVC\\Obscurio-Game\\app\\src\\main\\res\\layout\\activity_picture_fullscreen.xml"
+    },
+    {
+        "merged": "C:\\Users\\trung\\Desktop\\PVC\\Obscurio-Game\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_picture_fullscreen_main.xml",
+        "source": "C:\\Users\\trung\\Desktop\\PVC\\Obscurio-Game\\app\\src\\main\\res\\layout\\activity_picture_fullscreen_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\trung\\Desktop\\PVC\\Obscurio-Game\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_modus.xml",
+        "source": "C:\\Users\\trung\\Desktop\\PVC\\Obscurio-Game\\app\\src\\main\\res\\layout\\activity_modus.xml"
+    },
+    {
+        "merged": "C:\\Users\\trung\\Desktop\\PVC\\Obscurio-Game\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\nav_header.xml",
+        "source": "C:\\Users\\trung\\Desktop\\PVC\\Obscurio-Game\\app\\src\\main\\res\\layout\\nav_header.xml"
+    }
+]

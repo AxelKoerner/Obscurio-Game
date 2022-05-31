@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "439909467049",
+    "project_id": "obscurio-fb4cf",
+    "storage_bucket": "obscurio-fb4cf.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:439909467049:android:c01d51701efaa2affe3ab8",
+        "android_client_info": {
+          "package_name": "com.example.test"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "439909467049-b1ofmetamsambjljeki3mlr5meb4bvhp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBntAkDBwvEVSoS9QBd_6zXVQJLBnQZ1Rk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "439909467049-b1ofmetamsambjljeki3mlr5meb4bvhp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

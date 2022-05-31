@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background2"
+        android:id="@+id/fullscreenGM"
+        tools:context="de.hft.ubq.PictureFullscreenGM">
+
+    <ImageButton
+            android:id="@+id/Button_fullscreen"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="405dp"
+            android:layout_height="658dp"
+            android:layout_centerInParent="true"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/monk" />
+
+    <ImageView
+            android:id="@+id/pointer"
+            android:layout_width="102dp"
+            android:layout_height="99dp"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/arrow"
+            android:layout_marginLeft="93dp"
+            android:layout_marginTop="-256dp"
+            android:layout_below="@+id/Button_fullscreen" />
+
+    <Button
+            android:id="@+id/confirm_fullscreen_arrow"
+            android:text="Confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="150dp"
+            android:layout_marginBottom="58dp"/>
+</RelativeLayout>
