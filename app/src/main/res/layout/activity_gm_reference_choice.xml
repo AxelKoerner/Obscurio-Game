@@ -10,7 +10,7 @@
 
     <TextView
             android:id="@+id/lebensanzeige_GM"
-            android:text="@string/lebensanzeige"
+            android:text="Leben:"
             android:layout_width="228dp"
             android:layout_height="85dp"
             android:textAlignment="center"

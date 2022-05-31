@@ -9,6 +9,7 @@
         tools:context="de.hft.ubq.MainActivity">
 
     <TextView
+            android:id="@+id/LifepointsGM"
             android:layout_width="179dp"
             android:layout_height="wrap_content"
             android:text="@string/lebensanzeige"
@@ -30,7 +31,8 @@
             android:layout_marginEnd="81dp"
             android:layout_marginBottom="26dp"
             android:max="100"
-            android:layout_centerInParent="true" />
+            android:layout_centerInParent="true"
+            android:visibility="invisible" />
 
     <ImageButton
             android:id="@+id/Picture1_gm"

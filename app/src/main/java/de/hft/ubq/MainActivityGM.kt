@@ -51,7 +51,10 @@ class MainActivityGM : AppCompatActivity() {
         val button2 = findViewById<ImageButton>(R.id.Picture2_gm)
         val button3 = findViewById<ImageButton>(R.id.Picture3_gm)
         val confirm = findViewById<Button>(R.id.confirm_gm_main)
+        val lifepoints = findViewById<TextView>(R.id.LifepointsGM)
 
+
+        updatelifes(lifepoints)
         loadImages()
 
         fun openPictureFullscreenGM(button: ImageButton) {
@@ -86,6 +89,11 @@ class MainActivityGM : AppCompatActivity() {
 
         progressBarStart()
 
+    }
+
+    fun updatelifes(textView: TextView){
+        val sharedPreferences = getSharedPreferences(shared_Preferences, Context.MODE_PRIVATE)
+        textView.setText("Leben: " + sharedPreferences.getInt("Lifepoints", 9))
     }
 
 

@@ -11,10 +11,7 @@ import android.view.Menu
 import android.view.MenuItem
 import android.view.View
 import android.view.animation.DecelerateInterpolator
-import android.widget.Button
-import android.widget.ImageButton
-import android.widget.ProgressBar
-import android.widget.Toast
+import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
 import com.example.ubq.R
 import kotlinx.android.synthetic.main.activity_main.*
@@ -50,6 +47,9 @@ class MainActivity : AppCompatActivity() {
         val button7 = findViewById<ImageButton>(R.id.MarkedReference1)
         val button8 = findViewById<ImageButton>(R.id.MarkedReference2)
         val confirm = findViewById<Button>(R.id.ConfirmMain)
+        val lifepoints = findViewById<TextView>(R.id.lebensanzeige_main)
+
+        updatelifes(lifepoints)
 
         fun openPictureFullscreenMain(button: ImageButton){
             val intent = Intent(this, PictureFullscreenReferenceChoice::class.java)
@@ -349,6 +349,11 @@ class MainActivity : AppCompatActivity() {
                 startActivity(intent)
             }
         }
+    }
+
+    fun updatelifes(textView: TextView){
+        val sharedPreferences = getSharedPreferences(shared_Preferences, Context.MODE_PRIVATE)
+        textView.setText("Leben: " + sharedPreferences.getInt("Lifepoints", 9))
     }
 
     private fun countdown(){

@@ -9,6 +9,7 @@ import android.view.Menu
 import android.view.MenuItem
 import android.widget.Button
 import android.widget.ImageButton
+import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.widget.Toolbar
@@ -45,6 +46,8 @@ class GM_ReferenceChoice : AppCompatActivity() {
         val button6 = findViewById<ImageButton>(R.id.Picture6_ReferenceChoice)
         val button7 = findViewById<ImageButton>(R.id.Picture7_ReferenceChoice)
         val confirm = findViewById<Button>(R.id.confirm_ReferenceChoice)
+        val lifepoints = findViewById<TextView>(R.id.lebensanzeige_GM)
+        updatelifes(lifepoints)
 
 
 
@@ -178,6 +181,10 @@ class GM_ReferenceChoice : AppCompatActivity() {
             drawer.closeDrawer(GravityCompat.START)
         } else {
             super.onBackPressed() }
+    }
+    fun updatelifes(textView: TextView){
+        val sharedPreferences = getSharedPreferences(shared_Preferences, Context.MODE_PRIVATE)
+        textView.setText("Leben: " + sharedPreferences.getInt("Lifepoints", 9))
     }
 /*
     fun duplicationPrevention(button: ImageButton){
