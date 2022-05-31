@@ -79,20 +79,9 @@ class MainActivityGM : AppCompatActivity() {
             openPictureFullscreen()
         }
 
-        confirm.setOnClickListener{//TODO send shared Preferences to other Players
-            val sharedPreferences = getSharedPreferences(shared_Preferences, Context.MODE_PRIVATE)
-            gmDone = sharedPreferences.getBoolean("gmDone", false)
-            val editor = sharedPreferences.edit()
-            if(!gmDone) {
-                shufflePlayerDoors()
-                gmDone = true
-                editor.apply(){
-                    putBoolean("gmDone", true)
-                }.apply()
-            }
-            if (gmDone){
-                Toast.makeText(this, "Arrow Position already confirmed", Toast.LENGTH_SHORT)
-            }
+        confirm.setOnClickListener{
+            val intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
         }
 
         progressBarStart()
@@ -128,116 +117,6 @@ class MainActivityGM : AppCompatActivity() {
         intent.putExtra("origin", "MainActivityGM")
         startActivity(intent)
     }
-
-    fun provideDoor(): Int{
-        val max = availablePictures.size
-        val gate = (Math.random() * (max + 1)).toInt()
-        val mutaMapPictures = availablePictures.toMutableList()
-        var output = mutaMapPictures.removeAt(gate-1)
-        availablePictures = mutaMapPictures.toIntArray()
-        availablePictures.shuffle()
-        return output
-    }
-
-
-    fun shufflePlayerDoors(){
-        val sharedPreferences = getSharedPreferences(shared_Preferences, Context.MODE_PRIVATE)
-        var savedString = sharedPreferences.getString("AvailablePictures", "1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20," +
-                "21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40," +
-                "41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60," +
-                "61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76")
-        var st = StringTokenizer(savedString, ",")
-
-        for(i in 1..availablePictures.size){
-            availablePictures[i-1] = Integer.parseInt(st.nextToken())
-        }
-        availablePictures.shuffle()
-        val editor = sharedPreferences.edit()
-
-        val maxRightGate = 6
-        var rightGate = (Math.random() * (maxRightGate + 1)).toInt()
-
-
-
-
-        when (rightGate){
-            1 -> {
-
-                editor.apply{
-                    putInt("correctDoor", 1)
-                    putInt("Picture1Main", Picture7_ReferenceChoice.getTag().toString().toInt())
-                    putInt("Picture2Main", provideDoor())
-                    putInt("Picture3Main", provideDoor())
-                    putInt("Picture4Main", provideDoor())
-                    putInt("Picture5Main", provideDoor())
-                    putInt("Picture6Main", provideDoor())
-                }.apply()
-            }
-            2 -> {
-
-                editor.apply{
-                    putInt("correctDoor", 2)
-                    putInt("Picture2Main", Picture7_ReferenceChoice.getTag().toString().toInt())
-                    putInt("Picture1Main", provideDoor())
-                    putInt("Picture3Main", provideDoor())
-                    putInt("Picture4Main", provideDoor())
-                    putInt("Picture5Main", provideDoor())
-                    putInt("Picture6Main", provideDoor())
-                }.apply()
-            }
-            3 -> {
-
-                editor.apply{
-                    putInt("correctDoor", 3)
-                    putInt("Picture3Main", Picture7_ReferenceChoice.getTag().toString().toInt())
-                    putInt("Picture2Main", provideDoor())
-                    putInt("Picture1Main", provideDoor())
-                    putInt("Picture4Main", provideDoor())
-                    putInt("Picture5Main", provideDoor())
-                    putInt("Picture6Main", provideDoor())
-                }.apply()
-            }
-            4 -> {
-
-                editor.apply{
-                    putInt("correctDoor", 4)
-                    putInt("Picture4Main", Picture7_ReferenceChoice.getTag().toString().toInt())
-                    putInt("Picture2Main", provideDoor())
-                    putInt("Picture3Main", provideDoor())
-                    putInt("Picture1Main", provideDoor())
-                    putInt("Picture5Main", provideDoor())
-                    putInt("Picture6Main", provideDoor())
-                }.apply()
-            }
-            5 -> {
-
-                editor.apply{
-                    putInt("correctDoor", 5)
-                    putInt("Picture5Main", Picture7_ReferenceChoice.getTag().toString().toInt())
-                    putInt("Picture2Main", provideDoor())
-                    putInt("Picture3Main", provideDoor())
-                    putInt("Picture4Main", provideDoor())
-                    putInt("Picture1Main", provideDoor())
-                    putInt("Picture6Main", provideDoor())
-                }.apply()
-            }
-            6 -> {
-
-                editor.apply{
-                    putInt("correctDoor", 6)
-                    putInt("Picture6Main", Picture7_ReferenceChoice.getTag().toString().toInt())
-                    putInt("Picture2Main", provideDoor())
-                    putInt("Picture3Main", provideDoor())
-                    putInt("Picture4Main", provideDoor())
-                    putInt("Picture5Main", provideDoor())
-                    putInt("Picture1Main", provideDoor())
-                }.apply()
-            }
-        }
-    }
-
-
-
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
         menuInflater.inflate(R.menu.nav,menu)

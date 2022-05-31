@@ -21,8 +21,7 @@ class PictureFullscreenReferenceChoice : AppCompatActivity() {
         supportActionBar?.hide()
 
         fun backtoReferenceChoice() {
-            val intent = Intent(this, GM_ReferenceChoice::class.java)
-            startActivity(intent)
+            finish()
         }
 
         val pictureFull = findViewById<ImageButton>(R.id.Button_fullscreen_ReferenceChoice)
@@ -46,6 +45,10 @@ class PictureFullscreenReferenceChoice : AppCompatActivity() {
             if(savedInt == reference){
                 confirmSwitch.setChecked(true)
             }
+            savedInt = sharedPreferences.getInt("PlayerChoice", 700015)
+            if(savedInt==reference){
+                confirmSwitch.setChecked(true)
+            }
         }
 
         confirmSwitch.setOnCheckedChangeListener { buttonView, isChecked ->
@@ -54,43 +57,61 @@ class PictureFullscreenReferenceChoice : AppCompatActivity() {
 
             var res_image = bundle?.getString("chosenImage")
             var savedInt = sharedPreferences.getInt(res_image, 700015)
-            if (isChecked) {
+            if(!sharedPreferences.getBoolean("PlayerTurn", false)){
+                if (isChecked) {
+                    if (sharedPreferences.getInt("ChosenReference1", 700015) == 700015) {
 
+                        editor.apply {
+                            putInt("ChosenReference1", savedInt)
 
-                if(sharedPreferences.getInt("ChosenReference1", 700015) == 700015) {
+                        }.apply()
+                        Toast.makeText(this, "Reference 1 Chosen", Toast.LENGTH_SHORT).show()
+                    } else if (sharedPreferences.getInt("ChosenReference2", 700015) == 700015) {
 
+                        editor.apply {
+                            putInt("ChosenReference2", savedInt)
+
+                        }.apply()
+                        Toast.makeText(this, "Reference 2 Chosen", Toast.LENGTH_SHORT).show()
+                    } else if (sharedPreferences.getInt("ChosenReference1", 700015) != 700015
+                        && sharedPreferences.getInt("ChosenReference2", 700015) != 700015
+                    ) {
+                        confirmSwitch.setChecked(false)
+
+                        Toast.makeText(this, "Uncheck one Reference to choose This", Toast.LENGTH_SHORT)
+                            .show()
+                    }
+                } else if (sharedPreferences.getInt("ChosenReference1", 700015) == savedInt) {
                     editor.apply {
-                        putInt("ChosenReference1", savedInt)
-
+                        putInt("ChosenReference1", 700015)
                     }.apply()
-                    Toast.makeText(this, "Reference 1 Chosen", Toast.LENGTH_SHORT).show()
-                }
-                else if(sharedPreferences.getInt("ChosenReference2", 700015) == 700015) {
-
+                    Toast.makeText(this, "Reference 1 Unchecked", Toast.LENGTH_SHORT).show()
+                } else if (sharedPreferences.getInt("ChosenReference2", 700015) == savedInt) {
                     editor.apply {
-                        putInt("ChosenReference2", savedInt)
-
+                        putInt("ChosenReference2", 700015)
                     }.apply()
-                    Toast.makeText(this, "Reference 2 Chosen", Toast.LENGTH_SHORT).show()
-                }
-                else if(sharedPreferences.getInt("ChosenReference1", 700015) != 700015
-                    && sharedPreferences.getInt("ChosenReference2", 700015) != 700015) {
-                    confirmSwitch.setChecked(false)
-
-                    Toast.makeText(this, "Uncheck one Reference to choose This", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this, "Reference 2 Unchecked", Toast.LENGTH_SHORT).show()
                 }
             }
-            else if(sharedPreferences.getInt("ChosenReference1", 700015) == savedInt){
-                editor.apply{
-                    putInt("ChosenReference1", 700015)
-                }.apply()
-                Toast.makeText(this, "Reference 1 Unchecked", Toast.LENGTH_SHORT).show()
-            }
-            else if(sharedPreferences.getInt("ChosenReference2", 700015) == savedInt){
-                editor.apply{
-                    putInt("ChosenReference2", 700015)
-                }.apply()
-                Toast.makeText(this, "Reference 2 Unchecked", Toast.LENGTH_SHORT).show()
+            if(sharedPreferences.getBoolean("PlayerTurn", false)){
+                if(isChecked){
+                    if(sharedPreferences.getInt("PlayerChoice", 700015)!= 700015
+                        && sharedPreferences.getInt("PlayerChoice", 700015)!= savedInt ){
+                        confirmSwitch.setChecked(false)
+                    }
+                    else {
+                        editor.apply {
+                            putInt("PlayerChoice", savedInt)
+
+                        }.apply()
+                    }
+                }
+                if (!isChecked){
+                    editor.apply {
+                        putInt("PlayerChoice", 700015)
+
+                    }.apply()
+                }
             }
         }
 

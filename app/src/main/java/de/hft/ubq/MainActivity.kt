@@ -18,6 +18,7 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.ubq.R
 import kotlinx.android.synthetic.main.activity_main.*
+import java.util.*
 
 
 class MainActivity : AppCompatActivity() {
@@ -25,6 +26,7 @@ class MainActivity : AppCompatActivity() {
     lateinit var countDownTimer: CountDownTimer
     private var countDownProgress: Int = 180000 //TODO May only reset after Round End
     val shared_Preferences:String = "shared_Preferences"
+    var availablePictures = IntArray(69)
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -125,10 +127,123 @@ class MainActivity : AppCompatActivity() {
         button8.setOnClickListener {
             openPictureFullscreenMarked(button8)
         }
+        val sharedPreferences = getSharedPreferences(shared_Preferences, Context.MODE_PRIVATE)
+
+        if(!sharedPreferences.getBoolean("online",false)){
+            val game = Game()
+            //val maxRightGate = 6
+            var rightGate = (1..6).random()
+            button7.setImageResource(sharedPreferences.getInt("ChosenReference1", 700015))
+            button8.setImageResource(sharedPreferences.getInt("ChosenReference2", 700015))
+
+            when(rightGate){
+                1 ->{
+                    button1.setImageResource(sharedPreferences.getInt("Picture7", 700015))
+                    button1.setTag(sharedPreferences.getInt("Picture7", 700015))
+                    game.matchdoor(button2, provideDoor())
+                    game.matchdoor(button3, provideDoor())
+                    game.matchdoor(button4, provideDoor())
+                    game.matchdoor(button5, provideDoor())
+                    game.matchdoor(button6, provideDoor())
+                }
+                2 ->{
+                    button2.setImageResource(sharedPreferences.getInt("Picture7", 700015))
+                    button2.setTag(sharedPreferences.getInt("Picture7", 700015))
+                    game.matchdoor(button1, provideDoor())
+                    game.matchdoor(button3, provideDoor())
+                    game.matchdoor(button4, provideDoor())
+                    game.matchdoor(button5, provideDoor())
+                    game.matchdoor(button6, provideDoor())
+                }
+                3 ->{
+                    button3.setImageResource(sharedPreferences.getInt("Picture7", 700015))
+                    button3.setTag(sharedPreferences.getInt("Picture7", 700015))
+                    game.matchdoor(button2, provideDoor())
+                    game.matchdoor(button1, provideDoor())
+                    game.matchdoor(button4, provideDoor())
+                    game.matchdoor(button5, provideDoor())
+                    game.matchdoor(button6, provideDoor())
+                }
+                4 ->{
+                    button4.setImageResource(sharedPreferences.getInt("Picture7", 700015))
+                    button4.setTag(sharedPreferences.getInt("Picture7", 700015))
+                    game.matchdoor(button2, provideDoor())
+                    game.matchdoor(button3, provideDoor())
+                    game.matchdoor(button1, provideDoor())
+                    game.matchdoor(button5, provideDoor())
+                    game.matchdoor(button6, provideDoor())
+                }
+                5 ->{
+                    button5.setImageResource(sharedPreferences.getInt("Picture7", 700015))
+                    button5.setTag(sharedPreferences.getInt("Picture7", 700015))
+                    game.matchdoor(button2, provideDoor())
+                    game.matchdoor(button3, provideDoor())
+                    game.matchdoor(button4, provideDoor())
+                    game.matchdoor(button1, provideDoor())
+                    game.matchdoor(button6, provideDoor())
+                }
+                6 ->{
+                    button6.setImageResource(sharedPreferences.getInt("Picture7", 700015))
+                    button6.setTag(sharedPreferences.getInt("Picture7", 700015))
+                    game.matchdoor(button2, provideDoor())
+                    game.matchdoor(button3, provideDoor())
+                    game.matchdoor(button4, provideDoor())
+                    game.matchdoor(button5, provideDoor())
+                    game.matchdoor(button1, provideDoor())
+                }
+            }
+            saveData()
+
+        }
+
+
 
 
     progressBarStart()
 
+    }
+    fun saveData(){
+        val sharedPreferences = getSharedPreferences(shared_Preferences, Context.MODE_PRIVATE)
+        val editor = sharedPreferences.edit()
+        var str = StringBuilder();
+        for( i in 1..availablePictures.size){
+            str.append(availablePictures[i-1]).append(",")
+        }
+
+        editor.apply{
+
+            putInt("Picture1Main", Picture1Main.getTag().toString().toInt())
+            putInt("Picture2Main", Picture2Main.getTag().toString().toInt())
+            putInt("Picture3Main", Picture3Main.getTag().toString().toInt())
+            putInt("Picture4Main", Picture4Main.getTag().toString().toInt())
+            putInt("Picture5Main", Picture5Main.getTag().toString().toInt())
+            putInt("Picture6Main", Picture6Main.getTag().toString().toInt())
+            putBoolean("PlayerTurn", true)
+            putString("AvailablePictures",str.toString())
+        }.apply()
+
+        Toast.makeText(this, "Data saved", Toast.LENGTH_SHORT).show()
+    }
+
+    fun provideDoor(): Int{
+        val sharedPreferences = getSharedPreferences(shared_Preferences, Context.MODE_PRIVATE)
+        var savedString = sharedPreferences.getString("AvailablePictures", "1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20," +
+                "21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40," +
+                "41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60," +
+                "61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76")
+        var st = StringTokenizer(savedString, ",")
+
+        for(i in 1..availablePictures.size){
+            availablePictures[i-1] = Integer.parseInt(st.nextToken())
+        }
+        availablePictures.shuffle()
+        val max = availablePictures.size
+        val gate = (Math.random() * (max + 1)).toInt()
+        val mutaMapPictures = availablePictures.toMutableList()
+        var output = mutaMapPictures.removeAt(gate-1)
+        availablePictures = mutaMapPictures.toIntArray()
+        availablePictures.shuffle()
+        return output
     }
 
 

@@ -29,7 +29,7 @@ class MainMenu : AppCompatActivity() {
 
 
         bttNeuSpiel.setOnClickListener {
-            val intent = Intent(this, GM_ReferenceChoice::class.java)
+            val intent = Intent(this, Modus::class.java)
             clearPreferences()
             startActivity(intent)
         }
@@ -61,6 +61,8 @@ class MainMenu : AppCompatActivity() {
         val editor = sharedPreferences.edit()
 
         editor.apply{
+            putBoolean("PlayerTurn", false)
+            putBoolean("online", false)
             putInt("maxRounds", 7)
             putInt("PlayerNumber", 3)
             putInt("PlayerChoice", 700015)
