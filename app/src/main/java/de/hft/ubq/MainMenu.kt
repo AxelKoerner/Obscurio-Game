@@ -91,7 +91,7 @@ class MainMenu : AppCompatActivity()  {
             putInt("correctDoor",0)
             putInt("correctVotes", 0)
             putInt("Lifepoints", 9)
-            putInt("Round", 0)
+            putInt("Round", 1)
             putString("UsedPicture", "")
             putBoolean("isRunning", false)
             putInt("Picture1", 700015)

@@ -302,7 +302,7 @@ class MainActivity : AppCompatActivity() {
                     var player = sharedPreferences.getInt("overallVotes", 0) + 1
                     Toast.makeText(
                         this,
-                        "Player " + player + " Turn!",
+                        "Player " + player + "'s Turn!",
                         Toast.LENGTH_SHORT
                     ).show()
                 }
@@ -321,7 +321,7 @@ class MainActivity : AppCompatActivity() {
                     var player = sharedPreferences.getInt("overallVotes", 0) + 1
                     Toast.makeText(
                         this,
-                        "Player " + player + " Turn!",
+                        "Player " + player + "'s Turn!",
                         Toast.LENGTH_SHORT
                     ).show()
                 }
@@ -339,12 +339,17 @@ class MainActivity : AppCompatActivity() {
             }
 
             else if ( sharedPreferences.getInt("overallVotes", 0)>= sharedPreferences.getInt("PlayerNumber", 3)){
-                var round = sharedPreferences.getInt("Round",0)+1
-                editor.apply {
-                    putInt("Round", round)
+                val doubleVotes = sharedPreferences.getInt("correctVotes", 0)*2
+                if( doubleVotes >=sharedPreferences.getInt("PlayerNumber", 3)){
+                    var round = sharedPreferences.getInt("Round",1)+1
+                    editor.apply {
+                        putInt("Round", round)
 
 
-                }.apply()
+                    }.apply()
+                }
+
+
                 val intent = Intent(this, Midscreen::class.java)
                 startActivity(intent)
             }

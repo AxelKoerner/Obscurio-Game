@@ -37,32 +37,44 @@
             android:background="@drawable/obscurio_schriftzug"
             android:textAlignment="center"
             android:textSize="40sp"
-            tools:layout_editor_absoluteY="28dp"
-            tools:layout_editor_absoluteX="79dp" />
+            android:id="@+id/imageView"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintVertical_bias="0.071" />
 
     <TextView
             android:text="Leben"
             android:layout_width="172dp"
             android:layout_height="42dp"
             android:id="@+id/textView5"
-            tools:layout_editor_absoluteY="139dp"
-            tools:layout_editor_absoluteX="17dp"
             android:textAlignment="center"
             android:fontFamily="@font/roboto_black"
             android:textStyle="bold"
-            android:autoSizeTextType="uniform"/>
+            android:autoSizeTextType="uniform"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.138"
+            app:layout_constraintVertical_bias="0.214" />
 
     <TextView
             android:text="Spieler"
             android:layout_width="172dp"
             android:layout_height="42dp"
             android:id="@+id/textView6"
-            tools:layout_editor_absoluteY="139dp"
-            tools:layout_editor_absoluteX="223dp"
             android:textAlignment="center"
             android:fontFamily="@font/roboto_black"
             android:textStyle="bold"
-            android:autoSizeTextType="uniform"/>
+            android:autoSizeTextType="uniform"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.933"
+            app:layout_constraintVertical_bias="0.213" />
 
     <EditText
             android:layout_width="75dp"
@@ -71,9 +83,12 @@
             android:text="7"
             android:ems="10"
             android:id="@+id/lebensText"
-            tools:layout_editor_absoluteY="190dp"
-            tools:layout_editor_absoluteX="48dp"
-            />
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.235"
+            app:layout_constraintVertical_bias="0.275" />
 
     <EditText
             android:layout_width="75dp"
@@ -81,8 +96,12 @@
             android:inputType="textPersonName"
             android:text="3"
             android:ems="10"
-            android:id="@+id/lebensText2"
-            tools:layout_editor_absoluteY="190dp"
-            tools:layout_editor_absoluteX="268dp" />
+            android:id="@+id/spielerText"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.764"
+            app:layout_constraintVertical_bias="0.275" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
