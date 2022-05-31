@@ -20,7 +20,7 @@ class BackgroundSoundService : Service() {
         val player = MediaPlayer()
          player.setDataSource(afd.fileDescriptor)
      */
-        player = MediaPlayer.create(this, R.raw.music)
+        player = MediaPlayer.create(this, R.raw.song2)
         player.isLooping = true // Set looping
         player.setVolume(1f, 1f)
 
