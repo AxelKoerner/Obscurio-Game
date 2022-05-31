@@ -10,11 +10,19 @@
             android:supportsRtl="true"
             android:theme="@style/Theme.Test">
         <activity
+                android:name="de.hft.ubq.Modus"
+                android:exported="false" />
+        <activity
+                android:name="de.hft.ubq.Midscreen"
+                android:exported="false" />
+        <activity
                 android:name="de.hft.ubq.PictureFullscreenMain"
                 android:exported="false" />
+
         <service
                 android:name="de.hft.ubq.BackgroundSoundService"
-                android:enabled="true"/>
+                android:enabled="true" />
+
         <activity
                 android:name="de.hft.ubq.PictureFullscreenMarked"
                 android:exported="false" />
