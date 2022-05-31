@@ -20,8 +20,8 @@ class Modus : AppCompatActivity() {
         }
 
         buttonOnline.setOnClickListener { //TODO LoginScreen
-            //val intent = Intent(this, LoginScreen)
-            //startActivity(intent)
+            val intent = Intent(this, Login::class.java)
+            startActivity(intent)
         }
 
 

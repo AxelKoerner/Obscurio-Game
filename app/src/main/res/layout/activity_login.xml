@@ -86,4 +86,12 @@
             app:layout_constraintBottom_toTopOf="@+id/textView"
             app:layout_constraintVertical_bias="0.521" />
 
+    <Button
+            android:text="Back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/BackLogin"
+            tools:layout_editor_absoluteY="597dp"
+            tools:layout_editor_absoluteX="161dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

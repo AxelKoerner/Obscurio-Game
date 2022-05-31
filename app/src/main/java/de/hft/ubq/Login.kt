@@ -25,11 +25,15 @@ class Login : AppCompatActivity() {
         database.child("Users").child("a").setValue("b")
 
         val loginbtn = findViewById<Button>(R.id.loginButton)
+        val backButton = findViewById<Button>(R.id.BackLogin)
 
         loginbtn.setOnClickListener{
             signUp()
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
+        }
+        backButton.setOnClickListener {
+            finish()
         }
     }
 
