@@ -10,6 +10,10 @@ import android.view.MenuItem
 import android.widget.Button
 import android.widget.ImageButton
 import android.widget.Toast
+import androidx.appcompat.app.ActionBarDrawerToggle
+import androidx.appcompat.widget.Toolbar
+import androidx.core.view.GravityCompat
+import androidx.drawerlayout.widget.DrawerLayout
 import com.example.ubq.R
 import kotlinx.android.synthetic.main.activity_gm_reference_choice.*
 import kotlinx.android.synthetic.main.activity_main.*
@@ -166,6 +170,14 @@ class GM_ReferenceChoice : AppCompatActivity() {
 
 
 
+    }
+
+    override fun onBackPressed() {
+        val drawer = findViewById<DrawerLayout>(R.id.drawer_layout)
+        if (drawer.isDrawerOpen(GravityCompat.START)) {
+            drawer.closeDrawer(GravityCompat.START)
+        } else {
+            super.onBackPressed() }
     }
 /*
     fun duplicationPrevention(button: ImageButton){

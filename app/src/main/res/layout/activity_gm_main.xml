@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@drawable/background_gameboard"
-    android:id="@+id/mainGM"
-    tools:context="de.hft.ubq.MainActivity">
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_gameboard"
+        android:id="@+id/mainGM"
+        tools:context="de.hft.ubq.MainActivity">
 
     <TextView
             android:layout_width="179dp"
@@ -38,14 +38,14 @@
             android:layout_width="110dp"
             android:layout_height="110dp"
             android:layout_alignParentStart="true"
-            android:layout_marginStart="145dp"
+            android:layout_marginStart="144dp"
             android:adjustViewBounds="true"
             android:background="@drawable/button"
             android:scaleType="fitCenter"
             android:src="@drawable/monk"
             app:layout_constraintStart_toStartOf="parent"
             tools:ignore="MissingConstraints"
-            android:layout_marginTop="87dp"
+            android:layout_marginTop="110dp"
             android:layout_alignParentTop="true" />
 
     <ImageButton
@@ -54,14 +54,14 @@
             android:layout_width="110dp"
             android:layout_height="110dp"
             android:layout_alignParentStart="true"
-            android:layout_marginStart="144dp"
+            android:layout_marginStart="142dp"
             android:adjustViewBounds="true"
             android:background="@drawable/button"
             android:scaleType="fitCenter"
             android:src="@drawable/monk"
             app:layout_constraintStart_toStartOf="parent"
             tools:ignore="MissingConstraints"
-            android:layout_marginTop="19dp"
+            android:layout_marginTop="51dp"
             android:layout_below="@+id/Picture1_gm" />
 
     <ImageButton
@@ -70,8 +70,8 @@
             android:layout_width="110dp"
             android:layout_height="110dp"
             android:layout_alignParentStart="true"
-            android:layout_marginStart="142dp"
-            android:layout_marginTop="18dp"
+            android:layout_marginStart="145dp"
+            android:layout_marginTop="31dp"
             android:adjustViewBounds="true"
             android:background="@drawable/button"
             android:scaleType="fitCenter"
@@ -85,9 +85,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
-            android:layout_marginStart="150dp"
-            android:layout_marginTop="500dp"
-            android:id="@+id/confirm_gm_main" />
+            android:layout_marginStart="155dp"
+            android:layout_marginTop="588dp"
+            android:id="@+id/confirm_gm_main"
+            android:layout_alignParentTop="true" />
 
 
 </RelativeLayout>

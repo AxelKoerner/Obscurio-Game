@@ -22,7 +22,7 @@ class BackgroundSoundService : Service() {
      */
         player = MediaPlayer.create(this, R.raw.music)
         player.isLooping = true // Set looping
-        player.setVolume(100f, 100f)
+        player.setVolume(1f, 1f)
 
     }
 
