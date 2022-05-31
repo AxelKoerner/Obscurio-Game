@@ -10,6 +10,12 @@
             android:supportsRtl="true"
             android:theme="@style/Theme.Test">
         <activity
+                android:name="de.hft.ubq.lossScreen"
+                android:exported="false" />
+        <activity
+                android:name="de.hft.ubq.winScreen"
+                android:exported="false" />
+        <activity
                 android:name="de.hft.ubq.Login"
                 android:exported="false" />
         <activity

@@ -282,115 +282,73 @@ class MainActivity : AppCompatActivity() {
         return super.onOptionsItemSelected(item)
     }
 
-    fun timeout(){ //TODO has to happen when Time runs out
-        doSomething()
-        roundEnd()
-    }
 
     fun doSomething(){//TODO check for Synchronization, has to happen for each Player
         val sharedPreferences = getSharedPreferences(shared_Preferences, Context.MODE_PRIVATE)
         val editor = sharedPreferences.edit()
-        if(sharedPreferences.getInt("PlayerChoice", 700015) != 700015){
+
+
+        if(sharedPreferences.getInt("PlayerChoice", 700015) != 700015){//choice nonstandard
             if(sharedPreferences.getInt("PlayerChoice", 700015) ==
-                    sharedPreferences.getInt("Picture7", 700015)){
-               var Count = sharedPreferences.getInt("correctVotes", 0)+1
+                sharedPreferences.getInt("Picture7", 700015)){//right choice
+                var Count = sharedPreferences.getInt("correctVotes", 0)+1
+                var votes = sharedPreferences.getInt("overallVotes", 0)+1
                 editor.apply {
                     putInt("correctVotes", Count)
-
+                    putInt("overallVotes", votes)
+                    putInt("PlayerChoice", 700015)
                 }.apply()
+                if(sharedPreferences.getInt("overallVotes", 0) < sharedPreferences.getInt("PlayerNumber",3)) {
+                    var player = sharedPreferences.getInt("overallVotes", 0) + 1
+                    Toast.makeText(
+                        this,
+                        "Player " + player + " Turn!",
+                        Toast.LENGTH_SHORT
+                    ).show()
+                }
 
             }
-        }
-    }
+            else if(sharedPreferences.getInt("PlayerChoice", 700015) !=
+                sharedPreferences.getInt("Picture7", 700015)){//wrong choice
+                var lives = sharedPreferences.getInt("Lifepoints", 9)-1
+                var votes = sharedPreferences.getInt("overallVotes", 0)+1
+                editor.apply {
+                    putInt("Lifepoints", lives)
+                    putInt("overallVotes", votes)
+                    putInt("PlayerChoice", 700015)
+                }.apply()
+                if(sharedPreferences.getInt("overallVotes", 0) < sharedPreferences.getInt("PlayerNumber",3)) {
+                    var player = sharedPreferences.getInt("overallVotes", 0) + 1
+                    Toast.makeText(
+                        this,
+                        "Player " + player + " Turn!",
+                        Toast.LENGTH_SHORT
+                    ).show()
+                }
 
-    fun roundEnd(){// TODO check for Synchronization, has to happen only once
-        val sharedPreferences = getSharedPreferences(shared_Preferences, Context.MODE_PRIVATE)
-        val editor = sharedPreferences.edit()
-        if(sharedPreferences.getInt("correctVotes", 0) > sharedPreferences.getInt("PlayerNumber",3)/2){
-            var Round = sharedPreferences.getInt("Round", 0)+1
-            editor.apply {
-                putInt("Round", Round)
-            }.apply()
-        }
-        if(sharedPreferences.getInt("correctVotes", 0) <= sharedPreferences.getInt("PlayerNumber",3)/2){
-            var Round = sharedPreferences.getInt("Round", 0)
-            var LifePoints = sharedPreferences.getInt("Lifepoints", 0)
-                            - (sharedPreferences.getInt("PlayerNumber",3) - sharedPreferences.getInt("correctVotes", 0))
-            editor.apply {
-                putInt("Round", Round)
-                putInt("Lifepoints", LifePoints)
-            }.apply()
-        }
-        if(sharedPreferences.getInt("Lifepoints", 9) <= 0){
-            //TODO GameOver
-        }
-        if(sharedPreferences.getInt("Round", 0) > sharedPreferences.getInt("maxRounds", 7)
-            &&sharedPreferences.getInt("Lifepoints", 9) > 0){
-            //TODO WIN
-        }
+            }
+            if(sharedPreferences.getInt("Lifepoints",9)<= 0){//lifepointCheck
+                val intent = Intent(this, lossScreen::class.java)
+                startActivity(intent)
 
-    }
+            }
+            else if ( sharedPreferences.getInt("overallVotes", 0)>= sharedPreferences.getInt("PlayerNumber", 3)&&
+                sharedPreferences.getInt("Round",0) >= sharedPreferences.getInt("maxRounds", 7)){ //RoundEnd+GameEnd
+                val intent = Intent(this, winScreen::class.java)
+                startActivity(intent)
+            }
 
-    fun providePictures(){//TODO Call when GM has confirmed ArrowPositions
-        val sharedPreferences = getSharedPreferences(shared_Preferences, Context.MODE_PRIVATE)
-        val correctDoor = sharedPreferences.getInt("correctDoor", 1)
-        val button1 = findViewById<ImageButton>(R.id.Picture1Main)
-        val button2 = findViewById<ImageButton>(R.id.Picture2Main)
-        val button3 = findViewById<ImageButton>(R.id.Picture3Main)
-        val button4 = findViewById<ImageButton>(R.id.Picture4Main)
-        val button5 = findViewById<ImageButton>(R.id.Picture5Main)
-        val button6 = findViewById<ImageButton>(R.id.Picture6Main)
-        val game = Game()
+            else if ( sharedPreferences.getInt("overallVotes", 0)>= sharedPreferences.getInt("PlayerNumber", 3)){
+                var round = sharedPreferences.getInt("Round",0)+1
+                editor.apply {
+                    putInt("Round", round)
 
-        if(correctDoor == 1){
-            button1.setImageResource(sharedPreferences.getInt("Picture7", 700015))
-            game.matchdoor(button2, sharedPreferences.getInt("Picture2Main", 0))
-            game.matchdoor(button3, sharedPreferences.getInt("Picture3Main", 0))
-            game.matchdoor(button4, sharedPreferences.getInt("Picture4Main", 0))
-            game.matchdoor(button5, sharedPreferences.getInt("Picture5Main", 0))
-            game.matchdoor(button6, sharedPreferences.getInt("Picture6Main", 0))
-        }
-        if(correctDoor == 2){
-            button2.setImageResource(sharedPreferences.getInt("Picture7", 700015))
-            game.matchdoor(button1, sharedPreferences.getInt("Picture1Main", 0))
-            game.matchdoor(button3, sharedPreferences.getInt("Picture3Main", 0))
-            game.matchdoor(button4, sharedPreferences.getInt("Picture4Main", 0))
-            game.matchdoor(button5, sharedPreferences.getInt("Picture5Main", 0))
-            game.matchdoor(button6, sharedPreferences.getInt("Picture6Main", 0))
-        }
-        if(correctDoor == 3){
-            button3.setImageResource(sharedPreferences.getInt("Picture7", 700015))
-            game.matchdoor(button2, sharedPreferences.getInt("Picture2Main", 0))
-            game.matchdoor(button1, sharedPreferences.getInt("Picture1Main", 0))
-            game.matchdoor(button4, sharedPreferences.getInt("Picture4Main", 0))
-            game.matchdoor(button5, sharedPreferences.getInt("Picture5Main", 0))
-            game.matchdoor(button6, sharedPreferences.getInt("Picture6Main", 0))
-        }
-        if(correctDoor == 4){
-            button4.setImageResource(sharedPreferences.getInt("Picture7", 700015))
-            game.matchdoor(button2, sharedPreferences.getInt("Picture2Main", 0))
-            game.matchdoor(button3, sharedPreferences.getInt("Picture3Main", 0))
-            game.matchdoor(button1, sharedPreferences.getInt("Picture1Main", 0))
-            game.matchdoor(button5, sharedPreferences.getInt("Picture5Main", 0))
-            game.matchdoor(button6, sharedPreferences.getInt("Picture6Main", 0))
-        }
-        if(correctDoor == 5){
-            button5.setImageResource(sharedPreferences.getInt("Picture7", 700015))
-            game.matchdoor(button2, sharedPreferences.getInt("Picture2Main", 0))
-            game.matchdoor(button3, sharedPreferences.getInt("Picture3Main", 0))
-            game.matchdoor(button4, sharedPreferences.getInt("Picture4Main", 0))
-            game.matchdoor(button1, sharedPreferences.getInt("Picture1Main", 0))
-            game.matchdoor(button6, sharedPreferences.getInt("Picture6Main", 0))
-        }
-        if(correctDoor == 6){
-            button6.setImageResource(sharedPreferences.getInt("Picture7", 700015))
-            game.matchdoor(button2, sharedPreferences.getInt("Picture2Main", 0))
-            game.matchdoor(button3, sharedPreferences.getInt("Picture3Main", 0))
-            game.matchdoor(button4, sharedPreferences.getInt("Picture4Main", 0))
-            game.matchdoor(button5, sharedPreferences.getInt("Picture5Main", 0))
-            game.matchdoor(button1, sharedPreferences.getInt("Picture1Main", 0))
-        }
 
+                }.apply()
+                val intent = Intent(this, Midscreen::class.java)
+                startActivity(intent)
+            }
+        }
     }
 
     private fun countdown(){

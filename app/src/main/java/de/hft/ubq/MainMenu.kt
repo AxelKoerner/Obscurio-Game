@@ -81,6 +81,7 @@ class MainMenu : AppCompatActivity()  {
         val editor = sharedPreferences.edit()
 
         editor.apply{
+            putInt("overallVotes", 0)
             putBoolean("PlayerTurn", false)
             putBoolean("online", false)
             putInt("maxRounds", 7)

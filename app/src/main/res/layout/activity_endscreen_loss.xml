@@ -21,7 +21,7 @@
             android:textSize="40sp" />
 
     <Button
-            android:id="@+id/ErneutSpielen"
+            android:id="@+id/ErneutSpielenLoss"
             android:layout_width="193dp"
             android:layout_height="89dp"
             android:layout_alignParentEnd="true"
