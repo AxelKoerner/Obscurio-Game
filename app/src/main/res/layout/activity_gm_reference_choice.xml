@@ -7,17 +7,19 @@
         android:background="@drawable/background_gameboard"
         tools:context="de.hft.ubq.GM_ReferenceChoice">
 
+
     <TextView
-            android:layout_width="179dp"
-            android:layout_height="wrap_content"
-            android:text="Leben: 10"
-            android:layout_alignParentBottom="true"
-            android:layout_marginBottom="664dp"
-            android:layout_alignParentEnd="true"
-            android:layout_marginEnd="118dp"
+            android:id="@+id/lebensanzeige_GM"
+            android:text="@string/lebensanzeige"
+            android:layout_width="228dp"
+            android:layout_height="85dp"
             android:textAlignment="center"
+            android:textSize="30sp"
             android:textColor="@color/white"
-            android:textSize="30dp" />
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="81dp"
+            android:layout_marginBottom="555dp" />
 
     <TextView
             android:id="@+id/textView_ReferenceChoice"
@@ -25,8 +27,8 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/timer_ReferenceChoice"
             android:layout_alignParentEnd="true"
-            android:layout_marginTop="61dp"
-            android:layout_marginEnd="129dp"
+            android:layout_marginTop="-9dp"
+            android:layout_marginEnd="127dp"
             android:text="Obscurio Game"
             android:textAllCaps="true"
             android:textColor="@color/white"
@@ -177,7 +179,7 @@
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
             android:layout_marginEnd="150dp"
-            android:layout_marginBottom="200dp"/>
+            android:layout_marginBottom="200dp" />
 
 
 </RelativeLayout>
