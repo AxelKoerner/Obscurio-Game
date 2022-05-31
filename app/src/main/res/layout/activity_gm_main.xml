@@ -12,13 +12,13 @@
             android:layout_width="179dp"
             android:layout_height="wrap_content"
             android:text="@string/lebensanzeige"
-            android:layout_alignParentBottom="true"
-            android:layout_marginBottom="664dp"
             android:layout_alignParentEnd="true"
-            android:layout_marginEnd="118dp"
+            android:layout_marginEnd="113dp"
             android:textAlignment="center"
             android:textColor="@color/white"
-            android:textSize="30dp" />
+            android:textSize="30dp"
+            android:layout_marginTop="28dp"
+            android:layout_alignParentTop="true" />
 
     <ProgressBar
             android:id="@+id/progressbar_gm"
@@ -38,14 +38,14 @@
             android:layout_width="110dp"
             android:layout_height="110dp"
             android:layout_alignParentStart="true"
-            android:layout_marginStart="144dp"
+            android:layout_marginStart="149dp"
             android:adjustViewBounds="true"
             android:background="@drawable/button"
             android:scaleType="fitCenter"
             android:src="@drawable/monk"
             app:layout_constraintStart_toStartOf="parent"
             tools:ignore="MissingConstraints"
-            android:layout_marginTop="110dp"
+            android:layout_marginTop="121dp"
             android:layout_alignParentTop="true" />
 
     <ImageButton
@@ -54,14 +54,14 @@
             android:layout_width="110dp"
             android:layout_height="110dp"
             android:layout_alignParentStart="true"
-            android:layout_marginStart="142dp"
+            android:layout_marginStart="145dp"
             android:adjustViewBounds="true"
             android:background="@drawable/button"
             android:scaleType="fitCenter"
             android:src="@drawable/monk"
             app:layout_constraintStart_toStartOf="parent"
             tools:ignore="MissingConstraints"
-            android:layout_marginTop="51dp"
+            android:layout_marginTop="45dp"
             android:layout_below="@+id/Picture1_gm" />
 
     <ImageButton
@@ -70,8 +70,8 @@
             android:layout_width="110dp"
             android:layout_height="110dp"
             android:layout_alignParentStart="true"
-            android:layout_marginStart="145dp"
-            android:layout_marginTop="31dp"
+            android:layout_marginStart="144dp"
+            android:layout_marginTop="48dp"
             android:adjustViewBounds="true"
             android:background="@drawable/button"
             android:scaleType="fitCenter"
