@@ -42,6 +42,7 @@
             android:layout_width="202dp"
             android:layout_height="76dp"
             android:id="@+id/continueMidscreen"
+            android:background="@drawable/custom_button"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/leben"

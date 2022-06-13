@@ -32,6 +32,7 @@
             android:layout_marginEnd="108dp"
             android:layout_marginBottom="350dp"
             android:text="Noch mal spielen"
+            android:background="@drawable/custom_button"
             android:layout_alignParentStart="true"
             android:layout_marginStart="110dp"
             android:layout_alignParentTop="true" />
@@ -46,6 +47,7 @@
             android:layout_marginEnd="110dp"
             android:layout_marginBottom="208dp"
             android:text="Spiel Beenden"
+            android:background="@drawable/custom_button"
             android:layout_alignParentStart="true"
             android:layout_marginStart="108dp"
             android:layout_alignParentTop="true" />

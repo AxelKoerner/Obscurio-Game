@@ -13,10 +13,10 @@
             style="?android:attr/borderlessButtonStyle"
             android:layout_width="405dp"
             android:layout_height="658dp"
-            android:layout_centerInParent="true"
             android:adjustViewBounds="true"
             android:scaleType="fitCenter"
-            android:src="@drawable/monk" />
+            android:src="@drawable/monk"
+            android:layout_centerInParent="true" />
 
     <ImageView
             android:id="@+id/pointer"
@@ -33,9 +33,9 @@
             android:text="Confirm"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-
+            android:background="@drawable/custom_button"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
             android:layout_marginEnd="150dp"
-            android:layout_marginBottom="58dp"/>
+            android:layout_marginBottom="58dp" />
 </RelativeLayout>
