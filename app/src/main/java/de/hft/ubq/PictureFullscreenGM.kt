@@ -1,15 +1,23 @@
 package de.hft.ubq
 
+import android.content.ContentValues
 import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.view.View
 import com.example.ubq.R
 import android.view.MotionEvent
 import android.view.View.OnTouchListener
 import android.view.ViewGroup
 import android.widget.*
+import com.google.firebase.database.DataSnapshot
+import com.google.firebase.database.DatabaseError
+import com.google.firebase.database.DatabaseReference
+import com.google.firebase.database.ValueEventListener
+import com.google.firebase.database.ktx.database
+import com.google.firebase.ktx.Firebase
 import kotlinx.android.synthetic.main.activity_gm_reference_choice.*
 
 class PictureFullscreenGM : AppCompatActivity() {
@@ -18,6 +26,7 @@ class PictureFullscreenGM : AppCompatActivity() {
     private var yDelta = 0
     private var mainLayout: ViewGroup? = null
     private var image: ImageView? = null
+    private lateinit var database : DatabaseReference
 
 
 
@@ -25,6 +34,8 @@ class PictureFullscreenGM : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_picture_fullscreen_gm)
         supportActionBar?.hide()
+
+        database = Firebase.database.reference
 
         mainLayout = findViewById<View>(R.id.fullscreenGM) as RelativeLayout
         image = findViewById<View>(R.id.pointer) as ImageView
@@ -126,6 +137,39 @@ class PictureFullscreenGM : AppCompatActivity() {
             }
             mainLayout!!.invalidate()
             true
+        }
+    }
+
+    fun getdataInt(dbchild : String, dbchild2 : String) : Int {
+        var zahl = 0
+        database.addValueEventListener(object : ValueEventListener {
+            override fun onDataChange(snapshot: DataSnapshot) {
+                zahl = snapshot.child(dbchild).child(dbchild2).getValue() as Int
+            }
+            override fun onCancelled(error: DatabaseError) {
+                // Failed to read value
+                Log.w(ContentValues.TAG, "Failed to read value.", error.toException())
+            }
+        })
+        return zahl
+    }
+
+    fun setData(dbchild2 : String, saveValue : String, datatype : String) {
+        when(datatype){
+            "Int"->{
+                database.child("$dbchild2").setValue(saveValue.toInt())
+            }
+            "String"->{
+                database.child("$dbchild2").setValue("$saveValue")
+            }
+            "Boolean"->{
+                if (saveValue == "true"){
+                    database.child("$dbchild2").setValue(true)
+                }
+                if (saveValue == "false"){
+                    database.child("$dbchild2").setValue(false)
+                }
+            }
         }
     }
 

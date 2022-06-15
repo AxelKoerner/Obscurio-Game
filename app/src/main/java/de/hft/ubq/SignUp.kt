@@ -1,46 +1,45 @@
 package de.hft.ubq
 
-import android.content.ContentValues
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
-import android.view.View
 import android.widget.Button
-import android.widget.TextView
 import android.widget.Toast
 import com.example.ubq.R
 import com.google.firebase.auth.FirebaseAuth
-import com.google.firebase.database.DataSnapshot
-import com.google.firebase.database.DatabaseError
 import com.google.firebase.database.DatabaseReference
-import com.google.firebase.database.ValueEventListener
 import com.google.firebase.database.ktx.database
 import com.google.firebase.ktx.Firebase
 import kotlinx.android.synthetic.main.activity_login.*
+import kotlinx.android.synthetic.main.activity_sign_up.*
 
-class Login : AppCompatActivity() {
+class SignUp : AppCompatActivity() {
 
     private lateinit var  mAuth: FirebaseAuth
 
     private lateinit var database : DatabaseReference
 
+    var test = "Axel.de"
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_login)
+        setContentView(R.layout.activity_sign_up)
         mAuth= FirebaseAuth.getInstance()
         database = Firebase.database.reference
 
-        val loginbtn = findViewById<Button>(R.id.loginButton)
-        val backButton = findViewById<Button>(R.id.BackLogin)
+        val signbtn = findViewById<Button>(R.id.SignUpButton)
 
-        loginbtn.setOnClickListener{
-            login()
+        val signInbtn = findViewById<Button>(R.id.signIn)
+
+        signbtn.setOnClickListener{
+            signUp()
         }
 
-        backButton.setOnClickListener {
-            newUser("Son")
+        signInbtn.setOnClickListener{
+            val intent = Intent(this, Login::class.java)
+            startActivity(intent)
         }
+
     }
 
     private fun login() {
@@ -52,24 +51,27 @@ class Login : AppCompatActivity() {
             if (it.isSuccessful) {
                 val intent = Intent(this, MainMenu::class.java)
                 startActivity(intent)
-            } else
-                Toast.makeText(this, "Log In failed ", Toast.LENGTH_SHORT).show()
+            } else {
+                mAuth.createUserWithEmailAndPassword(email,pass)
+                    .addOnCompleteListener(this) { task ->
+                        if (task.isSuccessful) {
+                            finish()
+                        }
+                    }
+            }
         }
     }
 
-    fun getdataInt(dbchild : String, dbchild2 : String) : Int {
-        var zahl = 0
-        database.addValueEventListener(object : ValueEventListener {
-            override fun onDataChange(snapshot: DataSnapshot) {
-                //TODO change as String to right datatype
-                zahl = snapshot.child(dbchild).child(dbchild2).getValue() as Int
+    private fun signUp() {
+        val email = SignUpemail.text.toString().trim()
+        val password = signUpPassword.text.toString().trim()
+
+        mAuth.createUserWithEmailAndPassword(email,password)
+            .addOnCompleteListener(this) { task ->
+                if (task.isSuccessful) {
+                    finish()
+                }
             }
-            override fun onCancelled(error: DatabaseError) {
-                // Failed to read value
-                Log.w(ContentValues.TAG, "Failed to read value.", error.toException())
-            }
-        })
-        return zahl
     }
 
     fun newUser(username : String){
