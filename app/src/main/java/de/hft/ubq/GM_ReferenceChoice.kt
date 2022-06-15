@@ -318,16 +318,19 @@ class GM_ReferenceChoice : AppCompatActivity() {
         isRunning = savedBoolean
     }
 
-    fun getdata(dbchild : String) {
+    fun getdataInt(dbchild : String, dbchild2 : String) : Int {
+        var zahl = 0
         database.addValueEventListener(object : ValueEventListener {
             override fun onDataChange(snapshot: DataSnapshot) {
-                var test = snapshot.child("$dbchild").getValue()
+                //TODO change as String to right datatype
+                zahl = snapshot.child(dbchild).child(dbchild2).getValue() as Int
             }
             override fun onCancelled(error: DatabaseError) {
                 // Failed to read value
                 Log.w(ContentValues.TAG, "Failed to read value.", error.toException())
             }
         })
+        return zahl
     }
 
     fun setData(dbchild2 : String, saveValue : String, datatype : String) {

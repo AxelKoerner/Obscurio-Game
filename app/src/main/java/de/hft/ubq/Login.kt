@@ -33,7 +33,6 @@ class Login : AppCompatActivity() {
 
         val loginbtn = findViewById<Button>(R.id.loginButton)
         val backButton = findViewById<Button>(R.id.BackLogin)
-        val registerbtn = findViewById<Button>(R.id.registerbutton)
 
         loginbtn.setOnClickListener{
             login()
@@ -41,11 +40,6 @@ class Login : AppCompatActivity() {
 
         backButton.setOnClickListener {
             newUser("Son")
-        }
-
-        registerbtn.setOnClickListener{
-            val intent = Intent(this, SignUp::class.java)
-            startActivity(intent)
         }
     }
 

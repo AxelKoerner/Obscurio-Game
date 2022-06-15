@@ -42,8 +42,8 @@ class SignUp : AppCompatActivity() {
     }
 
     private fun signUp() {
-        val email = emailText.text.toString().trim()
-        val password = passwordText.text.toString().trim()
+        val email = SignUpemail.text.toString().trim()
+        val password = signUpPassword.text.toString().trim()
 
         mAuth.createUserWithEmailAndPassword(email,password)
             .addOnCompleteListener(this) { task ->
