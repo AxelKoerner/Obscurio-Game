@@ -5,7 +5,10 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.view.View
 import android.widget.Button
+import android.widget.TextView
+import android.widget.Toast
 import com.example.ubq.R
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.DataSnapshot
@@ -30,34 +33,40 @@ class Login : AppCompatActivity() {
 
         val loginbtn = findViewById<Button>(R.id.loginButton)
         val backButton = findViewById<Button>(R.id.BackLogin)
+        val registerbtn = findViewById<Button>(R.id.registerbutton)
 
         loginbtn.setOnClickListener{
-            signUp()
+            login()
         }
+
         backButton.setOnClickListener {
-            newUser("test")
+            newUser("Son")
+        }
+
+        registerbtn.setOnClickListener{
+            val intent = Intent(this, SignUp::class.java)
+            startActivity(intent)
         }
     }
 
-    private fun signUp() {
-        var email = emailText.text.toString().trim()
-        var password = passwordText.text.toString().trim()
+    private fun login() {
+        val email = emailText.text.toString()
 
-        mAuth.createUserWithEmailAndPassword(email,password)
-            .addOnSuccessListener{
-                val firebaseUser = mAuth.currentUser
-                val email = firebaseUser!!.email
-                newUser("$email")
-                val intent = Intent(this, MainActivity::class.java)
-                startActivity(intent)
-            }
+        val pass = passwordText.text.toString()
+
+        mAuth.signInWithEmailAndPassword(email, pass).addOnCompleteListener(this) {
+            if (it.isSuccessful) {
+                Toast.makeText(this, "Successfully LoggedIn", Toast.LENGTH_SHORT).show()
+            } else
+                Toast.makeText(this, "Log In failed ", Toast.LENGTH_SHORT).show()
+        }
     }
 
     fun getdata(dbchild : String, dbchild2 : String) {
         database.addValueEventListener(object : ValueEventListener {
             override fun onDataChange(snapshot: DataSnapshot) {
                 //TODO change as String to right datatype
-                var test = snapshot.child("$dbchild").child("$dbchild2").getValue()
+                var test = snapshot.child(dbchild).child(dbchild2).getValue()
             }
             override fun onCancelled(error: DatabaseError) {
                 // Failed to read value
