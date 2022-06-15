@@ -2,16 +2,24 @@ package de.hft.ubq
 
 import android.animation.Animator
 import android.animation.ObjectAnimator
+import android.content.ContentValues
 import android.content.Context
 import android.content.Intent
 import android.media.MediaPlayer
 import android.os.Bundle
 import android.os.CountDownTimer
+import android.util.Log
 import android.view.*
 import android.view.animation.DecelerateInterpolator
 import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
 import com.example.ubq.R
+import com.google.firebase.database.DataSnapshot
+import com.google.firebase.database.DatabaseError
+import com.google.firebase.database.DatabaseReference
+import com.google.firebase.database.ValueEventListener
+import com.google.firebase.database.ktx.database
+import com.google.firebase.ktx.Firebase
 import kotlinx.android.synthetic.main.activity_gm_main.*
 import kotlinx.android.synthetic.main.activity_gm_reference_choice.*
 import kotlinx.android.synthetic.main.activity_main.*
@@ -21,7 +29,6 @@ import java.util.*
 /*                                   Global Variables                             */
 
 
-
 class MainActivityGM : AppCompatActivity() {
 
     val shared_Preferences:String = "shared_Preferences"
@@ -29,6 +36,7 @@ class MainActivityGM : AppCompatActivity() {
     private var countDownProgress: Int = 60000
     var availablePictures = IntArray(69)
     var gmDone = false
+    private lateinit var database : DatabaseReference
 
 
 
@@ -39,6 +47,8 @@ class MainActivityGM : AppCompatActivity() {
         val mediaPlayer = MediaPlayer.create(this, R.raw.music)
         //mediaPlayer?.start()
         mediaPlayer?.isLooping = true
+        database = Firebase.database.reference
+
         //countdown()   <-- crashed die app
 
 
@@ -168,6 +178,37 @@ class MainActivityGM : AppCompatActivity() {
 
         savedInt = sharedPreferences.getInt("Picture7", 700015)
         Picture3_gm.setImageResource(savedInt)
+    }
+
+    fun getdata(dbchild : String) {
+        database.addValueEventListener(object : ValueEventListener {
+            override fun onDataChange(snapshot: DataSnapshot) {
+                var test = snapshot.child("$dbchild").getValue()
+            }
+            override fun onCancelled(error: DatabaseError) {
+                // Failed to read value
+                Log.w(ContentValues.TAG, "Failed to read value.", error.toException())
+            }
+        })
+    }
+
+    fun setData(dbchild2 : String, saveValue : String, datatype : String) {
+        when(datatype){
+            "Int"->{
+                database.child("$dbchild2").setValue(saveValue.toInt())
+            }
+            "String"->{
+                database.child("$dbchild2").setValue("$saveValue")
+            }
+            "Boolean"->{
+                if (saveValue == "true"){
+                    database.child("$dbchild2").setValue(true)
+                }
+                if (saveValue == "false"){
+                    database.child("$dbchild2").setValue(false)
+                }
+            }
+        }
     }
 
 }
