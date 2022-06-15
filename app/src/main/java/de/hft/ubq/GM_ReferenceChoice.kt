@@ -1,10 +1,12 @@
 package de.hft.ubq
 
+import android.content.ContentValues
 import android.content.Context
 import android.content.Intent
 import android.media.MediaPlayer
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
 import android.widget.Button
@@ -16,6 +18,12 @@ import androidx.appcompat.widget.Toolbar
 import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
 import com.example.ubq.R
+import com.google.firebase.database.DataSnapshot
+import com.google.firebase.database.DatabaseError
+import com.google.firebase.database.DatabaseReference
+import com.google.firebase.database.ValueEventListener
+import com.google.firebase.database.ktx.database
+import com.google.firebase.ktx.Firebase
 import kotlinx.android.synthetic.main.activity_gm_reference_choice.*
 import kotlinx.android.synthetic.main.activity_main.*
 import java.util.*
@@ -24,6 +32,7 @@ class GM_ReferenceChoice : AppCompatActivity() {
     var isRunning = false
     val shared_Preferences:String = "shared_Preferences"
     var availablePictures = IntArray(76)
+    private lateinit var database : DatabaseReference
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -32,6 +41,7 @@ class GM_ReferenceChoice : AppCompatActivity() {
         val mediaPlayer = MediaPlayer.create(this, R.raw.music)
         //mediaPlayer?.start()
         mediaPlayer?.isLooping = true
+        database = Firebase.database.reference
 
 
 
@@ -306,6 +316,37 @@ class GM_ReferenceChoice : AppCompatActivity() {
         val sharedPreferences = getSharedPreferences(shared_Preferences, Context.MODE_PRIVATE)
         var savedBoolean = sharedPreferences.getBoolean("isRunning", false)
         isRunning = savedBoolean
+    }
+
+    fun getdata(dbchild : String) {
+        database.addValueEventListener(object : ValueEventListener {
+            override fun onDataChange(snapshot: DataSnapshot) {
+                var test = snapshot.child("$dbchild").getValue()
+            }
+            override fun onCancelled(error: DatabaseError) {
+                // Failed to read value
+                Log.w(ContentValues.TAG, "Failed to read value.", error.toException())
+            }
+        })
+    }
+
+    fun setData(dbchild2 : String, saveValue : String, datatype : String) {
+        when(datatype){
+            "Int"->{
+                database.child("$dbchild2").setValue(saveValue.toInt())
+            }
+            "String"->{
+                database.child("$dbchild2").setValue("$saveValue")
+            }
+            "Boolean"->{
+                if (saveValue == "true"){
+                    database.child("$dbchild2").setValue(true)
+                }
+                if (saveValue == "false"){
+                    database.child("$dbchild2").setValue(false)
+                }
+            }
+        }
     }
 
 
