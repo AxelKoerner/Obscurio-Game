@@ -51,23 +51,26 @@ class Login : AppCompatActivity() {
 
         mAuth.signInWithEmailAndPassword(email, pass).addOnCompleteListener(this) {
             if (it.isSuccessful) {
-                Toast.makeText(this, "Successfully LoggedIn", Toast.LENGTH_SHORT).show()
+                val intent = Intent(this, MainMenu::class.java)
+                startActivity(intent)
             } else
                 Toast.makeText(this, "Log In failed ", Toast.LENGTH_SHORT).show()
         }
     }
 
-    fun getdata(dbchild : String, dbchild2 : String) {
+    fun getdataInt(dbchild : String, dbchild2 : String) : Int {
+        var zahl = 0
         database.addValueEventListener(object : ValueEventListener {
             override fun onDataChange(snapshot: DataSnapshot) {
                 //TODO change as String to right datatype
-                var test = snapshot.child(dbchild).child(dbchild2).getValue()
+                zahl = snapshot.child(dbchild).child(dbchild2).getValue() as Int
             }
             override fun onCancelled(error: DatabaseError) {
                 // Failed to read value
                 Log.w(ContentValues.TAG, "Failed to read value.", error.toException())
             }
         })
+        return zahl
     }
 
 }

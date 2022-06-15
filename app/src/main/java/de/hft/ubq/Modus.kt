@@ -28,7 +28,7 @@ class Modus : AppCompatActivity() {
         }
 
         buttonOnline.setOnClickListener { //TODO LoginScreen
-            val intent = Intent(this, Login::class.java)
+            val intent = Intent(this, SignUp::class.java)
             startActivity(intent)
         }
 
