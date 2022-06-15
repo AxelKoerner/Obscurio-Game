@@ -18,7 +18,7 @@ class SignUp : AppCompatActivity() {
 
     private lateinit var database : DatabaseReference
 
-    var test = "Axel"
+    var test = "Axel.de"
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -27,9 +27,14 @@ class SignUp : AppCompatActivity() {
         database = Firebase.database.reference
 
         val signbtn = findViewById<Button>(R.id.SignUpButton)
+
+        val signInbtn = findViewById<Button>(R.id.signIn)
+
         signbtn.setOnClickListener{
-            signUp()
             newUser(test)
+        }
+
+        signInbtn.setOnClickListener{
             val intent = Intent(this, Login::class.java)
             startActivity(intent)
         }

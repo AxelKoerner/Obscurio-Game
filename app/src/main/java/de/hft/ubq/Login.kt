@@ -33,20 +33,15 @@ class Login : AppCompatActivity() {
 
         val loginbtn = findViewById<Button>(R.id.loginButton)
         val backButton = findViewById<Button>(R.id.BackLogin)
-        val registerbtn = findViewById<Button>(R.id.registerbutton)
 
         loginbtn.setOnClickListener{
             login()
         }
 
         backButton.setOnClickListener {
-            newUser("Son")
+            finish()
         }
 
-        registerbtn.setOnClickListener{
-            val intent = Intent(this, SignUp::class.java)
-            startActivity(intent)
-        }
     }
 
     private fun login() {
@@ -75,38 +70,4 @@ class Login : AppCompatActivity() {
         })
     }
 
-    fun newUser(username : String){
-        database.child("$username").child("overallVotes").setValue(0)
-        database.child("$username").child("PlayerTurn").setValue(false)
-        database.child("$username").child("online").setValue(true)
-        database.child("$username").child("maxRounds").setValue(7)
-        database.child("$username").child("PlayerNumber").setValue(3)
-        database.child("$username").child("PlayerChoice").setValue(700015)
-        database.child("$username").child("gmDone").setValue(false)
-        database.child("$username").child("correctDoor").setValue(0)
-        database.child("$username").child("correctVotes").setValue(0)
-        database.child("$username").child("Lifepoints").setValue(9)
-        database.child("$username").child("Round").setValue(1)
-        database.child("$username").child("UsedPicture").setValue("")
-        database.child("$username").child("isRunning").setValue(false)
-        database.child("$username").child("Picture1").setValue(700015)
-        database.child("$username").child("Picture2").setValue(700015)
-        database.child("$username").child("Picture3").setValue(700015)
-        database.child("$username").child("Picture4").setValue(700015)
-        database.child("$username").child("Picture5").setValue(700015)
-        database.child("$username").child("Picture6").setValue(700015)
-        database.child("$username").child("Picture7").setValue(700015)
-        database.child("$username").child("ChosenReference1").setValue(700015)
-        database.child("$username").child("ChosenReference2").setValue(700015)
-        database.child("$username").child("PositionX_ChosenReference1").setValue(100)
-        database.child("$username").child("PositionY_ChosenReference1").setValue(100)
-        database.child("$username").child("PositionX_ChosenReference2").setValue(100)
-        database.child("$username").child("PositionX_ChosenReference2").setValue(100)
-        database.child("$username").child("Picture1Main").setValue(700015)
-        database.child("$username").child("Picture2Main").setValue(700015)
-        database.child("$username").child("Picture3Main").setValue(700015)
-        database.child("$username").child("Picture4Main").setValue(700015)
-        database.child("$username").child("Picture5Main").setValue(700015)
-        database.child("$username").child("Picture6Main").setValue(700015)
-    }
 }
