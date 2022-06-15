@@ -22,12 +22,22 @@ class Modus : AppCompatActivity() {
         val buttonOnline = findViewById<Button>(R.id.online)
 
         buttonOffline.setOnClickListener{
+            val sharedPreferences = getSharedPreferences(shared_Preferences, Context.MODE_PRIVATE)
+            val editor = sharedPreferences.edit()
+            editor.apply{
+                putBoolean("online", false)
+            }.apply()
             setLifesandPlayers()
             val intent = Intent(this, GM_ReferenceChoice::class.java)
             startActivity(intent)
         }
 
-        buttonOnline.setOnClickListener { //TODO LoginScreen
+        buttonOnline.setOnClickListener {
+            val sharedPreferences = getSharedPreferences(shared_Preferences, Context.MODE_PRIVATE)
+            val editor = sharedPreferences.edit()
+            editor.apply{
+                putBoolean("online", true)
+            }.apply()
             val intent = Intent(this, Login::class.java)
             startActivity(intent)
         }

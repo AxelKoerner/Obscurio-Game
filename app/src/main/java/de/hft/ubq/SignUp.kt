@@ -27,18 +27,24 @@ class SignUp : AppCompatActivity() {
         database = Firebase.database.reference
 
         val signbtn = findViewById<Button>(R.id.SignUpButton)
+        val back = findViewById<Button>(R.id.BackSignUp)
+
+        back.setOnClickListener {
+            finish()
+        }
         signbtn.setOnClickListener{
             signUp()
-            newUser(test)
-            val intent = Intent(this, Login::class.java)
-            startActivity(intent)
+          //  newUser(test)
+            //TODO aktuelle weiterleitung sinnlos
+          //  val intent = Intent(this, Login::class.java)
+           // startActivity(intent)
         }
 
     }
 
     private fun signUp() {
-        val email = emailText.text.toString().trim()
-        val password = passwordText.text.toString().trim()
+        val email = SignUpemail.text.toString().trim()
+        val password = passwordSignUp.text.toString().trim()
 
         mAuth.createUserWithEmailAndPassword(email,password)
             .addOnCompleteListener(this) { task ->
