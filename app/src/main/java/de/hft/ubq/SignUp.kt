@@ -4,7 +4,6 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
-import android.widget.Toast
 import com.example.ubq.R
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.DatabaseReference
@@ -12,7 +11,6 @@ import com.google.firebase.database.ktx.database
 import com.google.firebase.ktx.Firebase
 import kotlinx.android.synthetic.main.activity_login.*
 import kotlinx.android.synthetic.main.activity_sign_up.*
-import kotlin.math.sign
 
 class SignUp : AppCompatActivity() {
 
@@ -20,7 +18,7 @@ class SignUp : AppCompatActivity() {
 
     private lateinit var database : DatabaseReference
 
-    var test = "Axel"
+    var test = "Axel.de"
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -33,7 +31,7 @@ class SignUp : AppCompatActivity() {
         val signInbtn = findViewById<Button>(R.id.signIn)
 
         signbtn.setOnClickListener{
-            login()
+            newUser(test)
         }
 
         signInbtn.setOnClickListener{
@@ -44,8 +42,8 @@ class SignUp : AppCompatActivity() {
     }
 
     private fun signUp() {
-        val email = SignUpemail.text.toString().trim()
-        val password = passwordSignUp.text.toString().trim()
+        val email = emailText.text.toString().trim()
+        val password = passwordText.text.toString().trim()
 
         mAuth.createUserWithEmailAndPassword(email,password)
             .addOnCompleteListener(this) { task ->
@@ -54,21 +52,6 @@ class SignUp : AppCompatActivity() {
                 }
             }
     }
-
-    private fun login() {
-        val email = SignUpemail.text.toString()
-
-        val pass = passwordSignUp.text.toString()
-
-        mAuth.signInWithEmailAndPassword(email, pass).addOnCompleteListener(this) {
-            if (it.isSuccessful) {
-                val intent = Intent(this, MainMenu::class.java)
-                startActivity(intent)
-            } else
-                signUp()
-        }
-    }
-
 
     fun newUser(username : String){
         database.child("$username").child("overallVotes").setValue(0)
