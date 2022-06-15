@@ -1,38 +1,12 @@
 package de.hft.ubq;
 
-import android.content.Context;
-import android.content.SharedPreferences;
 import android.widget.ImageButton;
 
 import com.example.ubq.R;
 
 public class Game {
-    public boolean GM = false;
-    public int door = 0;
-
-    public static final String shared_Preferences = "shared_Preferences";
-    public static final String usedDoors = "";
-
-
-    public int set_door(){
-        int max = 76;
-
-        door = (int)(Math.random()*(max+1));
-
-
-
-
-
-        return door;
-    }
-
-
-
-
 
     public void matchdoor( ImageButton button, int door){
-       // set_door();
-
 
         switch (door){
             case 1: button.setImageResource(R.drawable.p_1);
@@ -270,8 +244,5 @@ public class Game {
         }
 
     }
-
-
-
 
 }

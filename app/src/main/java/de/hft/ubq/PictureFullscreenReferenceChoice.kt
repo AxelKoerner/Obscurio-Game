@@ -20,9 +20,6 @@ class PictureFullscreenReferenceChoice : AppCompatActivity() {
         setContentView(R.layout.activity_picture_fullscreen_reference_choice)
         supportActionBar?.hide()
 
-        fun backtoReferenceChoice() {
-            finish()
-        }
 
         val pictureFull = findViewById<ImageButton>(R.id.Button_fullscreen_ReferenceChoice)
         val confirmSwitch: Switch = findViewById(R.id.switch_referenceChoice)
@@ -117,7 +114,7 @@ class PictureFullscreenReferenceChoice : AppCompatActivity() {
 
 
         pictureFull.setOnClickListener(View.OnClickListener {
-            backtoReferenceChoice()
+            finish()
         })
 
 

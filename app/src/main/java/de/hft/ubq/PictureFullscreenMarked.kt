@@ -12,8 +12,6 @@ import com.example.ubq.R
 
 class PictureFullscreenMarked : AppCompatActivity() {
     val shared_Preferences:String = "shared_Preferences"
-    private var xDelta = 0
-    private var yDelta = 0
     private var mainLayout: ViewGroup? = null
     private var image: ImageView? = null
 
@@ -30,9 +28,7 @@ class PictureFullscreenMarked : AppCompatActivity() {
 
 
 
-        fun returnToMain() {
-           finish()
-        }
+
 
 
         val pictureFull = findViewById<ImageButton>(R.id.Button_fullscreen_marked)
@@ -77,7 +73,7 @@ class PictureFullscreenMarked : AppCompatActivity() {
         }
 
         pictureFull.setOnClickListener(View.OnClickListener {
-            returnToMain()
+            finish()
 
         })
 

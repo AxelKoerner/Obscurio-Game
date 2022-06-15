@@ -30,7 +30,6 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         supportActionBar?.hide()
         val mediaPlayer = MediaPlayer.create(this, R.raw.music)
-        //mediaPlayer?.start()
         mediaPlayer?.isLooping = true
         countdown()
 
@@ -93,7 +92,7 @@ class MainActivity : AppCompatActivity() {
 
 
         confirm.setOnClickListener {
-            doSomething()
+            checkChoice()
         }
 
         button1.setOnClickListener{
@@ -131,7 +130,6 @@ class MainActivity : AppCompatActivity() {
 
         if(!sharedPreferences.getBoolean("online",false)){
             val game = Game()
-            //val maxRightGate = 6
             var rightGate = (1..6).random()
             button7.setImageResource(sharedPreferences.getInt("ChosenReference1", 700015))
             button8.setImageResource(sharedPreferences.getInt("ChosenReference2", 700015))
@@ -193,15 +191,11 @@ class MainActivity : AppCompatActivity() {
                 }
             }
             saveData()
-
         }
 
-
-
-
     progressBarStart()
-
     }
+
     fun saveData(){
         val sharedPreferences = getSharedPreferences(shared_Preferences, Context.MODE_PRIVATE)
         val editor = sharedPreferences.edit()
@@ -283,7 +277,7 @@ class MainActivity : AppCompatActivity() {
     }
 
 
-    fun doSomething(){//TODO check for Synchronization, has to happen for each Player
+    fun checkChoice(){
         val sharedPreferences = getSharedPreferences(shared_Preferences, Context.MODE_PRIVATE)
         val editor = sharedPreferences.edit()
 

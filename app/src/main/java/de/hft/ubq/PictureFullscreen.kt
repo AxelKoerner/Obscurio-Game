@@ -16,10 +16,6 @@ import android.widget.RelativeLayout
 class PictureFullscreen : AppCompatActivity() {
     val shared_Preferences:String = "shared_Preferences"
 
-
-
-
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_picture_fullscreen)
@@ -39,17 +35,8 @@ class PictureFullscreen : AppCompatActivity() {
         }
 
 
-        fun returnToMain() {
-
-            finish()
-
-
-        }
-
-
-
         pictureFull.setOnClickListener(View.OnClickListener {
-            returnToMain()
+            finish()
         })
 
 

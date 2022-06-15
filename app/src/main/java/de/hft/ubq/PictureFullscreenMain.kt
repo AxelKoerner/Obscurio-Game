@@ -47,17 +47,8 @@ class PictureFullscreenMain : AppCompatActivity() {
         }
 
 
-        fun returnToMain() {
-
-            finish()
-
-
-        }
-
-
-
         pictureFull.setOnClickListener(View.OnClickListener {
-            returnToMain()
+           finish()
         })
         confirmSwitch.setOnCheckedChangeListener { buttonView, isChecked ->
             val sharedPreferences = getSharedPreferences(shared_Preferences, Context.MODE_PRIVATE)

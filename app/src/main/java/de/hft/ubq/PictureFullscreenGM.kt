@@ -31,10 +31,6 @@ class PictureFullscreenGM : AppCompatActivity() {
         image!!.setOnTouchListener(onTouchListener())
 
 
-        fun returnToMain() {
-            val intent = Intent(this, MainActivityGM::class.java)
-            startActivity(intent)
-        }
 
         val confirm = findViewById<Button>(R.id.confirm_fullscreen_arrow)
         val pictureFull = findViewById<ImageButton>(R.id.Button_fullscreen)
@@ -79,7 +75,7 @@ class PictureFullscreenGM : AppCompatActivity() {
         }
 
         pictureFull.setOnClickListener(View.OnClickListener {
-            returnToMain()
+            finish()
 
         })
 

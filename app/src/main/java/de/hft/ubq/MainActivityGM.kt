@@ -27,9 +27,6 @@ class MainActivityGM : AppCompatActivity() {
     val shared_Preferences:String = "shared_Preferences"
     lateinit var countDownTimer: CountDownTimer
     private var countDownProgress: Int = 60000
-    var availablePictures = IntArray(69)
-    var gmDone = false
-
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
