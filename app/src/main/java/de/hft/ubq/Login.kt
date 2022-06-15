@@ -18,7 +18,6 @@ import com.google.firebase.database.ValueEventListener
 import com.google.firebase.database.ktx.database
 import com.google.firebase.ktx.Firebase
 import kotlinx.android.synthetic.main.activity_login.*
-import java.util.*
 
 class Login : AppCompatActivity() {
 
@@ -41,7 +40,7 @@ class Login : AppCompatActivity() {
         }
 
         backButton.setOnClickListener {
-            finish()
+            newUser("Son")
         }
 
         registerbtn.setOnClickListener{
@@ -51,14 +50,13 @@ class Login : AppCompatActivity() {
     }
 
     private fun login() {
-        val email = emailTextLogin.text.toString()
+        val email = emailText.text.toString()
 
-        val pass = passwordTextLogin.text.toString()
+        val pass = passwordText.text.toString()
 
         mAuth.signInWithEmailAndPassword(email, pass).addOnCompleteListener(this) {
             if (it.isSuccessful) {
                 Toast.makeText(this, "Successfully LoggedIn", Toast.LENGTH_SHORT).show()
-                newUser(email)
             } else
                 Toast.makeText(this, "Log In failed ", Toast.LENGTH_SHORT).show()
         }
@@ -78,39 +76,37 @@ class Login : AppCompatActivity() {
     }
 
     fun newUser(username : String){
-        var st = StringTokenizer(username, ".")
-        var user = st.nextToken()
-        database.child(user).child("overallVotes").setValue(0)
-        database.child(user).child("PlayerTurn").setValue(false)
-        database.child(user).child("online").setValue(true)
-        database.child(user).child("maxRounds").setValue(7)
-        database.child(user).child("PlayerNumber").setValue(3)
-        database.child(user).child("PlayerChoice").setValue(700015)
-        database.child(user).child("gmDone").setValue(false)
-        database.child(user).child("correctDoor").setValue(0)
-        database.child(user).child("correctVotes").setValue(0)
-        database.child(user).child("Lifepoints").setValue(9)
-        database.child(user).child("Round").setValue(1)
-        database.child(user).child("UsedPicture").setValue("")
-        database.child(user).child("isRunning").setValue(false)
-        database.child(user).child("Picture1").setValue(700015)
-        database.child(user).child("Picture2").setValue(700015)
-        database.child(user).child("Picture3").setValue(700015)
-        database.child(user).child("Picture4").setValue(700015)
-        database.child(user).child("Picture5").setValue(700015)
-        database.child(user).child("Picture6").setValue(700015)
-        database.child(user).child("Picture7").setValue(700015)
-        database.child(user).child("ChosenReference1").setValue(700015)
-        database.child(user).child("ChosenReference2").setValue(700015)
-        database.child(user).child("PositionX_ChosenReference1").setValue(100)
-        database.child(user).child("PositionY_ChosenReference1").setValue(100)
-        database.child(user).child("PositionX_ChosenReference2").setValue(100)
-        database.child(user).child("PositionX_ChosenReference2").setValue(100)
-        database.child(user).child("Picture1Main").setValue(700015)
-        database.child(user).child("Picture2Main").setValue(700015)
-        database.child(user).child("Picture3Main").setValue(700015)
-        database.child(user).child("Picture4Main").setValue(700015)
-        database.child(user).child("Picture5Main").setValue(700015)
-        database.child(user).child("Picture6Main").setValue(700015)
+        database.child("$username").child("overallVotes").setValue(0)
+        database.child("$username").child("PlayerTurn").setValue(false)
+        database.child("$username").child("online").setValue(true)
+        database.child("$username").child("maxRounds").setValue(7)
+        database.child("$username").child("PlayerNumber").setValue(3)
+        database.child("$username").child("PlayerChoice").setValue(700015)
+        database.child("$username").child("gmDone").setValue(false)
+        database.child("$username").child("correctDoor").setValue(0)
+        database.child("$username").child("correctVotes").setValue(0)
+        database.child("$username").child("Lifepoints").setValue(9)
+        database.child("$username").child("Round").setValue(1)
+        database.child("$username").child("UsedPicture").setValue("")
+        database.child("$username").child("isRunning").setValue(false)
+        database.child("$username").child("Picture1").setValue(700015)
+        database.child("$username").child("Picture2").setValue(700015)
+        database.child("$username").child("Picture3").setValue(700015)
+        database.child("$username").child("Picture4").setValue(700015)
+        database.child("$username").child("Picture5").setValue(700015)
+        database.child("$username").child("Picture6").setValue(700015)
+        database.child("$username").child("Picture7").setValue(700015)
+        database.child("$username").child("ChosenReference1").setValue(700015)
+        database.child("$username").child("ChosenReference2").setValue(700015)
+        database.child("$username").child("PositionX_ChosenReference1").setValue(100)
+        database.child("$username").child("PositionY_ChosenReference1").setValue(100)
+        database.child("$username").child("PositionX_ChosenReference2").setValue(100)
+        database.child("$username").child("PositionX_ChosenReference2").setValue(100)
+        database.child("$username").child("Picture1Main").setValue(700015)
+        database.child("$username").child("Picture2Main").setValue(700015)
+        database.child("$username").child("Picture3Main").setValue(700015)
+        database.child("$username").child("Picture4Main").setValue(700015)
+        database.child("$username").child("Picture5Main").setValue(700015)
+        database.child("$username").child("Picture6Main").setValue(700015)
     }
 }

@@ -318,11 +318,10 @@ class GM_ReferenceChoice : AppCompatActivity() {
         isRunning = savedBoolean
     }
 
-    fun getdataInt(dbchild : String) {
+    fun getdata(dbchild : String) {
         database.addValueEventListener(object : ValueEventListener {
             override fun onDataChange(snapshot: DataSnapshot) {
                 var test = snapshot.child("$dbchild").getValue()
-
             }
             override fun onCancelled(error: DatabaseError) {
                 // Failed to read value
