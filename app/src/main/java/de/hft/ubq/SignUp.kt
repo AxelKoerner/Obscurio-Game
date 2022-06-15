@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import android.widget.Toast
 import com.example.ubq.R
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.DatabaseReference
@@ -31,7 +32,7 @@ class SignUp : AppCompatActivity() {
         val signInbtn = findViewById<Button>(R.id.signIn)
 
         signbtn.setOnClickListener{
-            newUser(test)
+            signUp()
         }
 
         signInbtn.setOnClickListener{
@@ -39,6 +40,26 @@ class SignUp : AppCompatActivity() {
             startActivity(intent)
         }
 
+    }
+
+    private fun login() {
+        val email = emailText.text.toString()
+
+        val pass = passwordText.text.toString()
+
+        mAuth.signInWithEmailAndPassword(email, pass).addOnCompleteListener(this) {
+            if (it.isSuccessful) {
+                val intent = Intent(this, MainMenu::class.java)
+                startActivity(intent)
+            } else {
+                mAuth.createUserWithEmailAndPassword(email,pass)
+                    .addOnCompleteListener(this) { task ->
+                        if (task.isSuccessful) {
+                            finish()
+                        }
+                    }
+            }
+        }
     }
 
     private fun signUp() {
