@@ -1,63 +1,54 @@
 package de.hft.ubq
 
-import android.app.Service
-import android.content.Intent
-import android.content.res.AssetFileDescriptor
 import android.media.MediaPlayer
-import android.os.IBinder
-import com.example.ubq.R
+import android.content.Context
 
-class BackgroundSoundService : Service() {
-    internal lateinit var player: MediaPlayer
-    override fun onBind(arg0: Intent): IBinder? {
 
-        return null
+object BackgroundSoundService {
+    var mediaPlayer: MediaPlayer? = null
+    var lastResource: Int? = null
+
+    fun playAudio(c: Context, id: Int, isLooping: Boolean = true) {
+        createMediaPlayer(c, id)
+
+        mediaPlayer?.let {
+            it.isLooping = isLooping
+
+            if (!it.isPlaying) {
+                it.start()
+            }
+        }
     }
 
-    override fun onCreate() {
-        super.onCreate()
-      /*  val afd = applicationContext.assets.openFd("backgroundsound1.wav")
-        val player = MediaPlayer()
-         player.setDataSource(afd.fileDescriptor)
-     */
-        player = MediaPlayer.create(this, R.raw.song2)
-        player.isLooping = true // Set looping
-        player.setVolume(1f, 1f)
+    private fun createMediaPlayer(c: Context, id: Int) {
+        // in case it's already playing something
+        mediaPlayer?.stop()
 
+        mediaPlayer = MediaPlayer.create(c, id)
+        lastResource = id
     }
 
-    override fun onStartCommand(intent: Intent, flags: Int, startId: Int): Int {
-        player.start()
-        return START_STICKY
+    // usually used inside the Activity's onResume method
+    fun continuePlaying(c: Context, specificResource: Int? = null) {
+        specificResource?.let {
+            if (lastResource != specificResource) {
+                createMediaPlayer(c, specificResource)
+            }
+        }
+
+        mediaPlayer?.let {
+            if (!it.isPlaying) {
+                it.start()
+            }
+        }
     }
 
-    override fun onStart(intent: Intent, startId: Int) {
-        // TO DO
+    fun pauseAudio() {
+        mediaPlayer?.pause()
     }
 
-    fun onUnBind(arg0: Intent): IBinder? {
-        // TO DO Auto-generated method
-        return null
+    fun changeVolume(volume: Float) {
+        mediaPlayer?.setVolume(volume, volume)
     }
 
-    fun onStop() {
-        player.stop()
-    }
-
-    fun onPause() {
-
-    }
-
-    override fun onDestroy() {
-        player.stop()
-        player.release()
-    }
-
-    override fun onLowMemory() {
-
-    }
-
-    companion object {
-        private val TAG: String? = null
-    }
 }

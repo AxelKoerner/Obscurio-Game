@@ -31,8 +31,7 @@ class MainMenu : AppCompatActivity()  {
 
 
         //kümmert sich um die Musik
-        val intentMusic = Intent(this, BackgroundSoundService::class.java)
-        startService(intentMusic)
+        BackgroundSoundService.playAudio(this, R.raw.song2)
 
         val bttNeuSpiel = findViewById<Button>(R.id.ButtonNeuSpiel)
         val bttSpielBeit = findViewById<Button>(R.id.ButtonSpielBeit)
