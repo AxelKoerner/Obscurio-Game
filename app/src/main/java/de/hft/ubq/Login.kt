@@ -35,11 +35,12 @@ class Login : AppCompatActivity() {
         val backButton = findViewById<Button>(R.id.BackLogin)
 
         loginbtn.setOnClickListener{
-            login()
+            //login()
+            Toast.makeText(this, "Online funktion currently Disabled", Toast.LENGTH_SHORT).show()
         }
 
         backButton.setOnClickListener {
-            newUser("Son")
+           finish()
         }
     }
 

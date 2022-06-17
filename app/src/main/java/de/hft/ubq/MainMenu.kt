@@ -47,7 +47,7 @@ class MainMenu : AppCompatActivity()  {
         }
 
         bttSpielBeit.setOnClickListener {
-            val intent = Intent(this, MainActivity::class.java)
+            val intent = Intent(this, Login::class.java)
             startActivity(intent)
         }
 

@@ -19,7 +19,6 @@ class SignUp : AppCompatActivity() {
 
     private lateinit var database : DatabaseReference
 
-    var test = "Axel.de"
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -31,13 +30,19 @@ class SignUp : AppCompatActivity() {
 
         val signInbtn = findViewById<Button>(R.id.signIn)
 
+        val back = findViewById<Button>(R.id.BackSignUp)
+
         signbtn.setOnClickListener{
-            signUp()
+            //signUp()
+            Toast.makeText(this, "Online funktion currently Disabled", Toast.LENGTH_SHORT).show()
         }
 
         signInbtn.setOnClickListener{
-            val intent = Intent(this, Login::class.java)
-            startActivity(intent)
+            Toast.makeText(this, "Online funktion currently Disabled", Toast.LENGTH_SHORT).show()
+        }
+
+        back.setOnClickListener {
+            finish()
         }
 
     }
