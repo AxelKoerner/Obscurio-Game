@@ -44,6 +44,8 @@
             android:id="@+id/continueMidscreen"
             android:background="@drawable/custom_button"
             app:layout_constraintEnd_toEndOf="parent"
+            android:drawableEnd="@drawable/ic_baseline_play_arrow_24"
+            android:paddingRight="30dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/leben"
             app:layout_constraintBottom_toBottomOf="parent" />

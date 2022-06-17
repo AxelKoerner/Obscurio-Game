@@ -72,7 +72,6 @@ class MainActivity : AppCompatActivity() {
                 resource = "Picture6Main"
             }
 
-
             intent.putExtra("chosenImage", resource)
             startActivity(intent)
         }
